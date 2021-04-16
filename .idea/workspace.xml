@@ -19,17 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/array-empty.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/array.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/object-constructor-methods.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/string-concat.md" afterDir="false" />
+    <list default="true" id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/config/nav.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config/nav.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/nav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/about/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/more/hodgepodge/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/more/hodgepodge/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/backend/nodejs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tools/git/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tools/git/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,8 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.docs:nav" />
         <item itemvalue="npm.docs:nav" />
         <item itemvalue="npm.docs:dev" />
@@ -172,7 +166,7 @@
       <workItem from="1618514040460" duration="4799000" />
       <workItem from="1618584528930" duration="524000" />
       <workItem from="1618585062719" duration="865000" />
-      <workItem from="1618592286279" duration="12982000" />
+      <workItem from="1618592286279" duration="15243000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初始化">
       <created>1618508194787</created>
@@ -251,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618604065931</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update">
+      <created>1618605331377</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1618605331377</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,11 +287,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="443" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1618505390119" />
-    <state x="355" y="27" key="CommitChangelistDialog2" timestamp="1618605320694">
+    <state x="355" y="27" key="CommitChangelistDialog2" timestamp="1618605331125">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="304" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1618508443618" />
-    <state x="355" y="27" key="CommitChangelistDialog2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618605320694" />
+    <state x="355" y="27" key="CommitChangelistDialog2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618605331125" />
     <state x="99" y="20" width="1344" height="840" key="DiffContextDialog" timestamp="1618518576720">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -299,26 +300,26 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="268" height="379" key="Git.Branch.Popup/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585545816" />
-    <state width="829" height="307" key="GridCell.Tab.0.bottom" timestamp="1618605261713">
+    <state width="829" height="180" key="GridCell.Tab.0.bottom" timestamp="1618610086213">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1419" height="115" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1618508277944" />
-    <state width="829" height="307" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618605261713" />
-    <state width="829" height="307" key="GridCell.Tab.0.center" timestamp="1618605261712">
+    <state width="829" height="180" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618610086213" />
+    <state width="829" height="180" key="GridCell.Tab.0.center" timestamp="1618610086211">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1419" height="115" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1618508277940" />
-    <state width="829" height="307" key="GridCell.Tab.0.center/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618605261712" />
-    <state width="829" height="307" key="GridCell.Tab.0.left" timestamp="1618605261712">
+    <state width="829" height="180" key="GridCell.Tab.0.center/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618610086211" />
+    <state width="829" height="180" key="GridCell.Tab.0.left" timestamp="1618610086209">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1419" height="115" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1618508277937" />
-    <state width="829" height="307" key="GridCell.Tab.0.left/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618605261712" />
-    <state width="829" height="307" key="GridCell.Tab.0.right" timestamp="1618605261713">
+    <state width="829" height="180" key="GridCell.Tab.0.left/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618610086209" />
+    <state width="829" height="180" key="GridCell.Tab.0.right" timestamp="1618610086212">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1419" height="115" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1618508277942" />
-    <state width="829" height="307" key="GridCell.Tab.0.right/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618605261713" />
+    <state width="829" height="180" key="GridCell.Tab.0.right/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618610086212" />
     <state x="349" y="161" key="SettingsEditor" timestamp="1618585160447">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -327,10 +328,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618508873991" />
-    <state x="440" y="262" key="Vcs.Push.Dialog.v2" timestamp="1618604068455">
+    <state x="440" y="262" key="Vcs.Push.Dialog.v2" timestamp="1618605333795">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="262" key="Vcs.Push.Dialog.v2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618604068455" />
+    <state x="440" y="262" key="Vcs.Push.Dialog.v2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618605333795" />
     <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1618600694810">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

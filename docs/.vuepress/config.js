@@ -18,10 +18,11 @@ module.exports = {
           mode: "uppercase",
           map: {
             "/frontend/javascript/": "JS 基础",
+            "/backend/node/": "Node 基础",
           }
         },
         collapse: {
-          collapseList: ["/frontend/javascript/"]
+          collapseList: ["/frontend/javascript/", "/backend/node/"]
         }
       }
     ],

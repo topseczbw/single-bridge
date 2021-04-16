@@ -15,7 +15,7 @@ module.exports = [
       { text: '单元测试', link: '/frontend/jest/' },
     ]},
     { text: '后端', items: [
-      { text: 'Node', link: '/backend/nodejs/' },
+      { text: 'Node', link: '/backend/node/' },
       { text: 'Http', link: '/backend/http/' },
         // { text: 'Nestjs', link: '/backend/nestjs/' },
         // { text: 'MySQL', link: '/backend/mysql/' },
