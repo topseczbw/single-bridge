@@ -13,7 +13,17 @@ module.exports = {
   ],
   plugins: [
     [
-      'vuepress-plugin-auto-sidebar'
+      'vuepress-plugin-auto-sidebar', {
+        title: {
+          mode: "uppercase",
+          map: {
+            "/frontend/javascript/": "JS 基础",
+          }
+        },
+        collapse: {
+          collapseList: ["/frontend/javascript/"]
+        }
+      }
     ],
     [
       '@vuepress/last-updated',
@@ -34,7 +44,7 @@ module.exports = {
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
     docsDir: 'docs',
-    editLinkText: '帮助zbw改善此页面',
+    editLinkText: '帮助改善此页面',
     docsBranch: 'main',
     nav: navConf
     // navbar: false,

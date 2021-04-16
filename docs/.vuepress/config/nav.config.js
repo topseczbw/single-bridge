@@ -32,5 +32,6 @@ module.exports = [
     { text: '更多', items: [
       { text: '面试题', link: '/more/interview/' },
       { text: '小工具', link: '/more/hodgepodge/' },
-    ]}
+    ]},
+    { text: '关于我', link: '/about/'}
   ];
