@@ -1,0 +1,22 @@
+{
+  "name": "single-bridge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/topseczbw/single-bridge.git",
+  "author": "zhangbowen <zhangbowen.frontend@bytedance.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "docs:nav": "vuepress nav docs"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-auto-sidebar": "^2.2.2"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
