@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="feat: 初始化">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/assets/img/logo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/styles/index.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/styles/palette.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/about/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/about/about-child-i/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/about/about-child-ii/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/fold/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/time/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tools/vscode/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tools/vscode/settings-sync.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1rDJXfSeHQfmWXf59tDPP8CtpdW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="compactDirectories" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.4.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.41" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/tools/vscode" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/tools/vscode" />
+      <recent name="$PROJECT_DIR$/docs" />
+      <recent name="$PROJECT_DIR$/docs/.vuepress" />
+      <recent name="$PROJECT_DIR$/docs/about/about-child-ii" />
+      <recent name="$PROJECT_DIR$/docs/about/about-child-i" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
+      <recent name="$PROJECT_DIR$/docs/.vuepress/public" />
+      <recent name="$PROJECT_DIR$/docs/.vuepress" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.docs:nav">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="docs:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docs:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="docs:nav" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docs:nav" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.docs:nav" />
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.docs:dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="" />
+      <created>1618504769308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618504769308</updated>
+      <workItem from="1618504770726" duration="4989000" />
+      <workItem from="1618509992145" duration="2965000" />
+      <workItem from="1618514040460" duration="4799000" />
+      <workItem from="1618584528930" duration="524000" />
+      <workItem from="1618585062719" duration="98000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: 初始化">
+      <created>1618508194787</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1618508194787</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: 增加更新时间">
+      <created>1618508443993</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1618508443993</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: 增加更新时间">
+      <created>1618508695638</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1618508695638</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: 增加部署">
+      <created>1618509542804</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618509542804</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: 修改自动部署配置">
+      <created>1618512831873</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1618512831873</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: 使用插件自动生成侧边栏">
+      <created>1618512862919</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1618512862919</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: 增加自动nav插件。增加返回顶部功能">
+      <created>1618515301585</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1618515301585</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: 修改主题">
+      <created>1618516694576</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1618516694576</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 增加更新时间" />
+    <MESSAGE value="feat: 增加部署" />
+    <MESSAGE value="feat: 修改自动部署配置" />
+    <MESSAGE value="feat: 使用插件自动生成侧边栏" />
+    <MESSAGE value="feat: 增加自动nav插件。增加返回顶部功能" />
+    <MESSAGE value="feat: 修改主题" />
+    <MESSAGE value="feat: 初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 初始化" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="443" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618505390120">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="443" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1618505390119" />
+    <state x="355" y="27" key="CommitChangelistDialog2" timestamp="1618585079426">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="304" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1618508443618" />
+    <state x="355" y="27" key="CommitChangelistDialog2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585079426" />
+    <state x="99" y="20" width="1344" height="840" key="DiffContextDialog" timestamp="1618518576720">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="99" y="20" width="1344" height="840" key="DiffContextDialog/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618518576720" />
+    <state width="268" height="379" key="Git.Branch.Popup" timestamp="1618585022816">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="268" height="379" key="Git.Branch.Popup/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585022816" />
+    <state width="829" height="250" key="GridCell.Tab.0.bottom" timestamp="1618518730021">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1419" height="115" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1618508277944" />
+    <state width="829" height="250" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618518730021" />
+    <state width="829" height="250" key="GridCell.Tab.0.center" timestamp="1618518730019">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1419" height="115" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1618508277940" />
+    <state width="829" height="250" key="GridCell.Tab.0.center/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618518730019" />
+    <state width="829" height="250" key="GridCell.Tab.0.left" timestamp="1618518730018">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1419" height="115" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1618508277937" />
+    <state width="829" height="250" key="GridCell.Tab.0.left/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618518730018" />
+    <state width="829" height="250" key="GridCell.Tab.0.right" timestamp="1618518730020">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1419" height="115" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1618508277942" />
+    <state width="829" height="250" key="GridCell.Tab.0.right/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618518730020" />
+    <state x="349" y="161" key="SettingsEditor" timestamp="1618585160447">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="349" y="161" key="SettingsEditor/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585160447" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1618508873991">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618508873991" />
+    <state x="440" y="262" key="Vcs.Push.Dialog.v2" timestamp="1618516698349">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="262" key="Vcs.Push.Dialog.v2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618516698349" />
+    <state x="105" y="55" width="1033" height="715" key="find.popup" timestamp="1618585094408">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="105" y="55" width="1033" height="715" key="find.popup/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585094408" />
+    <state x="625" y="418" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1618584997647">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="625" y="418" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618584997647" />
+  </component>
+</project>
