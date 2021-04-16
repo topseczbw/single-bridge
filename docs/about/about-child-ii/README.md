@@ -683,8 +683,6 @@ partitionBy(numbers, n => n % 2 === 0); // [[1, 1, 3, 3], [4], [5, 5, 5]]
 partitionBy(numbers, n => n); // [[1, 1], [3, 3], [4], [5, 5, 5]]
 ```
 
-
-
 ## 移除
 
 ### 1. compact（falsy）
@@ -979,8 +977,6 @@ insertAt(myArray, 2, 5); // myArray = [1, 2, 3, 5, 4]
 let otherArray = [2, 10];
 insertAt(otherArray, 0, 4, 6, 8); // otherArray = [2, 4, 6, 8, 10]
 ```
-
-
 
 ## 改序
 

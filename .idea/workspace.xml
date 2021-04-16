@@ -19,27 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="feat: 初始化">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/assets/img/logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/styles/index.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/styles/palette.styl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/about/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/about/about-child-i/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/about/about-child-ii/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/fold/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/time/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tools/vscode/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tools/vscode/settings-sync.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +107,7 @@
       <recent name="$PROJECT_DIR$/docs/.vuepress" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.docs:nav">
+  <component name="RunManager" selected="npm.deploy">
     <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -160,10 +140,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.docs:nav" />
-        <item itemvalue="npm.deploy" />
         <item itemvalue="npm.docs:dev" />
-        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.docs:nav" />
         <item itemvalue="npm.docs:dev" />
       </list>
     </recent_temporary>
@@ -180,7 +160,7 @@
       <workItem from="1618509992145" duration="2965000" />
       <workItem from="1618514040460" duration="4799000" />
       <workItem from="1618584528930" duration="524000" />
-      <workItem from="1618585062719" duration="98000" />
+      <workItem from="1618585062719" duration="865000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初始化">
       <created>1618508194787</created>
@@ -238,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618516694576</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat: 初始化">
+      <created>1618585204213</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1618585204214</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,39 +258,39 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="443" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1618505390119" />
-    <state x="355" y="27" key="CommitChangelistDialog2" timestamp="1618585079426">
+    <state x="355" y="27" key="CommitChangelistDialog2" timestamp="1618585203636">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="304" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1618508443618" />
-    <state x="355" y="27" key="CommitChangelistDialog2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585079426" />
+    <state x="355" y="27" key="CommitChangelistDialog2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585203636" />
     <state x="99" y="20" width="1344" height="840" key="DiffContextDialog" timestamp="1618518576720">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="99" y="20" width="1344" height="840" key="DiffContextDialog/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618518576720" />
-    <state width="268" height="379" key="Git.Branch.Popup" timestamp="1618585022816">
+    <state width="268" height="379" key="Git.Branch.Popup" timestamp="1618585545816">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="268" height="379" key="Git.Branch.Popup/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585022816" />
-    <state width="829" height="250" key="GridCell.Tab.0.bottom" timestamp="1618518730021">
+    <state width="268" height="379" key="Git.Branch.Popup/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585545816" />
+    <state width="829" height="279" key="GridCell.Tab.0.bottom" timestamp="1618585929256">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1419" height="115" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1618508277944" />
-    <state width="829" height="250" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618518730021" />
-    <state width="829" height="250" key="GridCell.Tab.0.center" timestamp="1618518730019">
+    <state width="829" height="279" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585929256" />
+    <state width="829" height="279" key="GridCell.Tab.0.center" timestamp="1618585929253">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1419" height="115" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1618508277940" />
-    <state width="829" height="250" key="GridCell.Tab.0.center/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618518730019" />
-    <state width="829" height="250" key="GridCell.Tab.0.left" timestamp="1618518730018">
+    <state width="829" height="279" key="GridCell.Tab.0.center/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585929253" />
+    <state width="829" height="279" key="GridCell.Tab.0.left" timestamp="1618585929251">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1419" height="115" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1618508277937" />
-    <state width="829" height="250" key="GridCell.Tab.0.left/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618518730018" />
-    <state width="829" height="250" key="GridCell.Tab.0.right" timestamp="1618518730020">
+    <state width="829" height="279" key="GridCell.Tab.0.left/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585929251" />
+    <state width="829" height="279" key="GridCell.Tab.0.right" timestamp="1618585929254">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1419" height="115" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1618508277942" />
-    <state width="829" height="250" key="GridCell.Tab.0.right/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618518730020" />
+    <state width="829" height="279" key="GridCell.Tab.0.right/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585929254" />
     <state x="349" y="161" key="SettingsEditor" timestamp="1618585160447">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -312,17 +299,21 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618508873991" />
-    <state x="440" y="262" key="Vcs.Push.Dialog.v2" timestamp="1618516698349">
+    <state x="440" y="262" key="Vcs.Push.Dialog.v2" timestamp="1618585526466">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="262" key="Vcs.Push.Dialog.v2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618516698349" />
+    <state x="440" y="262" key="Vcs.Push.Dialog.v2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585526466" />
+    <state x="641" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618585257888">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="641" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585257887" />
     <state x="105" y="55" width="1033" height="715" key="find.popup" timestamp="1618585094408">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="105" y="55" width="1033" height="715" key="find.popup/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585094408" />
-    <state x="625" y="418" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1618584997647">
+    <state x="625" y="418" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1618585286997">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="625" y="418" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618584997647" />
+    <state x="625" y="418" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585286997" />
   </component>
 </project>
