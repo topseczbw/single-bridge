@@ -1,16 +1,21 @@
 ---
 home: true
-# heroImage: /hero.png
-heroText: Hero 标题
-tagline: Hero 副标题
-actionText: 快速上手 →
-actionLink: /zh/guide/
+heroImage: cover.png
+heroText: zbw
+tagline: 谁人定我去或留 定我心中的宇宙
+actionText: Welcome!
+actionLink: /frontend/javascript/
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
-footer: MIT Licensed | Copyright © 2018-present Evan You
+- title: 共勉
+  details: |
+    他们把成功推给幸运，又把不幸叫做命运，但我最幸运的恰恰相反是，我从来不信命。
+- title: 关于我
+  details: 一直在努力的前端工程师
+- title: 爱好
+  details: LOL、音乐、说唱、学习、吃甜甜的东西
+footer: MIT Licensed | Copyright © 2021-present Burning
 ---
+
+::: warning 我不装乐 我摊牌乐
+这是一个写笔记的地方
+:::
