@@ -4,7 +4,7 @@ heroImage: cover.png
 heroText: zbw
 tagline: 谁人定我去或留 定我心中的宇宙
 actionText: Welcome!
-actionLink: /frontend/javascript/
+actionLink: /guide/
 features:
 - title: 共勉
   details: |
