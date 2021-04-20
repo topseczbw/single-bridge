@@ -98,14 +98,35 @@ sidebarDepth: 3
     {
       "name": "cmr"
     }
-  ]
+  ],
+  "other": "19"
 }
 ```
 
 构建上述 json，需要的 jsx 代码如下：
 
 ```jsx
-<Form {...layout} form={form} name="control-hooks" onFinish={onFinish}>
+const [form] = useForm();
+
+<Form form={form} onFinish={onFinish} initialValue={{
+  "name": "zbw",
+  "job": {
+    "one": "100tal",
+    "two": "bytedance"
+  },
+  "friends": [
+    {
+      "name": "ls"
+    },
+    {
+      "name": "gyt"
+    },
+    {
+      "name": "cmr"
+    }
+  ],
+  "other": "19"
+}}>
   <Form.Item name="name" label="name" rules={[{ required: true }]}>
     <Input />
   </Form.Item>
@@ -145,6 +166,35 @@ sidebarDepth: 3
         </>
     )}
   </Form.List>
+
+  <Form.Item noStyle shouldUpdate>
+  {({ getFieldError }) => {
+    return (
+        <Form.Item
+        name='other'
+        rules={[
+            {
+            validator(_rule, value) {
+                if (disabled) {
+                return Promise.resolve();
+                }
+
+                if (!/^([1-9]\d*(\.\d\d?)?|0\.\d\d?)$/gm.test(value) || !value.trim()) {
+                return Promise.reject(new Error('请输入大于0的数字，精确到小数点后两位'));
+                }
+
+                return Promise.resolve();
+                },
+            },
+        ]}>
+        <Input
+            placeholder="请输入"
+            disabled={false}
+        />
+        </Form.Item>
+    );
+  }}
+  </Form.Item>
 
   <Form.Item shouldUpdate>
     {() => {
