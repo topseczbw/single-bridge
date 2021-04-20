@@ -13,4 +13,4 @@ title: 首页
 ## 参考资料
 
 1. [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
-2. [下载chrome](https://www.chromium.org/getting-involved/download-chromium)
+2. [下载指定版本chrome](https://www.chromium.org/getting-involved/download-chromium)
