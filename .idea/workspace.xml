@@ -20,16 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/tools/chrome/2021-04-20-23-48-20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/solution/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/utils/antd-form-use.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/tools/chrome/base.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config/nav.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config/nav.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/frontend/utils/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/frontend/utils/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/frontend/webpack/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/frontend/webpack/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/more/hodgepodge/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/more/hodgepodge/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tools/chrome/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tools/chrome/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tools/git/common.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tools/git/common.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +165,7 @@
       <workItem from="1618585062719" duration="865000" />
       <workItem from="1618592286279" duration="17363000" />
       <workItem from="1618934325848" duration="16000" />
-      <workItem from="1618934610475" duration="38000" />
+      <workItem from="1618934610475" duration="495000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初始化">
       <created>1618508194787</created>
