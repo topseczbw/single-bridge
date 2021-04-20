@@ -12,6 +12,14 @@ title: 首页
 
 插件安装位置为 `~/.vscode/extensions/` 下。
 
+### markdown 相关
+
+- paste image
+
+markdown 中插入图片
+
+- 
+
 ## 参考资料
 
 1. [VSCode](https://code.visualstudio.com/docs)

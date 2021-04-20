@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/docs/frontend/utils/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/frontend/utils/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/more/interview/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/more/interview/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tools/vscode/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tools/vscode/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tools/vscode/markdown.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tools/vscode/markdown.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tools/vscode/settings-sync.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tools/vscode/settings-sync.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +168,7 @@
       <workItem from="1618585062719" duration="865000" />
       <workItem from="1618592286279" duration="17363000" />
       <workItem from="1618934325848" duration="16000" />
-      <workItem from="1618934610475" duration="495000" />
+      <workItem from="1618934610475" duration="706000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初始化">
       <created>1618508194787</created>

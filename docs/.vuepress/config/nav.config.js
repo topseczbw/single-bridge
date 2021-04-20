@@ -11,7 +11,7 @@ module.exports = [
       { text: 'Utils', link: '/frontend/utils/' },
       { text: '性能优化', link: '/frontend/performance/' },
       { text: '前端技术规范', link: '/frontend/standard/' },
-      { text: '数据结构和算法', link: '/frontend/design/' },
+      { text: '数据结构和算法', link: '/frontend/data-structures-algorithms/' },
       { text: '设计模式', link: '/frontend/design/' },
       { text: '单元测试', link: '/frontend/jest/' },
     ]},
