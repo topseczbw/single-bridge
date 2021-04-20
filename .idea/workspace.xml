@@ -19,11 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
+    <list default="true" id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/tools/chrome/2021-04-20-23-48-20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/solution/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/utils/antd-form-use.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/tools/chrome/base.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/config/nav.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config/nav.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/backend/nodejs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tools/git/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tools/git/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/frontend/utils/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/frontend/utils/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/frontend/webpack/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/frontend/webpack/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/more/hodgepodge/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/more/hodgepodge/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tools/chrome/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tools/chrome/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tools/git/common.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tools/git/common.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +172,9 @@
       <workItem from="1618514040460" duration="4799000" />
       <workItem from="1618584528930" duration="524000" />
       <workItem from="1618585062719" duration="865000" />
-      <workItem from="1618592286279" duration="15243000" />
+      <workItem from="1618592286279" duration="17363000" />
+      <workItem from="1618934325848" duration="16000" />
+      <workItem from="1618934610475" duration="38000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初始化">
       <created>1618508194787</created>
@@ -287,39 +295,45 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="443" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1618505390119" />
-    <state x="355" y="27" key="CommitChangelistDialog2" timestamp="1618605331125">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="2221" y="-353" key="CommitChangelistDialog2" timestamp="1618934641714">
+      <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
     <state x="304" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1618508443618" />
     <state x="355" y="27" key="CommitChangelistDialog2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618605331125" />
-    <state x="99" y="20" width="1344" height="840" key="DiffContextDialog" timestamp="1618518576720">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="2221" y="-353" key="CommitChangelistDialog2/0.0.1680.1050/1680.-390.2560.1440@1680.-390.2560.1440" timestamp="1618934641714" />
+    <state x="1831" y="-363" width="1344" height="840" key="DiffContextDialog" timestamp="1618934628076">
+      <screen x="1680" y="-390" width="2560" height="1440" />
     </state>
     <state x="99" y="20" width="1344" height="840" key="DiffContextDialog/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618518576720" />
+    <state x="1831" y="-363" key="DiffContextDialog/0.0.1680.1050/1680.-390.2560.1440@1680.-390.2560.1440" timestamp="1618934628076" />
     <state width="268" height="379" key="Git.Branch.Popup" timestamp="1618585545816">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="268" height="379" key="Git.Branch.Popup/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585545816" />
-    <state width="829" height="180" key="GridCell.Tab.0.bottom" timestamp="1618610086213">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="709" height="222" key="GridCell.Tab.0.bottom" timestamp="1618768227108">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="115" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1618508277944" />
+    <state width="709" height="222" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1618768227108" />
     <state width="829" height="180" key="GridCell.Tab.0.bottom/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618610086213" />
-    <state width="829" height="180" key="GridCell.Tab.0.center" timestamp="1618610086211">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="829" height="154" key="GridCell.Tab.0.bottom/0.25.1680.949/1680.-365.2560.1415@0.25.1680.949" timestamp="1618645054872" />
+    <state width="709" height="222" key="GridCell.Tab.0.center" timestamp="1618768227106">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="115" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1618508277940" />
+    <state width="709" height="222" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1618768227106" />
     <state width="829" height="180" key="GridCell.Tab.0.center/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618610086211" />
-    <state width="829" height="180" key="GridCell.Tab.0.left" timestamp="1618610086209">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="829" height="154" key="GridCell.Tab.0.center/0.25.1680.949/1680.-365.2560.1415@0.25.1680.949" timestamp="1618645054871" />
+    <state width="709" height="222" key="GridCell.Tab.0.left" timestamp="1618768227104">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="115" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1618508277937" />
+    <state width="709" height="222" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1618768227104" />
     <state width="829" height="180" key="GridCell.Tab.0.left/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618610086209" />
-    <state width="829" height="180" key="GridCell.Tab.0.right" timestamp="1618610086212">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="829" height="154" key="GridCell.Tab.0.left/0.25.1680.949/1680.-365.2560.1415@0.25.1680.949" timestamp="1618645054866" />
+    <state width="709" height="222" key="GridCell.Tab.0.right" timestamp="1618768227107">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="115" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1618508277942" />
+    <state width="709" height="222" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1618768227107" />
     <state width="829" height="180" key="GridCell.Tab.0.right/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618610086212" />
+    <state width="829" height="154" key="GridCell.Tab.0.right/0.25.1680.949/1680.-365.2560.1415@0.25.1680.949" timestamp="1618645054871" />
     <state x="349" y="161" key="SettingsEditor" timestamp="1618585160447">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

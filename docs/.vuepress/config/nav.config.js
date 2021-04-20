@@ -27,7 +27,7 @@ module.exports = [
       { text: 'Git', link: '/tools/git/' },
       { text: 'Github', link: '/tools/github/' },
       { text: 'VSCode', link: '/tools/vscode/' },
-      { text: 'Chrome Developer tools', link: '/tools/chrome/' },
+      { text: 'Chrome', link: '/tools/chrome/' },
     ]},
     { text: '更多', items: [
       { text: '面试题', link: '/more/interview/' },
