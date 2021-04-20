@@ -45,38 +45,6 @@ sidebarDepth: 3
 
 如何构建 **一份** json 我认为是表单开发的核心，对于 **json的增删改查** ，很多同学经常会犯一些误区：
 
-#### json从哪里来？
-
-**Bad**
-
-维护多个状态：组件state(通过 `onValuesChange` API 实现用户交互和组件状态的绑定)、dom元素属性、`formInstance`。提交时对多个状态进行拼装组合，传递给后端。
-
-**Good**
-
-仅从 `formInstance` 中来
-
-#### 除了用户主动交互外，在代码中如何修改json，比如表单值联动场景？
-
-**Bad**
-
-1. 通过 `onValuesChange` api 监听 `formInstance` 中数据改动，进行联动处理
-
-2. 调用底层api
-
-    ```js
-    // 获取 rcForm 原始更新值方法
-    const { dispatch } = formInstance.getInternalHooks('RC_FORM_INTERNAL_HOOKS');
-    dispatch({
-        type: 'updateValue',
-        nane,
-        value,
-    });
-    ```
-
-**Good**
-
-调用官方api `formIntacne.getFieldValue`, `formIntacne.getFieldsValue`
-
 #### 构建模板
 
 开发时参照如下模板修改即可。
@@ -204,6 +172,38 @@ const [form] = useForm();
   </Form.Item>
 </Form>
 ```
+
+#### 思考：用什么状态维护这份json？
+
+**Bad**
+
+维护多个状态：组件state(通过 `onValuesChange` API 实现用户交互和组件状态的绑定)、dom元素属性、`formInstance`。提交时对多个状态进行拼装组合，传递给后端。
+
+**Good**
+
+仅从 `formInstance` 中来
+
+#### 除了用户主动交互外，在代码中如何修改json，比如表单值联动场景？
+
+**Bad**
+
+1. 通过 `onValuesChange` api 监听 `formInstance` 中数据改动，进行联动处理
+
+2. 调用底层api
+
+    ```js
+    // 获取 rcForm 原始更新值方法
+    const { dispatch } = formInstance.getInternalHooks('RC_FORM_INTERNAL_HOOKS');
+    dispatch({
+        type: 'updateValue',
+        nane,
+        value,
+    });
+    ```
+
+**Good**
+
+调用官方api `formIntacne.getFieldValue`, `formIntacne.getFieldsValue`
 
 ### 处理数据
 
