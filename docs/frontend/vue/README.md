@@ -13,5 +13,4 @@ title: Vue
 
 - [Vue2](https://cn.vuejs.org/)
 - [Vue3](https://v3.vuejs.org/)（[中文](https://v3.cn.vuejs.org/)）
-- [vuepress搭建博客教程](https://www.bilibili.com/video/BV1vb411m7NY?p=16)
-  - 本站由此而生，强烈推荐
+- [使用 vuepress 搭建博客 *](https://www.bilibili.com/video/BV1vb411m7NY?p=16)
