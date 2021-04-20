@@ -10,6 +10,7 @@ module.exports = [
       { text: 'Webpack', link: '/frontend/webpack/' },
       { text: 'Utils', link: '/frontend/utils/' },
       { text: '性能优化', link: '/frontend/performance/' },
+      { text: '前端技术规范', link: '/frontend/standard/' },
       { text: '数据结构和算法', link: '/frontend/design/' },
       { text: '设计模式', link: '/frontend/design/' },
       { text: '单元测试', link: '/frontend/jest/' },
@@ -26,12 +27,14 @@ module.exports = [
     { text: '开发工具', items: [
       { text: 'Git', link: '/tools/git/' },
       { text: 'Github', link: '/tools/github/' },
-      { text: 'VSCode', link: '/tools/vscode/' },
+      { text: 'Webstorm', link: '/tools/webstorm/' },
       { text: 'Chrome', link: '/tools/chrome/' },
+      { text: 'VSCode', link: '/tools/vscode/' },
+      { text: 'Charles', link: '/tools/charles/' },
     ]},
     { text: '更多', items: [
       { text: '面试题', link: '/more/interview/' },
-      { text: '小工具', link: '/more/hodgepodge/' },
+      { text: '杂物室', link: '/more/hodgepodge/' },
     ]},
     { text: '关于我', link: '/about/'}
   ];

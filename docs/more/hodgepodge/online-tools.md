@@ -19,3 +19,7 @@ title: 在线工具
 [在线写正则](https://regex101.com/)
 
 [正则速查表](https://www.jb51.net/shouce/jquery/regexp.html)
+
+## 其他
+
+[静态站点生成技术汇总](https://jamstack.org/generators/)

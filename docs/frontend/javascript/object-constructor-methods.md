@@ -1,5 +1,5 @@
 ---
-autoGroup-1: 对象方法
+autoGroup-1: JavaScript 深度剖析
 title: 对象的构造函数方法
 ---
 

@@ -20,7 +20,7 @@ module.exports = {
         title: {
           mode: "uppercase",
           map: {
-            "/frontend/javascript/": "JS 基础",
+            "/frontend/javascript/": "JavaScript 基础",
             "/backend/node/": "Node 基础",
           }
         },
