@@ -37,6 +37,8 @@ sidebarDepth: 3
 
 - 用户主动与表单控件交互，会实时更新 `formInstance` 中维护的数据
 
+- `shouldUpdate` 使用，form组件会根据 `shouldUpdate` 的参数是否为 `true` 选择是否更新子元素中的 Form.Item。如果不传递参数，则当表单值发生变化是，子元素始终更新。
+
 ### 构建json
 
 不管是用哪些ui框架或前端框架（vue，react），前端最终将约定好的格式通过http请求传给后端，生成数据。
@@ -75,22 +77,81 @@ sidebarDepth: 3
 
 调用官方api `formIntacne.getFieldValue`, `formIntacne.getFieldsValue`
 
-#### 如何构建json？
+#### 构建模板
 
-**构建对象**
+开发时参照如下模板修改即可。
 
-**构建数组**
+```json
+{
+  "name": "zbw",
+  "job": {
+    "one": "100tal",
+    "two": "bytedance"
+  },
+  "friends": [
+    {
+      "name": "ls"
+    },
+    {
+      "name": "gyt"
+    },
+    {
+      "name": "cmr"
+    }
+  ]
+}
+```
 
-#### 小技巧
+构建上述 json，需要的 jsx 代码如下：
 
-使用打印面板，实时预览表单数据
+```jsx
+<Form {...layout} form={form} name="control-hooks" onFinish={onFinish}>
+  <Form.Item name="name" label="name" rules={[{ required: true }]}>
+    <Input />
+  </Form.Item>
 
-```js
-<Form.Item shouldUpdate>
-  {() => {
-    return <pre>{JSON.stringify(form.getFieldsValue(), null, 2)}</pre>;
-  }}
-</Form.Item>
+  <Form.Item name={['job', 'one']} label="job" rules={[{ required: true }]}>
+    <Input />
+  </Form.Item>
+
+  <Form.Item name={['job', 'two']} label="job" rules={[{ required: true }]}>
+    <Input />
+  </Form.Item>
+
+  <Form.List name="friends">
+    {(fields, { add, remove }) => (
+      <>
+        {fields.map(field => (
+          <div key={field.key}>
+            <Form.Item
+              {...field}
+              label="name"
+              name={[field.name, 'name']}
+              fieldKey={[field.fieldKey, 'name']}
+              rules={[{ required: true, message: 'Missing name' }]}
+              >
+              <Input />
+            </Form.Item>
+
+            <Button onClick={() => remove(field.name)} />
+          </div>
+        ))}
+
+        <Form.Item>
+          <Button type="dashed" onClick={() => add()} block>
+            Add sights
+          </Button>
+        </Form.Item>
+        </>
+    )}
+  </Form.List>
+
+  <Form.Item shouldUpdate>
+    {() => {
+      return <pre>{JSON.stringify(form.getFieldsValue(), null, 2)}</pre>;
+    }}
+  </Form.Item>
+</Form>
 ```
 
 ### 处理数据
@@ -133,29 +194,26 @@ sidebarDepth: 3
 
 - 联动设置填充、禁用
 
-处理方式同上即可，使用 `shouldUpdate`、`formInstance.setFieldsValue` ，拿到需要联动字段的数据
+处理方式同上即可，使用 `shouldUpdate`、`formInstance.setFieldsValue`、`formInstance.getFieldValue`等是实例方法，拿到需要联动字段的数据或设置数据
 
 ### 动态表单
 
 - 动态增删表单项
 
+### 技巧 & 问题
 
-### 如何使用antd的Form开发联动功能
+#### 使用打印面板，实时预览表单数据，提升开发效率
 
-开发中经常会遇到表单联动的场景，如：动态校验，动态显示表单项，antd提供了shouldUpdate api，在以下情况发生时，form组件会shouldUpdate的参数判断是否更新该Form.Item，如果不传递参数，则是始终更新
-用户主动与表单产生交互时
-调用form.setFiledsValue
-主动手动调用底层dispatch方法
+```js
+<Form.Item shouldUpdate>
+  {() => {
+    return <pre>{JSON.stringify(form.getFieldsValue(), null, 2)}</pre>;
+  }}
+</Form.Item>
+```
 
-### 如何使用antd的Form构建一个期望的json
+#### 使用 antd4 form 在输入input框时出现卡顿问题
 
-使用表单的场景大多是创建xxx或修改xxxx，最后都会给后端传递一个json数据，那么如何正确的使用antd的form构建一个与后端约定好的json数据便成为了关键，其中value基本都是基础数据类型、对象、数组
-
-示例
-
-
-
-使用antd的form在交互时出现卡顿如何处理
 在开发复杂表单过程中，经常会遇到动态表单场景，动态增删表单项的同时又掺杂了很多联动需求（选择xxxx时隐藏xxxx）。
 
 学会了上面的开发联动和构建json功能实现，聪明的我们似乎明白了不管多复杂的联动和动态表单，只要放在一个form实例中，都可以很方便的通过form.setFiledsValue、shouldUpdate、Form.List等api实现。
@@ -168,10 +226,9 @@ sidebarDepth: 3
 
 ps：一般form出现卡顿时，也侧面反应交互太多了，可以从产品层面优化，与pm沟通，限制一个form下的表单项个数，毕竟让一个用户填写10分钟表单也不太合适（草稿箱先别想，先实现基本功能）
 
-开发技巧
+#### 另一种构建数组类型数据的方式
 
-构建json：另一种构建数组项的方式 
-有时我们并不希望使用Form.List，数组项有可能是我们自己封装的类似FormCard类型的组件
+有时我们并不希望使用Form.List，数组项有可能是我们自己封装的类似 FormCard 类型的组件
 
 提交时再去格式化
 有时我们碍于功能实现，我们无法直接构建出一个于后端接口100%匹配的json，因为json数据中可能存在后端不需要，但是前段交互需要用到的数据，那也无所谓，提交前再去格式化一下就好了
@@ -189,23 +246,3 @@ Form.Item下仅可放置一个表单控件
 
 form.getFieldsValue方法获取的对象始终如一
 不会生成一个有新的引用地址的对象
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-如果说从上面的常见操作中，选出表单开发的核心点，我认为是 **构建json** 和 **处理联动**。
-
-**字段校验、处理数据** 这些根据不同的实际业务，实现不同
-
-
-## 性能优化

@@ -9,6 +9,6 @@ title: JEST
 ## 参考资料
 
 1. [jestjs.io](https://jestjs.io/)
-2. [Vue Test Utils](https://vue-test-utils.vuejs.org/zh/)
-3. [ts-jest](https://kulshekhar.github.io/ts-jest/docs/)
-4. [javascript-testing-best-practices](https://github.com/goldbergyoni/javascript-testing-best-practices)
+3. [Vue Test Utils](https://vue-test-utils.vuejs.org/zh/)
+4. [ts-jest](https://kulshekhar.github.io/ts-jest/docs/)
+5. [javascript-testing-best-practices](https://github.com/goldbergyoni/javascript-testing-best-practices)
