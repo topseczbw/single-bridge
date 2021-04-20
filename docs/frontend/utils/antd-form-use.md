@@ -106,6 +106,7 @@ sidebarDepth: 3
 构建上述 json，需要的 jsx 代码如下：
 
 ```jsx
+import { Button, Form, Input } from 'antd';
 const [form] = useForm();
 
 <Form form={form} onFinish={onFinish} initialValue={{
