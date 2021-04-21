@@ -15,6 +15,6 @@ features:
 footer: MIT Licensed | Copyright © 2021-present Burning
 ---
 
-::: warning 我不装乐 我摊牌乐
+::: warning 我不装了 摊牌了
 这是一个写笔记的地方
 :::

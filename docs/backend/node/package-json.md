@@ -1,8 +1,8 @@
 ---
-title: package.json
+title: 解读 package.json
 ---
 
-## browserslist配置项
+## browserslist 配置
 
 ### 是什么
 

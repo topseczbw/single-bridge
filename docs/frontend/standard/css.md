@@ -1,5 +1,5 @@
 ---
-title: css 规范
+title: CSS 规范
 ---
 
 学习常见的 css 编写规范。
