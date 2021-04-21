@@ -19,7 +19,44 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="update" />
+    <list default="true" id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/docs/backend/node/package-json.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/css/base.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/data-structures-algorithms/search.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/data-structures-algorithms/sort.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/0.1+0.2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/advanced-programming.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/api.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/call-apply-bind-new.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/copy.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/es6.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/jwt.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/module.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/operate-img.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/promise.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/typeof-instanceof.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/performance/http.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/solution/fe-distinguish-env.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/solution/img-spin.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/solution/login-process.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/solution/mobile-debugge.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/solution/use-ali-monitor.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/standard/check-tool.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/utils/use-gulp-demo.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/vue/vue-router-source.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/vue/vue2-menu-control.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/vue/vue2-skill.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/vue/vue2-source.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/frontend/webpack/question.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/more/hodgepodge/hexo-blog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/more/interview/vue2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config/nav.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config/nav.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/frontend/data-structures-algorithms/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/frontend/data-structures-algorithms/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/frontend/solution/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/frontend/solution/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/guide/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/more/data-structure/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/more/interview/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/more/interview/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,7 +200,7 @@
       <workItem from="1618585062719" duration="865000" />
       <workItem from="1618592286279" duration="17363000" />
       <workItem from="1618934325848" duration="16000" />
-      <workItem from="1618934610475" duration="1146000" />
+      <workItem from="1618934610475" duration="1902000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初始化">
       <created>1618508194787</created>

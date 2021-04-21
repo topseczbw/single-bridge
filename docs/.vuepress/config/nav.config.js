@@ -10,10 +10,11 @@ module.exports = [
       { text: 'Webpack', link: '/frontend/webpack/' },
       { text: 'Utils', link: '/frontend/utils/' },
       { text: '性能优化', link: '/frontend/performance/' },
-      { text: '数据结构和算法', link: '/frontend/data-structures-algorithms/' },
+      { text: '数据结构与算法', link: '/frontend/data-structures-algorithms/' },
       { text: '设计模式', link: '/frontend/design/' },
       { text: '单元测试', link: '/frontend/jest/' },
-      { text: '前端技术规范', link: '/frontend/standard/' },
+      { text: '技术方案', link: '/frontend/solution/' },
+      { text: '技术规范', link: '/frontend/standard/' },
     ]},
     { text: '后端', items: [
       { text: 'Node', link: '/backend/node/' },
