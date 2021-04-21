@@ -8,7 +8,7 @@ module.exports = [
       { text: 'CSS', link: '/frontend/css/' },
       { text: 'TypeScript', link: '/frontend/typescript/' },
       { text: 'Webpack', link: '/frontend/webpack/' },
-      { text: 'Utils', link: '/frontend/utils/' },
+      { text: 'Utils & Lib', link: '/frontend/utils/' },
       { text: '性能优化', link: '/frontend/performance/' },
       { text: '数据结构与算法', link: '/frontend/data-structures-algorithms/' },
       { text: '设计模式', link: '/frontend/design/' },
