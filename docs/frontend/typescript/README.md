@@ -4,21 +4,13 @@ title: 首页
 
 ## 介绍
 
-关于 TypeScript 中遇到的问题。
-
-
+TypeScript 学习与使用
 
 ## 工具
 
-+ [TypeScript Playground](https://www.typescriptlang.org/play)
+- [TypeScript Playground](https://www.typescriptlang.org/play)
 
-  在线 TypeScript 运行环境
-
-+ [JSON TO TS](http://www.jsontots.com/)
-
-  根据 JSON 生成 typescript 的工具，很赞
-
-
+ 在线 TypeScript 运行环境
 
 ## 参考资料
 

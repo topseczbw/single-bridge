@@ -1,6 +1,9 @@
 module.exports = [
     { text: '首页', link: '/' },
     { text: '前言', link: '/guide/' },
+    { text: '系统', link: '/system/', items: [
+      { text: 'Linux', link: '/system/linux/' }
+    ] },
     { text: '前端', items: [
       { text: 'JavaScript', link: '/frontend/javascript/' },
       { text: 'React', link: '/frontend/react/' },
@@ -34,6 +37,7 @@ module.exports = [
       { text: 'Charles', link: '/tools/charles/' },
     ]},
     { text: '更多', items: [
+      { text: '读书笔记', link: '/more/book-note/' },
       { text: '面试题', link: '/more/interview/' },
       { text: '杂物室', link: '/more/hodgepodge/' },
     ]},

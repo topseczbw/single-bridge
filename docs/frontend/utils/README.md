@@ -11,3 +11,4 @@ title: 首页
 ## 参考资料
 
 1. [30-seconds-of-code](https://github.com/30-seconds/30-seconds-of-code)
+2. [lodash](https://www.lodashjs.com/)
