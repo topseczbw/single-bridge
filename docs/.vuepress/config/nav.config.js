@@ -22,11 +22,6 @@ module.exports = [
     { text: '后端', items: [
       { text: 'Node', link: '/backend/node/' },
       { text: 'Http', link: '/backend/http/' },
-        // { text: 'Nestjs', link: '/backend/nestjs/' },
-        // { text: 'MySQL', link: '/backend/mysql/' },
-        // { text: 'MongoDB', link: '/backend/mongodb/' },
-        // { text: 'Redis', link: '/backend/redis/' },
-        // { text: 'Docker', link: '/backend/docker/' },
       ]},
     { text: '开发工具', items: [
       { text: 'Git', link: '/tools/git/' },
@@ -35,6 +30,7 @@ module.exports = [
       { text: 'Chrome', link: '/tools/chrome/' },
       { text: 'VSCode', link: '/tools/vscode/' },
       { text: 'Charles', link: '/tools/charles/' },
+      { text: 'Mac', link: '/tools/mac/' },
     ]},
     { text: '更多', items: [
       { text: '读书笔记', link: '/more/book-note/' },

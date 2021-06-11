@@ -2,7 +2,17 @@
 title: 解读 package.json
 ---
 
-## browserslist 配置
+## nohoist
+
+nohoist 指定一些包不需要 **提升安装** 到项目根目录的 node_modules 下。
+
+在使用 monorepo 时，各个子包的依赖需要区分版本，并不是公用同一个版本，此时需要在子包的 package.json 中指定哪些包不需要提升，安装在子包目录下的 node_modules 中。
+
+### 资料
+
+- https://classic.yarnpkg.com/blog/2018/02/15/nohoist/
+
+## browserslist
 
 ### 是什么
 
