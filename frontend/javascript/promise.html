@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>手写一个简版promise | 走不完的独木桥</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="">
+    <meta name="keyword" content="前端，笔记，走不完的独木桥，zbw">
+    <meta name="author" content="zbw">
+    
+    <link rel="preload" href="/assets/css/0.styles.48495811.css" as="style"><link rel="preload" href="/assets/js/app.a11098e0.js" as="script"><link rel="preload" href="/assets/js/2.f102a954.js" as="script"><link rel="preload" href="/assets/js/43.f5cad07f.js" as="script"><link rel="prefetch" href="/assets/js/10.d7bf86a2.js"><link rel="prefetch" href="/assets/js/11.659d90c4.js"><link rel="prefetch" href="/assets/js/12.d8bab031.js"><link rel="prefetch" href="/assets/js/13.74f69804.js"><link rel="prefetch" href="/assets/js/14.bf373128.js"><link rel="prefetch" href="/assets/js/15.3001e838.js"><link rel="prefetch" href="/assets/js/16.cbae8585.js"><link rel="prefetch" href="/assets/js/17.4bd7e04d.js"><link rel="prefetch" href="/assets/js/18.46909e7d.js"><link rel="prefetch" href="/assets/js/19.1262eb80.js"><link rel="prefetch" href="/assets/js/20.80285d0d.js"><link rel="prefetch" href="/assets/js/21.a7e68786.js"><link rel="prefetch" href="/assets/js/22.33f2cb8b.js"><link rel="prefetch" href="/assets/js/23.c7ca1978.js"><link rel="prefetch" href="/assets/js/24.3890fe03.js"><link rel="prefetch" href="/assets/js/25.887c70aa.js"><link rel="prefetch" href="/assets/js/26.8a667a6e.js"><link rel="prefetch" href="/assets/js/27.d5abaa2a.js"><link rel="prefetch" href="/assets/js/28.cf26d80f.js"><link rel="prefetch" href="/assets/js/29.b74d9bc2.js"><link rel="prefetch" href="/assets/js/3.cf01fde2.js"><link rel="prefetch" href="/assets/js/30.d4f77e87.js"><link rel="prefetch" href="/assets/js/31.172aae25.js"><link rel="prefetch" href="/assets/js/32.24a19e0e.js"><link rel="prefetch" href="/assets/js/33.07b90912.js"><link rel="prefetch" href="/assets/js/34.ba7d9493.js"><link rel="prefetch" href="/assets/js/35.c25fa3b2.js"><link rel="prefetch" href="/assets/js/36.aa14b28e.js"><link rel="prefetch" href="/assets/js/37.a10a4a26.js"><link rel="prefetch" href="/assets/js/38.6ca4aaa9.js"><link rel="prefetch" href="/assets/js/39.b9608b97.js"><link rel="prefetch" href="/assets/js/4.23c78c7d.js"><link rel="prefetch" href="/assets/js/40.c0fa1657.js"><link rel="prefetch" href="/assets/js/41.7d4aa2ea.js"><link rel="prefetch" href="/assets/js/42.fbf4baed.js"><link rel="prefetch" href="/assets/js/44.8bf5237c.js"><link rel="prefetch" href="/assets/js/45.18932255.js"><link rel="prefetch" href="/assets/js/46.6fc07e6d.js"><link rel="prefetch" href="/assets/js/47.3b877866.js"><link rel="prefetch" href="/assets/js/48.975419d7.js"><link rel="prefetch" href="/assets/js/49.0008e89b.js"><link rel="prefetch" href="/assets/js/5.00824436.js"><link rel="prefetch" href="/assets/js/50.92cd1089.js"><link rel="prefetch" href="/assets/js/51.1ce4c979.js"><link rel="prefetch" href="/assets/js/52.15fb9ba7.js"><link rel="prefetch" href="/assets/js/53.4f0e2a09.js"><link rel="prefetch" href="/assets/js/54.83b4bb4c.js"><link rel="prefetch" href="/assets/js/55.a32cd2d5.js"><link rel="prefetch" href="/assets/js/56.1cff256c.js"><link rel="prefetch" href="/assets/js/57.f2335bff.js"><link rel="prefetch" href="/assets/js/58.15a4394e.js"><link rel="prefetch" href="/assets/js/59.d880b109.js"><link rel="prefetch" href="/assets/js/6.098188e9.js"><link rel="prefetch" href="/assets/js/60.4a47bbe6.js"><link rel="prefetch" href="/assets/js/61.c15267ae.js"><link rel="prefetch" href="/assets/js/62.50bd2aea.js"><link rel="prefetch" href="/assets/js/63.8ab7dd54.js"><link rel="prefetch" href="/assets/js/64.4212c659.js"><link rel="prefetch" href="/assets/js/65.549e3e3d.js"><link rel="prefetch" href="/assets/js/66.4b05c6e8.js"><link rel="prefetch" href="/assets/js/67.73ca1adb.js"><link rel="prefetch" href="/assets/js/68.b8bc00d0.js"><link rel="prefetch" href="/assets/js/69.441f1051.js"><link rel="prefetch" href="/assets/js/7.d27e4011.js"><link rel="prefetch" href="/assets/js/70.20d1f5d1.js"><link rel="prefetch" href="/assets/js/71.94834f5a.js"><link rel="prefetch" href="/assets/js/72.4a55cf77.js"><link rel="prefetch" href="/assets/js/73.2751d49e.js"><link rel="prefetch" href="/assets/js/74.5c000ef2.js"><link rel="prefetch" href="/assets/js/75.eb597e18.js"><link rel="prefetch" href="/assets/js/76.e7063b7c.js"><link rel="prefetch" href="/assets/js/77.98a6f730.js"><link rel="prefetch" href="/assets/js/78.6f93268f.js"><link rel="prefetch" href="/assets/js/79.e32a5082.js"><link rel="prefetch" href="/assets/js/8.4d8cc8a2.js"><link rel="prefetch" href="/assets/js/80.40a0c376.js"><link rel="prefetch" href="/assets/js/81.9cd25835.js"><link rel="prefetch" href="/assets/js/82.8e27ed86.js"><link rel="prefetch" href="/assets/js/83.13e116a5.js"><link rel="prefetch" href="/assets/js/84.9ae3c89a.js"><link rel="prefetch" href="/assets/js/85.9f665a01.js"><link rel="prefetch" href="/assets/js/86.80b6157a.js"><link rel="prefetch" href="/assets/js/87.2c8b028a.js"><link rel="prefetch" href="/assets/js/88.16fa6511.js"><link rel="prefetch" href="/assets/js/89.199ea063.js"><link rel="prefetch" href="/assets/js/9.a004e024.js"><link rel="prefetch" href="/assets/js/90.cbf24b8e.js"><link rel="prefetch" href="/assets/js/91.106720b3.js"><link rel="prefetch" href="/assets/js/92.122317d1.js"><link rel="prefetch" href="/assets/js/93.43a7030f.js"><link rel="prefetch" href="/assets/js/94.77d531c8.js"><link rel="prefetch" href="/assets/js/95.532d0ecf.js"><link rel="prefetch" href="/assets/js/96.5052679f.js"><link rel="prefetch" href="/assets/js/97.e34d4eeb.js"><link rel="prefetch" href="/assets/js/98.965b5fa4.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.48495811.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">走不完的独木桥</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  前言
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/system/linux/" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/utils/" class="nav-link">
+  Utils &amp; Lib
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/performance/" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/data-structures-algorithms/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/design/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/jest/" class="nav-link">
+  单元测试
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/solution/" class="nav-link">
+  技术方案
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/standard/" class="nav-link">
+  技术规范
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/http/" class="nav-link">
+  Http
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发工具" class="dropdown-title"><span class="title">开发工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发工具" class="mobile-dropdown-title"><span class="title">开发工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/github/" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/tools/webstorm/" class="nav-link">
+  Webstorm
+</a></li><li class="dropdown-item"><!----> <a href="/tools/chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/tools/vscode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/charles/" class="nav-link">
+  Charles
+</a></li><li class="dropdown-item"><!----> <a href="/tools/mac/" class="nav-link">
+  Mac
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/more/book-note/" class="nav-link">
+  读书笔记
+</a></li><li class="dropdown-item"><!----> <a href="/more/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/more/hodgepodge/" class="nav-link">
+  杂物室
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div> <a href="https://github.com/topseczbw/single-bridge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  前言
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/system/linux/" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/javascript/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/utils/" class="nav-link">
+  Utils &amp; Lib
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/performance/" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/data-structures-algorithms/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/design/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/jest/" class="nav-link">
+  单元测试
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/solution/" class="nav-link">
+  技术方案
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/standard/" class="nav-link">
+  技术规范
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/http/" class="nav-link">
+  Http
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发工具" class="dropdown-title"><span class="title">开发工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发工具" class="mobile-dropdown-title"><span class="title">开发工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/github/" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/tools/webstorm/" class="nav-link">
+  Webstorm
+</a></li><li class="dropdown-item"><!----> <a href="/tools/chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/tools/vscode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/charles/" class="nav-link">
+  Charles
+</a></li><li class="dropdown-item"><!----> <a href="/tools/mac/" class="nav-link">
+  Mac
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/more/book-note/" class="nav-link">
+  读书笔记
+</a></li><li class="dropdown-item"><!----> <a href="/more/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/more/hodgepodge/" class="nav-link">
+  杂物室
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div> <a href="https://github.com/topseczbw/single-bridge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>JavaScript 基础</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend/javascript/" aria-current="page" class="sidebar-link">首页</a></li><li><a href="/frontend/javascript/0.1+0.2.html" class="sidebar-link">0.1 + 0.2 为什么不等于 0.3</a></li><li><a href="/frontend/javascript/ajax-interactive.html" class="sidebar-link">与后端交互的数据格式</a></li><li><a href="/frontend/javascript/api.html" class="sidebar-link">基础api</a></li><li><a href="/frontend/javascript/array.html" class="sidebar-link">数组</a></li><li><a href="/frontend/javascript/call-apply-bind-new.html" class="sidebar-link">new、call、apply、bind原理</a></li><li><a href="/frontend/javascript/copy.html" class="sidebar-link">深拷贝 or 浅拷贝</a></li><li><a href="/frontend/javascript/data-type.html" class="sidebar-link">数据类型</a></li><li><a href="/frontend/javascript/es6.html" class="sidebar-link">ES6使用</a></li><li><a href="/frontend/javascript/expressions-and-operators.html" class="sidebar-link">表达式和操作符</a></li><li><a href="/frontend/javascript/iframe-postmessage.html" class="sidebar-link">使用 postMessage 实现 iframe 通信</a></li><li><a href="/frontend/javascript/jwt.html" class="sidebar-link">jwt实现</a></li><li><a href="/frontend/javascript/module.html" class="sidebar-link">前端模块化</a></li><li><a href="/frontend/javascript/operate-img.html" class="sidebar-link">js操作图片资源</a></li><li><a href="/frontend/javascript/promise.html" aria-current="page" class="active sidebar-link">手写一个简版promise</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/javascript/promise.html#promise-是什么" class="sidebar-link">promise 是什么</a></li><li class="sidebar-sub-header"><a href="/frontend/javascript/promise.html#promise-存在的价值" class="sidebar-link">promise 存在的价值</a></li><li class="sidebar-sub-header"><a href="/frontend/javascript/promise.html#promise-特点" class="sidebar-link">promise 特点</a></li><li class="sidebar-sub-header"><a href="/frontend/javascript/promise.html#如何手写一个简版-promise" class="sidebar-link">如何手写一个简版 promise</a></li></ul></li><li><a href="/frontend/javascript/typeof-instanceof.html" class="sidebar-link">typeof or instanceof</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript 书籍阅读</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript 深度剖析</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="promise-是什么"><a href="#promise-是什么" class="header-anchor">#</a> promise 是什么</h2> <p>promise是一个构造函数/类</p> <h2 id="promise-存在的价值"><a href="#promise-存在的价值" class="header-anchor">#</a> promise 存在的价值</h2> <p>解决并发问题，多个异步任务的执行结果</p> <p>解决链式问题，第二个接口依赖于第一个接口，解决回调地狱问题</p> <h2 id="promise-特点"><a href="#promise-特点" class="header-anchor">#</a> promise 特点</h2> <ol><li><p>每次new一个promise实例时，都需要传递一个执行器函数executor，并且执行器函数会立即执行</p></li> <li><p>执行器函数有两个参数 resolve reject</p></li> <li><p>每个promise都有一个状态标识，有三种状态类型：</p> <p>pending =&gt; resolve 成功了</p> <p>pending =&gt; reject 失败了</p></li> <li><p>状态可以改变，一旦改变不可以再次更改</p> <p>一旦成功了，不能再变成失败，一旦失败了，不能再变成成功
+（什么时候可以改变状态呢？ ）</p></li> <li><p>如果执行器函数在执行时，抛出异常如 <code>throw new Error('自定义错误')</code> ，那promise应该变成失败状态，会被.then时的 <code>onRejected</code> 处理错误的函数接收</p></li></ol> <h2 id="如何手写一个简版-promise"><a href="#如何手写一个简版-promise" class="header-anchor">#</a> 如何手写一个简版 promise</h2> <h3 id="既然-promise-是一个构造函数-类-那么它-new-时可以传递哪些参数-这些参数又是做什么用的"><a href="#既然-promise-是一个构造函数-类-那么它-new-时可以传递哪些参数-这些参数又是做什么用的" class="header-anchor">#</a> 既然 promise 是一个构造函数/类，那么它 new 时可以传递哪些参数，这些参数又是做什么用的</h3> <p>executor、resolve、reject</p> <p>executor执行业务逻辑（同步/异步），在适当的时机调用，resolve/reject。</p> <p>如数据成功返回时，调用resolve函数，将promise实例变成成功态，并将数据告诉promise实例，promise实例拿到数据后，先暂存起来，当promise实例被手动调用.then方法时，供then方法第一个处理成功信息的函数nFullfilled使用</p> <p>如数据返回失败/代码报错时，调用reject函数，将promise实例变成失败态，并将失败原因告诉promise实例，promise实例拿到失败原因后，先暂存起来，当promise实例被手动调用.then方法时，供then方法第二个处理失败信息的函数onRejected使用</p> <h3 id="为了实现上述功能-每个-promise-实例应该具有哪些内部状态"><a href="#为了实现上述功能-每个-promise-实例应该具有哪些内部状态" class="header-anchor">#</a> 为了实现上述功能，每个 promise 实例应该具有哪些内部状态</h3> <ol><li>用户手动调用的resolve、reject函数不需要自己声明变量，所以调用的应该是new Promise() 时， Promise函数内部作用域的变量 =&gt; constructor 中的resolve和 reject</li> <li>resolve函数可以改变promise状态，每个promise都有一个状态标识，标识当前状态 =&gt; this.status</li> <li>当resolve(data) / reject(reason)时，promise需要暂存外部告知的<strong>数据</strong>或<strong>失败原因</strong>，并且当外部手动调用then时，还需要用到 =&gt; this.value  this.reason</li> <li>promise实例可以被手动调用then方法，处理成功时的数据或失败时的原因 =&gt; this.then()</li></ol> <h3 id="当-executor-函数只有同步时-2-1-resolve-回答正确-throw-new-error-原则性错误"><a href="#当-executor-函数只有同步时-2-1-resolve-回答正确-throw-new-error-原则性错误" class="header-anchor">#</a> 当 executor 函数只有同步时：2 &gt; 1 ? resolve('回答正确') : throw new Error('原则性错误')</h3> <p>由于executor函数会立即执行，所以如果该函数都是同步逻辑，promise状态会立即改变，数据会立即暂存，所以后面.then时，可以立即处理对应的数据。</p> <h3 id="当-executor-函数存在异步时-settimeout-resolve-async-2000"><a href="#当-executor-函数存在异步时-settimeout-resolve-async-2000" class="header-anchor">#</a> 当 executor 函数存在异步时：setTimeOut(() =&gt; resolve('async'), 2000)</h3> <p>但是当executor函数中有异步逻辑时，resolve函数不会马上执行，但是.then会在 new Promise 后马上执行。但此时promise还处于pending状态，所以我们需要在原型的then方法中，当状态是pending时，先将用户传来的处理数据/异常的方法暂存进一个队列，当调用resolve/reject，在从队列中遍历执行处理方法。此处使用发布订阅模式。</p> <p>故promise增加onResolvedCallBacks、onRejectedCallBacks两个数组实例属性，暂存处理函数。</p> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'——————————————————————————手写的promise——————————————————————'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token constant">PENDING</span> <span class="token operator">=</span> <span class="token string">'pending'</span>
+<span class="token keyword">const</span> <span class="token constant">FULLFILLED</span> <span class="token operator">=</span> <span class="token string">'fullFilled'</span>
+<span class="token keyword">const</span> <span class="token constant">REJECTED</span> <span class="token operator">=</span> <span class="token string">'rejected'</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">Promise</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">executor</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>reason <span class="token operator">=</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>status <span class="token operator">=</span> <span class="token constant">PENDING</span>
+    <span class="token comment">// 两个队列 专门存成功的和失败的 为了处理异步 发布订阅模式</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>onResolvedCallBacks <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>onRejectedCallBacks <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">let</span> <span class="token function-variable function">resolve</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 只有pending状态时才可以改变promise的状态</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token constant">PENDING</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>status <span class="token operator">=</span> <span class="token constant">FULLFILLED</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> value
+        <span class="token keyword">this</span><span class="token punctuation">.</span>onResolvedCallBacks<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">fn</span> <span class="token operator">=&gt;</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> <span class="token function-variable function">reject</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">reason</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token constant">PENDING</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>status <span class="token operator">=</span> <span class="token constant">REJECTED</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>reason <span class="token operator">=</span> reason
+        <span class="token keyword">this</span><span class="token punctuation">.</span>onRejectedCallBacks<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">fn</span> <span class="token operator">=&gt;</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 传递一个执行器 执行器会立即执行</span>
+    <span class="token comment">// 这里可能会发生异常</span>
+    <span class="token keyword">try</span><span class="token punctuation">{</span>
+      <span class="token function">executor</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span> reject<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">reject</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// then方法会判断当前的状态</span>
+  <span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">onFullfilled<span class="token punctuation">,</span> onRejected</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token constant">FULLFILLED</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">onFullfilled</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token constant">REJECTED</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">onRejected</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>reason<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 异步 pending 时调用then   resolve 需要在 then 之后执行</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token constant">PENDING</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// ** todo</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>onResolvedCallBacks<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">onFullfilled</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>onRejectedCallBacks<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token function">onRejected</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>reason<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> Promise
+
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/topseczbw/single-bridge/edit/main/docs/frontend/javascript/promise.md" target="_blank" rel="noopener noreferrer">帮助改善此页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021年4月22日星期四凌晨2点12分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/javascript/operate-img.html" class="prev">
+        js操作图片资源
+      </a></span> <span class="next"><a href="/frontend/javascript/typeof-instanceof.html">
+        typeof or instanceof
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.a11098e0.js" defer></script><script src="/assets/js/2.f102a954.js" defer></script><script src="/assets/js/43.f5cad07f.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue-router 源码学习 | 走不完的独木桥</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="">
+    <meta name="keyword" content="前端，笔记，走不完的独木桥，zbw">
+    <meta name="author" content="zbw">
+    
+    <link rel="preload" href="/assets/css/0.styles.48495811.css" as="style"><link rel="preload" href="/assets/js/app.a11098e0.js" as="script"><link rel="preload" href="/assets/js/2.f102a954.js" as="script"><link rel="preload" href="/assets/js/69.441f1051.js" as="script"><link rel="prefetch" href="/assets/js/10.d7bf86a2.js"><link rel="prefetch" href="/assets/js/11.659d90c4.js"><link rel="prefetch" href="/assets/js/12.d8bab031.js"><link rel="prefetch" href="/assets/js/13.74f69804.js"><link rel="prefetch" href="/assets/js/14.bf373128.js"><link rel="prefetch" href="/assets/js/15.3001e838.js"><link rel="prefetch" href="/assets/js/16.cbae8585.js"><link rel="prefetch" href="/assets/js/17.4bd7e04d.js"><link rel="prefetch" href="/assets/js/18.46909e7d.js"><link rel="prefetch" href="/assets/js/19.1262eb80.js"><link rel="prefetch" href="/assets/js/20.80285d0d.js"><link rel="prefetch" href="/assets/js/21.a7e68786.js"><link rel="prefetch" href="/assets/js/22.33f2cb8b.js"><link rel="prefetch" href="/assets/js/23.c7ca1978.js"><link rel="prefetch" href="/assets/js/24.3890fe03.js"><link rel="prefetch" href="/assets/js/25.887c70aa.js"><link rel="prefetch" href="/assets/js/26.8a667a6e.js"><link rel="prefetch" href="/assets/js/27.d5abaa2a.js"><link rel="prefetch" href="/assets/js/28.cf26d80f.js"><link rel="prefetch" href="/assets/js/29.b74d9bc2.js"><link rel="prefetch" href="/assets/js/3.cf01fde2.js"><link rel="prefetch" href="/assets/js/30.d4f77e87.js"><link rel="prefetch" href="/assets/js/31.172aae25.js"><link rel="prefetch" href="/assets/js/32.24a19e0e.js"><link rel="prefetch" href="/assets/js/33.07b90912.js"><link rel="prefetch" href="/assets/js/34.ba7d9493.js"><link rel="prefetch" href="/assets/js/35.c25fa3b2.js"><link rel="prefetch" href="/assets/js/36.aa14b28e.js"><link rel="prefetch" href="/assets/js/37.a10a4a26.js"><link rel="prefetch" href="/assets/js/38.6ca4aaa9.js"><link rel="prefetch" href="/assets/js/39.b9608b97.js"><link rel="prefetch" href="/assets/js/4.23c78c7d.js"><link rel="prefetch" href="/assets/js/40.c0fa1657.js"><link rel="prefetch" href="/assets/js/41.7d4aa2ea.js"><link rel="prefetch" href="/assets/js/42.fbf4baed.js"><link rel="prefetch" href="/assets/js/43.f5cad07f.js"><link rel="prefetch" href="/assets/js/44.8bf5237c.js"><link rel="prefetch" href="/assets/js/45.18932255.js"><link rel="prefetch" href="/assets/js/46.6fc07e6d.js"><link rel="prefetch" href="/assets/js/47.3b877866.js"><link rel="prefetch" href="/assets/js/48.975419d7.js"><link rel="prefetch" href="/assets/js/49.0008e89b.js"><link rel="prefetch" href="/assets/js/5.00824436.js"><link rel="prefetch" href="/assets/js/50.92cd1089.js"><link rel="prefetch" href="/assets/js/51.1ce4c979.js"><link rel="prefetch" href="/assets/js/52.15fb9ba7.js"><link rel="prefetch" href="/assets/js/53.4f0e2a09.js"><link rel="prefetch" href="/assets/js/54.83b4bb4c.js"><link rel="prefetch" href="/assets/js/55.a32cd2d5.js"><link rel="prefetch" href="/assets/js/56.1cff256c.js"><link rel="prefetch" href="/assets/js/57.f2335bff.js"><link rel="prefetch" href="/assets/js/58.15a4394e.js"><link rel="prefetch" href="/assets/js/59.d880b109.js"><link rel="prefetch" href="/assets/js/6.098188e9.js"><link rel="prefetch" href="/assets/js/60.4a47bbe6.js"><link rel="prefetch" href="/assets/js/61.c15267ae.js"><link rel="prefetch" href="/assets/js/62.50bd2aea.js"><link rel="prefetch" href="/assets/js/63.8ab7dd54.js"><link rel="prefetch" href="/assets/js/64.4212c659.js"><link rel="prefetch" href="/assets/js/65.549e3e3d.js"><link rel="prefetch" href="/assets/js/66.4b05c6e8.js"><link rel="prefetch" href="/assets/js/67.73ca1adb.js"><link rel="prefetch" href="/assets/js/68.b8bc00d0.js"><link rel="prefetch" href="/assets/js/7.d27e4011.js"><link rel="prefetch" href="/assets/js/70.20d1f5d1.js"><link rel="prefetch" href="/assets/js/71.94834f5a.js"><link rel="prefetch" href="/assets/js/72.4a55cf77.js"><link rel="prefetch" href="/assets/js/73.2751d49e.js"><link rel="prefetch" href="/assets/js/74.5c000ef2.js"><link rel="prefetch" href="/assets/js/75.eb597e18.js"><link rel="prefetch" href="/assets/js/76.e7063b7c.js"><link rel="prefetch" href="/assets/js/77.98a6f730.js"><link rel="prefetch" href="/assets/js/78.6f93268f.js"><link rel="prefetch" href="/assets/js/79.e32a5082.js"><link rel="prefetch" href="/assets/js/8.4d8cc8a2.js"><link rel="prefetch" href="/assets/js/80.40a0c376.js"><link rel="prefetch" href="/assets/js/81.9cd25835.js"><link rel="prefetch" href="/assets/js/82.8e27ed86.js"><link rel="prefetch" href="/assets/js/83.13e116a5.js"><link rel="prefetch" href="/assets/js/84.9ae3c89a.js"><link rel="prefetch" href="/assets/js/85.9f665a01.js"><link rel="prefetch" href="/assets/js/86.80b6157a.js"><link rel="prefetch" href="/assets/js/87.2c8b028a.js"><link rel="prefetch" href="/assets/js/88.16fa6511.js"><link rel="prefetch" href="/assets/js/89.199ea063.js"><link rel="prefetch" href="/assets/js/9.a004e024.js"><link rel="prefetch" href="/assets/js/90.cbf24b8e.js"><link rel="prefetch" href="/assets/js/91.106720b3.js"><link rel="prefetch" href="/assets/js/92.122317d1.js"><link rel="prefetch" href="/assets/js/93.43a7030f.js"><link rel="prefetch" href="/assets/js/94.77d531c8.js"><link rel="prefetch" href="/assets/js/95.532d0ecf.js"><link rel="prefetch" href="/assets/js/96.5052679f.js"><link rel="prefetch" href="/assets/js/97.e34d4eeb.js"><link rel="prefetch" href="/assets/js/98.965b5fa4.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.48495811.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">走不完的独木桥</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  前言
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/system/linux/" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue/" class="nav-link router-link-active">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/utils/" class="nav-link">
+  Utils &amp; Lib
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/performance/" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/data-structures-algorithms/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/design/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/jest/" class="nav-link">
+  单元测试
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/solution/" class="nav-link">
+  技术方案
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/standard/" class="nav-link">
+  技术规范
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/http/" class="nav-link">
+  Http
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发工具" class="dropdown-title"><span class="title">开发工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发工具" class="mobile-dropdown-title"><span class="title">开发工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/github/" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/tools/webstorm/" class="nav-link">
+  Webstorm
+</a></li><li class="dropdown-item"><!----> <a href="/tools/chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/tools/vscode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/charles/" class="nav-link">
+  Charles
+</a></li><li class="dropdown-item"><!----> <a href="/tools/mac/" class="nav-link">
+  Mac
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/more/book-note/" class="nav-link">
+  读书笔记
+</a></li><li class="dropdown-item"><!----> <a href="/more/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/more/hodgepodge/" class="nav-link">
+  杂物室
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div> <a href="https://github.com/topseczbw/single-bridge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  前言
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="系统" class="dropdown-title"><span class="title">系统</span> <span class="arrow down"></span></button> <button type="button" aria-label="系统" class="mobile-dropdown-title"><span class="title">系统</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/system/linux/" class="nav-link">
+  Linux
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/react/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/vue/" class="nav-link router-link-active">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/typescript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/webpack/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/utils/" class="nav-link">
+  Utils &amp; Lib
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/performance/" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/data-structures-algorithms/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/design/" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/jest/" class="nav-link">
+  单元测试
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/solution/" class="nav-link">
+  技术方案
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/standard/" class="nav-link">
+  技术规范
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/http/" class="nav-link">
+  Http
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发工具" class="dropdown-title"><span class="title">开发工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发工具" class="mobile-dropdown-title"><span class="title">开发工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/github/" class="nav-link">
+  Github
+</a></li><li class="dropdown-item"><!----> <a href="/tools/webstorm/" class="nav-link">
+  Webstorm
+</a></li><li class="dropdown-item"><!----> <a href="/tools/chrome/" class="nav-link">
+  Chrome
+</a></li><li class="dropdown-item"><!----> <a href="/tools/vscode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/charles/" class="nav-link">
+  Charles
+</a></li><li class="dropdown-item"><!----> <a href="/tools/mac/" class="nav-link">
+  Mac
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/more/book-note/" class="nav-link">
+  读书笔记
+</a></li><li class="dropdown-item"><!----> <a href="/more/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/more/hodgepodge/" class="nav-link">
+  杂物室
+</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">
+  关于我
+</a></div> <a href="https://github.com/topseczbw/single-bridge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>VUE</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend/vue/" aria-current="page" class="sidebar-link">Vue</a></li><li><a href="/frontend/vue/vue-router-source.html" aria-current="page" class="active sidebar-link">vue-router 源码学习</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/vue/vue-router-source.html#vue-router-在项目中如何使用" class="sidebar-link">vue-router 在项目中如何使用</a></li><li class="sidebar-sub-header"><a href="/frontend/vue/vue-router-source.html#如何实现在不刷新页面的前提下改变url" class="sidebar-link">如何实现在不刷新页面的前提下改变url</a></li><li class="sidebar-sub-header"><a href="/frontend/vue/vue-router-source.html#配置项中传入的mode作用" class="sidebar-link">配置项中传入的mode作用</a></li><li class="sidebar-sub-header"><a href="/frontend/vue/vue-router-source.html#router-和-route-是什么-从何而来" class="sidebar-link">$router 和 $route 是什么，从何而来</a></li><li class="sidebar-sub-header"><a href="/frontend/vue/vue-router-source.html#router-link-和-router-view-是什么-从何而来" class="sidebar-link">router-link 和 router-view 是什么，从何而来</a></li><li class="sidebar-sub-header"><a href="/frontend/vue/vue-router-source.html#如何实现根据不同url渲染不同组件" class="sidebar-link">如何实现根据不同url渲染不同组件</a></li></ul></li><li><a href="/frontend/vue/vue2-menu-control.html" class="sidebar-link">vue2菜单权限控制</a></li><li><a href="/frontend/vue/vue2-skill.html" class="sidebar-link">vue2实战总结</a></li><li><a href="/frontend/vue/vue2-source.html" class="sidebar-link">vue2源码学习</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p>分析源码前不妨先问自己几个问题，有目的的看源码，以终为始</p> <ol><li>回想一下 <code>vue-router</code> 在项目中是如何使用的，分几步</li> <li>如何实现在不刷新页面的前提下改变url</li> <li>配置项中传入的mode作用</li> <li>$router 和 $route 是什么，从何而来</li> <li>router-link 和 router-view 是什么，从何而来</li> <li>如何实现根据不同url渲染不同组件</li></ol> <h2 id="vue-router-在项目中如何使用"><a href="#vue-router-在项目中如何使用" class="header-anchor">#</a> vue-router 在项目中如何使用</h2> <ol><li>首先 <code>npm i vue-router</code> 安装依赖</li> <li>VueRouter 是一个构造函数，通过 new 并传入配置项包括 <code>mode</code> <code>routes</code> 模式和path映射，初始化router实例，生成实例后，导出并且在根组件（main.js）中，做为自定义选项，注入根组件</li> <li>使用 <code>Vue.use(VueRouter)</code> 以插件的形式，安装router</li></ol> <h2 id="如何实现在不刷新页面的前提下改变url"><a href="#如何实现在不刷新页面的前提下改变url" class="header-anchor">#</a> 如何实现在不刷新页面的前提下改变url</h2> <p>两种方式如下：</p> <ol><li><p><code>hash</code> 锚点的方式</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#/home<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>首页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#/about<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>关于<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>html<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 监听 window 的 `load` 事件，初始化渲染组件</span>
+window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'load'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  html<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> location<span class="token punctuation">.</span>hash<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// 监听 window 的 `hashchange` 事件，动态渲染不同组件</span>
+window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'hashchange'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  html<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> location<span class="token punctuation">.</span>hash<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></li> <li><p>H5 History Api 方式</p> <p>注意在页面刷新的时候，如当前url为 <code>www.xxx.com/home</code>，服务器上没有home文件夹，所以找不到对应的html资源，会出现404，所以在使用history模式时，需要跟后台配置支持。</p> <p>在服务端增加一个覆盖所有情况的候选资源：如果 URL 匹配不到任何静态资源，则应该返回同一个 index.html 页面，这个页面就是你 app 依赖的入口页面。</p> <div class="language-html extra-class"><pre class="language-html"><code> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>go(<span class="token punctuation">'</span>/home<span class="token punctuation">'</span>)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>首页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>go(<span class="token punctuation">'</span>/about<span class="token punctuation">'</span>)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>关于<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>html<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 使用history的pushState方法，实现改变url且不刷新页面，动态渲染不同组件</span>
+<span class="token keyword">function</span> <span class="token function">go</span><span class="token punctuation">(</span><span class="token parameter">pathName</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   history<span class="token punctuation">.</span><span class="token function">pushState</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> pathName<span class="token punctuation">)</span>
+
+   html<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> pathName
+ <span class="token punctuation">}</span>
+<span class="token comment">// 监听浏览器前进后退事件，动态渲染不同组件</span>
+ window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'popstate'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+   <span class="token function">go</span><span class="token punctuation">(</span>location<span class="token punctuation">.</span>pathname<span class="token punctuation">)</span>
+ <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div></li></ol> <h2 id="配置项中传入的mode作用"><a href="#配置项中传入的mode作用" class="header-anchor">#</a> 配置项中传入的mode作用</h2> <p>mode选项即用来配置当前vue应用使用 hash模式 还是 history模式</p> <h2 id="router-和-route-是什么-从何而来"><a href="#router-和-route-是什么-从何而来" class="header-anchor">#</a> $router 和 $route 是什么，从何而来</h2> <p><code>$router</code> 标识全局路由器对象，即 <code>new VueRouter</code> 生成的实例，可以通过调用 <code>$router</code> 实例上的方法，实现路由跳转</p> <p><code>$route</code> 是标签与当前url匹配的路由对象，可以用来获取当前url上的query参数</p> <p><code>$router</code> 和 <code>$route</code> 都是vue实例上的属性，都是在 <code>Vue.use(VueRouter)</code> 时，通过 <code>Vue.mixin</code> 方法，配合 <code>beforeCreate</code> 钩子函数，为每个vue实例增加的属性</p> <h2 id="router-link-和-router-view-是什么-从何而来"><a href="#router-link-和-router-view-是什么-从何而来" class="header-anchor">#</a> router-link 和 router-view 是什么，从何而来</h2> <p><code>router-link</code> 组件支持用户在具有路由功能的应用中 (点击) 导航。</p> <p>与写死的 <code>&lt;a href=&quot;...&quot;&gt;</code> 对比，优势：</p> <ul><li>无论是hash还是history模式，表现行为一致</li> <li>在 HTML5 history 模式下，router-link 会守卫点击事件，让浏览器不再重新加载页面。</li> <li>当你在 HTML5 history 模式下使用 base 选项之后，所有的 to 属性都不需要写 (基路径) 了。</li></ul> <p><code>&lt;router-view&gt;</code> 组件是一个 functional 组件，渲染路径匹配到的视图组件。</p> <p><code>router-link</code> 和 <code>router-view</code> 也是在 <code>Vue.use(VueRouter)</code> 时，通过 <code>Vue.component</code> 方法注册的全局组件</p> <p>这里组件渲染其实使用的是render函数</p> <div class="language-js extra-class"><pre class="language-js"><code>Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">&quot;router-link&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  props<span class="token operator">:</span> <span class="token punctuation">{</span>
+    to<span class="token operator">:</span> String<span class="token punctuation">,</span>
+    tag<span class="token operator">:</span> String
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">handleClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">alert</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// return h(&quot;a&quot;, {}, &quot;首页&quot;);</span>
+    <span class="token keyword">let</span> mode <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_self<span class="token punctuation">.</span>$router<span class="token punctuation">.</span>mode<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> tag <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>tag<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>tag
+        on<span class="token operator">-</span>click<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleClick<span class="token punctuation">}</span>
+        href<span class="token operator">=</span><span class="token punctuation">{</span>mode <span class="token operator">===</span> <span class="token string">&quot;hash&quot;</span> <span class="token operator">?</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">#</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>to<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span> <span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>to<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span>
+      <span class="token operator">&gt;</span>
+        <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>$slots<span class="token punctuation">.</span>default<span class="token punctuation">}</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>tag<span class="token operator">&gt;</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">&quot;router-view&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> current <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_self<span class="token punctuation">.</span>$router<span class="token punctuation">.</span>history<span class="token punctuation">.</span>current<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> routeMap <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>_self<span class="token punctuation">.</span>$router<span class="token punctuation">.</span>routeMap<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span>routeMap<span class="token punctuation">[</span>current<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="如何实现根据不同url渲染不同组件"><a href="#如何实现根据不同url渲染不同组件" class="header-anchor">#</a> 如何实现根据不同url渲染不同组件</h2> <p>在 <code>new VueRouter</code> 的时候，会在构造函数中，根据传入的mode模式，启动不同的对url的事件监听方法</p> <p>并在 <code>$router</code> 实例中增加属性 <code>history.current</code> 存储当前页面路由对象</p> <p>当用户触发url改变操作时，如调用 <code>push</code> <code>go</code> <code>back</code> 的方法时，会改变 <code>history.current</code></p> <p>这里发现，虽然history对象修改了，但是视图仍然无法刷新</p> <p>此时，使用 <code>Vue.util.defineReactive</code> 方法，给当前vue实例，随机绑定一个响应式属性，值为 <code>this._router.history</code> 对象，达到当<code>this._router.history</code> 发生变化时 ，会更新视图</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/topseczbw/single-bridge/edit/main/docs/frontend/vue/vue-router-source.md" target="_blank" rel="noopener noreferrer">帮助改善此页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021年4月22日星期四凌晨2点12分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/vue/" class="prev router-link-active">
+        Vue
+      </a></span> <span class="next"><a href="/frontend/vue/vue2-menu-control.html">
+        vue2菜单权限控制
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.a11098e0.js" defer></script><script src="/assets/js/2.f102a954.js" defer></script><script src="/assets/js/69.441f1051.js" defer></script>
+  </body>
+</html>
