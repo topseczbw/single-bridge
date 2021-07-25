@@ -15,3 +15,7 @@ title: mac 使用总结
 ## 相关链接
 
 - [盘点那些真正能提升工作幸福度的小工具](https://mp.weixin.qq.com/s/eNzJg4__s8DFQzjGPr51SA)
+
+## 分屏神器 Magnet
+
+搭配 4k屏幕 轻松实现一个屏幕4个浏览器，解决切屏烦恼，快捷键：control + option + u/i/j/k
