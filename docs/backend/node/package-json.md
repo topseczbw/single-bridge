@@ -48,7 +48,9 @@ browserslist是package.json包描述文件中的一个配置项，用于配置�
 
 autoprefixer、babel、postcss
 
-## 固定子依赖的安装版本
+## resolutions
+
+有时需要固定孙子依赖或者更深层级依赖的版本号会用到 `resolutions`
 
 ```json
 "resolutions": {
