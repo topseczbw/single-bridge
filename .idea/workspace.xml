@@ -20,42 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/docs/backend/node/package-json.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/css/base.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/data-structures-algorithms/search.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/data-structures-algorithms/sort.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/0.1+0.2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/advanced-programming.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/api.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/call-apply-bind-new.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/copy.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/es6.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/jwt.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/module.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/operate-img.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/promise.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/javascript/typeof-instanceof.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/performance/http.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/solution/fe-distinguish-env.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/solution/img-spin.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/solution/login-process.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/solution/mobile-debugge.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/solution/use-ali-monitor.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/standard/check-tool.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/utils/use-gulp-demo.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/vue/vue-router-source.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/vue/vue2-menu-control.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/vue/vue2-skill.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/vue/vue2-source.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/frontend/webpack/question.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/more/hodgepodge/hexo-blog.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/more/interview/vue2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/config/nav.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config/nav.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/frontend/data-structures-algorithms/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/frontend/data-structures-algorithms/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/frontend/solution/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/frontend/solution/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/guide/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/guide/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/more/data-structure/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/more/interview/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/more/interview/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/backend/node/package-json.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/backend/node/package-json.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tools/mac/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tools/mac/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/tools/webstorm/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tools/webstorm/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +84,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.4.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.14.41" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.17.5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/frontend/javascript" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -201,6 +169,7 @@
       <workItem from="1618592286279" duration="17363000" />
       <workItem from="1618934325848" duration="16000" />
       <workItem from="1618934610475" duration="1902000" />
+      <workItem from="1627127138994" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初始化">
       <created>1618508194787</created>
@@ -321,17 +290,19 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="443" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1618505390119" />
-    <state x="2221" y="-353" key="CommitChangelistDialog2" timestamp="1618934641714">
-      <screen x="1680" y="-390" width="2560" height="1440" />
+    <state x="379" y="29" key="CommitChangelistDialog2" timestamp="1627127143775">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="304" y="23" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1618508443618" />
     <state x="355" y="27" key="CommitChangelistDialog2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618605331125" />
     <state x="2221" y="-353" key="CommitChangelistDialog2/0.0.1680.1050/1680.-390.2560.1440@1680.-390.2560.1440" timestamp="1618934641714" />
-    <state x="1831" y="-363" width="1344" height="840" key="DiffContextDialog" timestamp="1618934628076">
-      <screen x="1680" y="-390" width="2560" height="1440" />
+    <state x="379" y="29" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1627127143775" />
+    <state x="106" y="21" width="1344" height="840" key="DiffContextDialog" timestamp="1627127143502">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="99" y="20" width="1344" height="840" key="DiffContextDialog/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618518576720" />
     <state x="1831" y="-363" key="DiffContextDialog/0.0.1680.1050/1680.-390.2560.1440@1680.-390.2560.1440" timestamp="1618934628076" />
+    <state x="106" y="21" key="DiffContextDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1627127143502" />
     <state width="268" height="379" key="Git.Branch.Popup" timestamp="1618585545816">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -360,6 +331,10 @@
     <state width="709" height="222" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1618768227107" />
     <state width="829" height="180" key="GridCell.Tab.0.right/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618610086212" />
     <state width="829" height="154" key="GridCell.Tab.0.right/0.25.1680.949/1680.-365.2560.1415@0.25.1680.949" timestamp="1618645054871" />
+    <state x="597" y="269" key="RollbackChangesDialog" timestamp="1627127167033">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="597" y="269" key="RollbackChangesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1627127167033" />
     <state x="349" y="161" key="SettingsEditor" timestamp="1618585160447">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -376,10 +351,11 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618600694810" />
-    <state x="641" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618585257888">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="684" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1627127168895">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="641" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050/1680.-390.2560.1440@0.0.1680.1050" timestamp="1618585257887" />
+    <state x="684" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1792.1120@0.0.1792.1120" timestamp="1627127168895" />
     <state x="105" y="55" width="1033" height="715" key="find.popup" timestamp="1618603576158">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

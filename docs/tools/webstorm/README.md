@@ -1,10 +1,10 @@
 ---
-title: IDE 使用总结
+title: webstorm 使用总结
 ---
 
 > 多年使用 Webstorm，总结出一些技巧
 
-## 查看 Webstorm 默认快捷键指令
+## 查看默认快捷键指令
 
 有时我们已知快捷键的功能描述，但是由于自定义快捷键时覆盖了该快捷键默认指令
 
@@ -13,7 +13,7 @@ title: IDE 使用总结
 ![2021-04-22-01-57-28](/tools/webstorm/2021-04-22-01-57-28.png)
 ![2021-04-22-01-57-43](/tools/webstorm/2021-04-22-01-57-43.png)
 
-## 解决 webstorm 卡顿问题
+## 解决卡顿问题
 
 1. M1 mac 编辑器卡顿
 
@@ -33,3 +33,7 @@ Preferences→Appearance&Behavior→Apperance→Antialiasing→Editor设置为Gr
 4. 停止对常变动文件夹的索引如：node_modules、build
 
 ![b](https://tva1.sinaimg.cn/large/008i3skNly1gresk94f13j30u00uok13.jpg)
+
+## 配置 typescript
+
+![示例](https://tva1.sinaimg.cn/large/008i3skNly1gssa4031lsj315f0u0wfv.jpg)

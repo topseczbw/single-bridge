@@ -26,6 +26,7 @@ module.exports = [
     { text: '开发工具', items: [
       { text: 'Git', link: '/tools/git/' },
       { text: 'Github', link: '/tools/github/' },
+      { text: 'Gitlab', link: '/tools/gitlab/' },
       { text: 'Webstorm', link: '/tools/webstorm/' },
       { text: 'Chrome', link: '/tools/chrome/' },
       { text: 'VSCode', link: '/tools/vscode/' },

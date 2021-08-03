@@ -47,3 +47,17 @@ browserslist是package.json包描述文件中的一个配置项，用于配置�
 ### 有哪些应用场景
 
 autoprefixer、babel、postcss
+
+## 固定子依赖的安装版本
+
+```json
+"resolutions": {
+  "rc-checkbox": "2.3.1",
+  "rc-virtual-list": "1.1.0",
+  "rc-menu": "8.5.3",
+  "rc-textarea": "0.3.1",
+  "rc-util": "5.5.0",
+  "rc-tabs": "11.5.7",
+  "@ant-design/icons": "4.5.0"
+},
+```
