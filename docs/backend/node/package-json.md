@@ -2,6 +2,12 @@
 title: 解读 package.json
 ---
 
+## peerDependencies
+
+一般在开发工具包、组件包时会用到。比如组件包依赖 react 17版本，而调用组件包的项目中 react 是16版本，
+
+防止多次引入相同的库
+
 ## nohoist
 
 nohoist 指定一些包不需要 **提升安装** 到项目根目录的 node_modules 下。
