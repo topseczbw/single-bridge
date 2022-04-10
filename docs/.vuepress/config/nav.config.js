@@ -1,6 +1,6 @@
 module.exports = [
     { text: '首页', link: '/' },
-    { text: '前言', link: '/guide/' },
+    { text: '前言', link: '/前言/' },
     { text: '工作', items: [
       { text: '前端', items: [
         { text: 'javascript', link: '/frontend/javascript/' },
