@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="" />
+    <list default="true" id="468e8f3f-0945-447c-8c91-7978ec28819e" name="Default Changelist" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +79,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.4.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.17.5" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.18.12" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/frontend/javascript" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -165,6 +165,9 @@
       <workItem from="1618934325848" duration="16000" />
       <workItem from="1618934610475" duration="1902000" />
       <workItem from="1627127138994" duration="297000" />
+      <workItem from="1648101000276" duration="15000" />
+      <workItem from="1648101082325" duration="649000" />
+      <workItem from="1648290320629" duration="69000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初始化">
       <created>1618508194787</created>
@@ -281,25 +284,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="379" y="29" key="CommitChangelistDialog2" timestamp="1627127143775">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="332" y="225" key="CommitChangelistDialog2" timestamp="1648101085757">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="379" y="29" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1627127143775" />
-    <state x="106" y="21" width="1344" height="840" key="DiffContextDialog" timestamp="1627127143502">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="332" y="225" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1648101085757" />
+    <state x="168" y="91" key="DiffContextDialog" timestamp="1648101084746">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="106" y="21" key="DiffContextDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1627127143502" />
-    <state x="597" y="269" key="RollbackChangesDialog" timestamp="1627127167033">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="168" y="91" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1648101084746" />
+    <state x="641" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1648101114567">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="597" y="269" key="RollbackChangesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1627127167033" />
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2" timestamp="1628010042864">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="187" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1628010042864" />
-    <state x="684" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1627127168895">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="684" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1792.1120@0.0.1792.1120" timestamp="1627127168895" />
+    <state x="641" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1648101114567" />
   </component>
 </project>
