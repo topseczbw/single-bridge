@@ -10,7 +10,7 @@
     "docs:build": "vuepress build docs",
     "deploy": "bash deploy.sh",
     "docs:nav": "vuepress nav docs",
-    "pipeline": "git add . && git commit -m 'update' && git push && yarn deploy"
+    "pipeline": "git add . && git commit -m 'update' && git push && npm run deploy"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2",
