@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git常用指令 | 走不完的独木桥</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="">
+    <meta name="keyword" content="前端，笔记，走不完的独木桥，zbw">
+    <meta name="author" content="zbw">
+    
+    <link rel="preload" href="/assets/css/0.styles.086c3bbe.css" as="style"><link rel="preload" href="/assets/js/app.2fd69221.js" as="script"><link rel="preload" href="/assets/js/2.c8687347.js" as="script"><link rel="preload" href="/assets/js/63.8501fe03.js" as="script"><link rel="prefetch" href="/assets/js/10.0a6d1513.js"><link rel="prefetch" href="/assets/js/100.88ab4f33.js"><link rel="prefetch" href="/assets/js/101.a7145a26.js"><link rel="prefetch" href="/assets/js/102.cc782542.js"><link rel="prefetch" href="/assets/js/11.31ee87c9.js"><link rel="prefetch" href="/assets/js/12.26e76308.js"><link rel="prefetch" href="/assets/js/13.60adb3a1.js"><link rel="prefetch" href="/assets/js/14.aae6515a.js"><link rel="prefetch" href="/assets/js/15.fbb6c346.js"><link rel="prefetch" href="/assets/js/16.886b3270.js"><link rel="prefetch" href="/assets/js/17.11f72f05.js"><link rel="prefetch" href="/assets/js/18.4c867756.js"><link rel="prefetch" href="/assets/js/19.2f34ae88.js"><link rel="prefetch" href="/assets/js/20.56757e39.js"><link rel="prefetch" href="/assets/js/21.2ba59bc6.js"><link rel="prefetch" href="/assets/js/22.cc67e65b.js"><link rel="prefetch" href="/assets/js/23.577ec706.js"><link rel="prefetch" href="/assets/js/24.c6441ab6.js"><link rel="prefetch" href="/assets/js/25.eff16abc.js"><link rel="prefetch" href="/assets/js/26.534b72b6.js"><link rel="prefetch" href="/assets/js/27.979d7675.js"><link rel="prefetch" href="/assets/js/28.b109d1d6.js"><link rel="prefetch" href="/assets/js/29.b7031a81.js"><link rel="prefetch" href="/assets/js/3.b390b88e.js"><link rel="prefetch" href="/assets/js/30.cdcc2549.js"><link rel="prefetch" href="/assets/js/31.27237d4a.js"><link rel="prefetch" href="/assets/js/32.c1105f6c.js"><link rel="prefetch" href="/assets/js/33.a5e761f5.js"><link rel="prefetch" href="/assets/js/34.b655b340.js"><link rel="prefetch" href="/assets/js/35.322eee2b.js"><link rel="prefetch" href="/assets/js/36.894007d3.js"><link rel="prefetch" href="/assets/js/37.14f0f34e.js"><link rel="prefetch" href="/assets/js/38.c6f65776.js"><link rel="prefetch" href="/assets/js/39.3005276a.js"><link rel="prefetch" href="/assets/js/4.effdd555.js"><link rel="prefetch" href="/assets/js/40.3fb95f80.js"><link rel="prefetch" href="/assets/js/41.41316344.js"><link rel="prefetch" href="/assets/js/42.dc50ea3c.js"><link rel="prefetch" href="/assets/js/43.6a60a50c.js"><link rel="prefetch" href="/assets/js/44.5ab33295.js"><link rel="prefetch" href="/assets/js/45.1fabd84e.js"><link rel="prefetch" href="/assets/js/46.6e4c52df.js"><link rel="prefetch" href="/assets/js/47.99ee9c3d.js"><link rel="prefetch" href="/assets/js/48.a0b8a5fc.js"><link rel="prefetch" href="/assets/js/49.999e5667.js"><link rel="prefetch" href="/assets/js/5.6f537172.js"><link rel="prefetch" href="/assets/js/50.fbbbd6a7.js"><link rel="prefetch" href="/assets/js/51.33a4569d.js"><link rel="prefetch" href="/assets/js/52.f3a03c7b.js"><link rel="prefetch" href="/assets/js/53.e69528b2.js"><link rel="prefetch" href="/assets/js/54.51efc700.js"><link rel="prefetch" href="/assets/js/55.5af734dc.js"><link rel="prefetch" href="/assets/js/56.30c2bd12.js"><link rel="prefetch" href="/assets/js/57.33297ccf.js"><link rel="prefetch" href="/assets/js/58.3e138383.js"><link rel="prefetch" href="/assets/js/59.5c6e3ff4.js"><link rel="prefetch" href="/assets/js/6.91d9df77.js"><link rel="prefetch" href="/assets/js/60.3dc7acc2.js"><link rel="prefetch" href="/assets/js/61.84325ecc.js"><link rel="prefetch" href="/assets/js/62.0cc3341a.js"><link rel="prefetch" href="/assets/js/64.ead31a44.js"><link rel="prefetch" href="/assets/js/65.1ba135f8.js"><link rel="prefetch" href="/assets/js/66.9b488819.js"><link rel="prefetch" href="/assets/js/67.e98f3437.js"><link rel="prefetch" href="/assets/js/68.318c6c22.js"><link rel="prefetch" href="/assets/js/69.268491dc.js"><link rel="prefetch" href="/assets/js/7.b7f07291.js"><link rel="prefetch" href="/assets/js/70.3e636659.js"><link rel="prefetch" href="/assets/js/71.e167de4f.js"><link rel="prefetch" href="/assets/js/72.b543b8c8.js"><link rel="prefetch" href="/assets/js/73.9d16024c.js"><link rel="prefetch" href="/assets/js/74.cbd90b74.js"><link rel="prefetch" href="/assets/js/75.068a9885.js"><link rel="prefetch" href="/assets/js/76.9cab3112.js"><link rel="prefetch" href="/assets/js/77.4bda8875.js"><link rel="prefetch" href="/assets/js/78.ec16a432.js"><link rel="prefetch" href="/assets/js/79.fa9ebda3.js"><link rel="prefetch" href="/assets/js/8.46b09777.js"><link rel="prefetch" href="/assets/js/80.1f9bbeef.js"><link rel="prefetch" href="/assets/js/81.10e48a00.js"><link rel="prefetch" href="/assets/js/82.29f30e7f.js"><link rel="prefetch" href="/assets/js/83.a31b8fc0.js"><link rel="prefetch" href="/assets/js/84.24d7e54f.js"><link rel="prefetch" href="/assets/js/85.0bf7958a.js"><link rel="prefetch" href="/assets/js/86.e95e433d.js"><link rel="prefetch" href="/assets/js/87.995e792b.js"><link rel="prefetch" href="/assets/js/88.b3fea108.js"><link rel="prefetch" href="/assets/js/89.f5880e17.js"><link rel="prefetch" href="/assets/js/9.efe42fe3.js"><link rel="prefetch" href="/assets/js/90.e7ab7970.js"><link rel="prefetch" href="/assets/js/91.c144e9ca.js"><link rel="prefetch" href="/assets/js/92.11ecee7a.js"><link rel="prefetch" href="/assets/js/93.fb488f44.js"><link rel="prefetch" href="/assets/js/94.dba39697.js"><link rel="prefetch" href="/assets/js/95.29a0fc11.js"><link rel="prefetch" href="/assets/js/96.deae8079.js"><link rel="prefetch" href="/assets/js/97.9ed3c330.js"><link rel="prefetch" href="/assets/js/98.1aa45f8f.js"><link rel="prefetch" href="/assets/js/99.ed001c0f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.086c3bbe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">走不完的独木桥</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/前言/" class="nav-link">
+  前言
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作" class="dropdown-title"><span class="title">工作</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作" class="mobile-dropdown-title"><span class="title">工作</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/frontend/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-subitem"><a href="/frontend/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/frontend/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/frontend/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/frontend/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/frontend/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-subitem"><a href="/frontend/utils/" class="nav-link">
+  util
+</a></li><li class="dropdown-subitem"><a href="/frontend/performance/" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-subitem"><a href="/frontend/solution/" class="nav-link">
+  企业解决方案
+</a></li><li class="dropdown-subitem"><a href="/frontend/standard/" class="nav-link">
+  团队规范
+</a></li><li class="dropdown-subitem"><a href="/frontend/jest/" class="nav-link">
+  单元测试
+</a></li></ul></li><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-subitem"><a href="/frontend/data-structures-algorithms/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-subitem"><a href="/frontend/design/" class="nav-link">
+  设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/tools/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/tools/github/" class="nav-link">
+  github
+</a></li><li class="dropdown-subitem"><a href="/tools/gitlab/" class="nav-link">
+  gitlab
+</a></li><li class="dropdown-subitem"><a href="/tools/webstorm/" class="nav-link">
+  webstorm
+</a></li><li class="dropdown-subitem"><a href="/tools/chrome/" class="nav-link">
+  chrome
+</a></li><li class="dropdown-subitem"><a href="/tools/vscode/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-subitem"><a href="/tools/charles/" class="nav-link">
+  charles
+</a></li><li class="dropdown-subitem"><a href="/tools/mac/" class="nav-link">
+  mac
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/more/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-subitem"><a href="/more/hodgepodge/" class="nav-link">
+  杂物室
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活/随笔/" class="nav-link">
+  随笔
+</a></li></ul></div></div> <a href="https://github.com/topseczbw/single-bridge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/前言/" class="nav-link">
+  前言
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作" class="dropdown-title"><span class="title">工作</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作" class="mobile-dropdown-title"><span class="title">工作</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/frontend/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-subitem"><a href="/frontend/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/frontend/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/frontend/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/frontend/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/frontend/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-subitem"><a href="/frontend/utils/" class="nav-link">
+  util
+</a></li><li class="dropdown-subitem"><a href="/frontend/performance/" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-subitem"><a href="/frontend/solution/" class="nav-link">
+  企业解决方案
+</a></li><li class="dropdown-subitem"><a href="/frontend/standard/" class="nav-link">
+  团队规范
+</a></li><li class="dropdown-subitem"><a href="/frontend/jest/" class="nav-link">
+  单元测试
+</a></li></ul></li><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-subitem"><a href="/frontend/data-structures-algorithms/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-subitem"><a href="/frontend/design/" class="nav-link">
+  设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/tools/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/tools/github/" class="nav-link">
+  github
+</a></li><li class="dropdown-subitem"><a href="/tools/gitlab/" class="nav-link">
+  gitlab
+</a></li><li class="dropdown-subitem"><a href="/tools/webstorm/" class="nav-link">
+  webstorm
+</a></li><li class="dropdown-subitem"><a href="/tools/chrome/" class="nav-link">
+  chrome
+</a></li><li class="dropdown-subitem"><a href="/tools/vscode/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-subitem"><a href="/tools/charles/" class="nav-link">
+  charles
+</a></li><li class="dropdown-subitem"><a href="/tools/mac/" class="nav-link">
+  mac
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/more/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-subitem"><a href="/more/hodgepodge/" class="nav-link">
+  杂物室
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活/随笔/" class="nav-link">
+  随笔
+</a></li></ul></div></div> <a href="https://github.com/topseczbw/single-bridge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>GIT</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend/tools/git/" aria-current="page" class="sidebar-link">首页</a></li><li><a href="/frontend/tools/git/common.html" aria-current="page" class="active sidebar-link">git常用指令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#创建" class="sidebar-link">创建</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#初始化" class="sidebar-link">初始化</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#远程" class="sidebar-link">远程</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#拉取" class="sidebar-link">拉取</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#分支" class="sidebar-link">分支</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#提交" class="sidebar-link">提交</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#比较" class="sidebar-link">比较</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#合并" class="sidebar-link">合并</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#还原、撤销" class="sidebar-link">还原、撤销</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#打标签" class="sidebar-link">打标签</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#储藏" class="sidebar-link">储藏</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#修改" class="sidebar-link">修改</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#变基" class="sidebar-link">变基</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#q-a" class="sidebar-link">Q&amp;A</a></li><li class="sidebar-sub-header"><a href="/frontend/tools/git/common.html#commit命名规范" class="sidebar-link">Commit命名规范</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="创建"><a href="#创建" class="header-anchor">#</a> 创建</h2> <p>创建用户，设置用户名、邮箱</p> <p><code>git config --global user.name &quot;zhangbowen&quot;</code></p> <p><code>git config --global user.email &quot;zbwbiehua@163.com&quot;</code></p> <h2 id="初始化"><a href="#初始化" class="header-anchor">#</a> 初始化</h2> <p>初始化本地git仓库，并关联远程仓库，有两种方法：</p> <ol><li><p>克隆远程仓库到本地，建立本地仓库，并自动建立关联关系。也用于备份仓库</p> <p><code>git clone [仓库地址]</code></p></li> <li><p>初始化本地git仓库</p> <p><code>git init</code></p> <p>关联远程仓库</p> <p><code>git remote add origin [仓库地址]</code></p> <p>推送master分支，建立远程master分支，-u是添加关联</p> <p><code>git push -u origin master</code></p></li></ol> <h2 id="远程"><a href="#远程" class="header-anchor">#</a> 远程</h2> <ol><li><p>查看当前仓库关联的远程仓库</p> <p><code>git remote -v</code></p></li></ol> <h2 id="拉取"><a href="#拉取" class="header-anchor">#</a> 拉取</h2> <ol><li><p>从远程分支获取最新的版本，并merge到本地当前分支</p> <p><code>git pull origin [远程分支名称]</code></p></li> <li><p>对于已经关联远程分支的本地当前分支，可以直接使用</p> <p><code>git pull</code></p></li></ol> <h2 id="分支"><a href="#分支" class="header-anchor">#</a> 分支</h2> <ol><li><p>切换分支</p> <p><code>git checkout [分支名称]</code></p></li> <li><p>基于当前分支新建一个分支，并切换到新分支</p> <p><code>git checkout -b [分支名称]</code></p></li> <li><p>查看分支信息</p> <p><code>git branch</code></p></li> <li><p>删除本地分支</p> <p><code>git branch -D [分支名称]</code></p></li> <li><p>删除远程分支</p> <p><code>git push origin --delete [分支名称]</code></p></li></ol> <h2 id="提交"><a href="#提交" class="header-anchor">#</a> 提交</h2> <ol><li><p>将当前目录所有文件添加到暂存区</p> <p>在WebStorm中文件由红色变为绿色，将文件添加到版本管理</p> <p><code>git add .</code></p></li> <li><p>提交暂存区到仓库区（当前分支稳定代码），-m为加注释</p> <p>在WebStorm中文件由绿色变为白色，更新当前分支代码</p> <p><code>git commit -m [描述信息]</code></p></li> <li><p>查看提交历史</p> <p><code>git log</code></p></li> <li><p>显示当前目录文件与暂存区状态变化</p> <p>比较当前分支暂存区和仓库区（commit后，当前分支稳定代码）区别</p> <p><code>git status</code></p></li> <li><p>对于新建的本地分支，push到远程仓库，-u是添加关联</p> <p><code>git push -u origin [分支名称]</code></p></li> <li><p>对于已关联远程分支的本地当前分支，可以直接使用</p> <p><code>git push</code></p></li> <li><p>修改最近一次commit的message</p> <p><code>git commit --amend</code></p></li> <li><p>修改旧的commit的message，要使用rebase</p> <p><code>git rebase -i [目标commit的上一个commitId]</code></p> <p>找到目标commit，选择r命令，只修改commit的message</p></li> <li><p>整理合并几个连续的commit</p> <p><code>git rebase -i [需要合并的目标commit列表中的最上面的一个commit的上一个commitId]</code></p> <p>使用s命令，将后面的commit合并到前面的commit</p></li> <li><p>整理合并不连续的commit</p> <p><code>git rebase -i [需要合并的目标commit列表中的最上面的一个commit的上一个commitId]</code></p> <p>手动编辑commit的顺序，其他同上</p></li></ol> <h2 id="比较"><a href="#比较" class="header-anchor">#</a> 比较</h2> <ol><li><p>比较暂存区和HEAD差异</p> <p><code>git diff cached</code></p></li> <li><p>比较工作区和暂存区差异</p> <p><code>git diff</code></p></li></ol> <h2 id="合并"><a href="#合并" class="header-anchor">#</a> 合并</h2> <ol><li><p>合并其他分支代码到当前分支</p> <p><code>git merge [其他分支名称]</code></p></li></ol> <h2 id="还原、撤销"><a href="#还原、撤销" class="header-anchor">#</a> 还原、撤销</h2> <p>revert：撤销。一般用于删除某个commit，在log中会有记录</p> <ol><li><p>撤销某个提交过的commit</p> <p><code>git revert [commit-id]</code></p> <p>执行这个操作时，git需要一条新的commit记录这次操作</p></li></ol> <p>reset：回滚。一般在&quot;线上事故&quot;通常需要回滚到想要的版本（分支），再提交到远程分支，解决问题</p> <ol><li><p>撤回当前代码到历史某一版本号代码</p> <p><code>git reset [commit-id]</code></p></li> <li><p>回滚到某个版本，强推到远程分支，发布。一般用于&quot;线上事故&quot;</p> <p><code>git reset [commit-id]</code></p> <p>对于已关联的分支：<code>git push -f</code></p> <p>对于未关联的分支：<code>git push origin HEAD:[branch-name] -f</code></p></li> <li><p>撤销工作目录中所有未提交文件的修改内容</p> <p><code>git reset --hard HEAD</code></p></li> <li><p>将暂存区所有文件还原到HEAD版本</p> <p><code>git reset HEAD</code></p></li> <li><p>将暂存区部分文件还原到HEAD版本</p> <p><code>git reset HEAD -- [目标文件]</code></p></li> <li><p>将工作区部分文件还原到暂存区版本</p> <p><code>git checkout -- [目标文件]</code></p></li></ol> <h2 id="打标签"><a href="#打标签" class="header-anchor">#</a> 打标签</h2> <p>标签是与分支是并行的两个概念，我们可以检出分支，得到指定版本代码，也可以通过检出tag，得到指定版本代码，tag方式一般用于线上发布做标记。</p> <ol><li><p>查看tag</p> <p><code>git tag</code></p></li> <li><p>删除本地tag</p> <p><code>git tag -d [tag-name]</code></p></li> <li><p>给当前版本打一个tag</p> <p><code>git tag v2019-04-01</code></p> <p><code>git tag -a [标签名称] -m [标签描述]</code></p></li> <li><p>将标签推送到远程仓库</p> <p><code>git push origin [标签名称]</code></p></li> <li><p>查看标签详情</p> <p><code>git show [标签名]</code></p></li> <li><p>删除远程tag</p> <p>先删除本地tag，再推到远程仓库</p> <p><code>git tag -d [tag-name]</code></p> <p><code>git push origin :refs/tags/[标签名]</code></p></li> <li><p>新建一个本地tag</p> <p><code>git tag v2019-09-19</code></p></li></ol> <h2 id="储藏"><a href="#储藏" class="header-anchor">#</a> 储藏</h2> <ol><li><p>储藏当前状态</p> <p><code>git stash</code></p></li> <li><p>查看所有储藏状态列表</p> <p><code>git stash list</code></p></li> <li><p>导出指定储藏状态</p> <p><code>git stash apply stash@{index}</code></p></li> <li><p>删除指定储藏状态</p> <p><code>git stash drop stash@{index}</code></p></li> <li><p>重新应用，并移除储藏</p> <p><code>git stash pop</code></p></li></ol> <h2 id="修改"><a href="#修改" class="header-anchor">#</a> 修改</h2> <ol><li><p>修改最后一次改动</p> <p><code>git commit --amend</code></p></li></ol> <h2 id="变基"><a href="#变基" class="header-anchor">#</a> 变基</h2> <p>rebase常用两个功能：</p> <ol><li><p>合并多次描述冗余的commit为一次精简的commit</p> <p>推荐：<a href="https://www.jianshu.com/p/4a8f4af4e803" target="_blank" rel="noopener noreferrer">【Git】rebase 用法小结<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>git rebase -i HEAD~4  // 从当前commit起，包括当前，选择处理前4个commit，s指令表示与之前的commit进行合并</p></li> <li><p>保证提交分支图优雅（直线型）展示</p> <p>改变当前分支commit基础，在新的基础上追加当前分支自己的commit，当前分支rebase完成后，再合并到其他分支，就不会出现像下方的无意义提交记录了</p> <p><code>Merge branch '$test$' into bugfix</code></p> <p>例：多人协作时，主分支为bugfix，成员A在bugfix_A上完成自己的bug修复，提交commit，切到本地bugfix，pull下了B的commit</p> <p>方式一：</p> <p>如果直接将bugfix_A分支merge到bugfix，会出现提交记录中多出一条</p> <p><code>Merge branch 'bugfix_A' into bugfix</code></p> <p>这并不是我们希望的</p> <p>方式二：</p> <p>成员A切回到自己的bugfix_A分支，使用 <code>git rebase bugfix</code> ,将自己的commit在此时的bugfix分支代码基础上（此分支已更新有成员B的commit）提交</p> <p>完成rebase后，在将bugfix_A分支merge到bugfix分支，此时发现并没有任何无意义的提交记录，push到远程分支</p> <p>rebase 过程中可能会遇到冲突，因为相当于把成员B的代码和成员A的代码做了一次整合</p> <p>解决完冲突之后，使用 <code>git add .</code>，标记为已解决</p> <p>再 <code>git rebase --continue</code> 完成rebase</p></li></ol> <h2 id="q-a"><a href="#q-a" class="header-anchor">#</a> Q&amp;A</h2> <ol><li><p><strong>执行 git merge 时分支处于merging状态，提示MERGE_MSG.swp文件报错</strong></p> <p>执行 git pull 或者 push 或者 merge 命令操作的时候，当前分支一直处于merging状态</p> <p>当打开 git/MERGE_MSG 文件的时候，发现有 git/MERGE_MSG.swp 文件的存在，并且从时间上来看， MERGE_MSG 比 MERGE_MSG.swp 要更新</p> <p><strong>关于 MERGE_MSG.swp 文件的说明：</strong></p> <p>.swp 文件和 git 无关，在使用 VIM 开始编辑某文件时，都会产生该文件对应的 .swp 文件。正常的退出，VIM 会自动除此类型文件，非正常退出情况下， VIM 不会删除 ，.swp 文件会作为文件编辑状态的内容备份</p> <p>其实多次打开多次不正常关闭，会一直产生 .sw* 文件</p> <p><strong>问题解决：</strong></p> <p>第一步：回到合并前状态</p> <p><code>git merge -abort</code> 或者 <code>git reset --hard HEAD</code></p> <p>第二步：删除 vim 非正常关闭产生的文件</p> <p>rm .git/.MERGE_MSG.sw*</p> <p>第三步：重新合并</p> <p><code>git merge [分支名称]</code></p> <p>使用<code>:wq</code>正常安全退出</p></li> <li><p>指定不需要git管理的文件</p> <p>使用.gitignore文件，/结尾指文件夹，后缀名结尾指具体文件</p></li> <li><p>设置ssh，配置公私钥</p> <p>创建私钥：<code>ssh-keygen -t rsa -b 4096 -C &quot;[邮箱地址]&quot;</code></p> <p>一路回车</p> <p>cd ~/.ssh    寻找ssh文件夹</p> <p>cat id_rsa.pub   复制粘贴key</p> <p>粘贴到github的账号  setting——ssh and GPG key</p></li></ol> <h2 id="commit命名规范"><a href="#commit命名规范" class="header-anchor">#</a> Commit命名规范</h2> <div class="language-js extra-class"><pre class="language-js"><code>feat：新功能（feature）
+fix：修补bug
+docs：文档（documentation）
+style： 格式（不影响代码运行的变动）
+refactor：重构（即不是新增功能，也不是修改bug的代码变动）
+test：增加测试
+chore：构建过程或辅助工具的变动
+</code></pre></div><p>摘自<a href="http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html" target="_blank" rel="noopener noreferrer">《阮一峰 Commit message 和 Change log 编写指南》<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/topseczbw/single-bridge/edit/main/docs/frontend/tools/git/common.md" target="_blank" rel="noopener noreferrer">帮助改善此页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022年4月10日星期日下午5点35分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/tools/git/" class="prev router-link-active">
+        首页
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.2fd69221.js" defer></script><script src="/assets/js/2.c8687347.js" defer></script><script src="/assets/js/63.8501fe03.js" defer></script>
+  </body>
+</html>

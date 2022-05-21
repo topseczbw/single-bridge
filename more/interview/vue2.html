@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue2 面试题 | 走不完的独木桥</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="">
+    <meta name="keyword" content="前端，笔记，走不完的独木桥，zbw">
+    <meta name="author" content="zbw">
+    
+    <link rel="preload" href="/assets/css/0.styles.086c3bbe.css" as="style"><link rel="preload" href="/assets/js/app.2fd69221.js" as="script"><link rel="preload" href="/assets/js/2.c8687347.js" as="script"><link rel="preload" href="/assets/js/96.deae8079.js" as="script"><link rel="prefetch" href="/assets/js/10.0a6d1513.js"><link rel="prefetch" href="/assets/js/100.88ab4f33.js"><link rel="prefetch" href="/assets/js/101.a7145a26.js"><link rel="prefetch" href="/assets/js/102.cc782542.js"><link rel="prefetch" href="/assets/js/11.31ee87c9.js"><link rel="prefetch" href="/assets/js/12.26e76308.js"><link rel="prefetch" href="/assets/js/13.60adb3a1.js"><link rel="prefetch" href="/assets/js/14.aae6515a.js"><link rel="prefetch" href="/assets/js/15.fbb6c346.js"><link rel="prefetch" href="/assets/js/16.886b3270.js"><link rel="prefetch" href="/assets/js/17.11f72f05.js"><link rel="prefetch" href="/assets/js/18.4c867756.js"><link rel="prefetch" href="/assets/js/19.2f34ae88.js"><link rel="prefetch" href="/assets/js/20.56757e39.js"><link rel="prefetch" href="/assets/js/21.2ba59bc6.js"><link rel="prefetch" href="/assets/js/22.cc67e65b.js"><link rel="prefetch" href="/assets/js/23.577ec706.js"><link rel="prefetch" href="/assets/js/24.c6441ab6.js"><link rel="prefetch" href="/assets/js/25.eff16abc.js"><link rel="prefetch" href="/assets/js/26.534b72b6.js"><link rel="prefetch" href="/assets/js/27.979d7675.js"><link rel="prefetch" href="/assets/js/28.b109d1d6.js"><link rel="prefetch" href="/assets/js/29.b7031a81.js"><link rel="prefetch" href="/assets/js/3.b390b88e.js"><link rel="prefetch" href="/assets/js/30.cdcc2549.js"><link rel="prefetch" href="/assets/js/31.27237d4a.js"><link rel="prefetch" href="/assets/js/32.c1105f6c.js"><link rel="prefetch" href="/assets/js/33.a5e761f5.js"><link rel="prefetch" href="/assets/js/34.b655b340.js"><link rel="prefetch" href="/assets/js/35.322eee2b.js"><link rel="prefetch" href="/assets/js/36.894007d3.js"><link rel="prefetch" href="/assets/js/37.14f0f34e.js"><link rel="prefetch" href="/assets/js/38.c6f65776.js"><link rel="prefetch" href="/assets/js/39.3005276a.js"><link rel="prefetch" href="/assets/js/4.effdd555.js"><link rel="prefetch" href="/assets/js/40.3fb95f80.js"><link rel="prefetch" href="/assets/js/41.41316344.js"><link rel="prefetch" href="/assets/js/42.dc50ea3c.js"><link rel="prefetch" href="/assets/js/43.6a60a50c.js"><link rel="prefetch" href="/assets/js/44.5ab33295.js"><link rel="prefetch" href="/assets/js/45.1fabd84e.js"><link rel="prefetch" href="/assets/js/46.6e4c52df.js"><link rel="prefetch" href="/assets/js/47.99ee9c3d.js"><link rel="prefetch" href="/assets/js/48.a0b8a5fc.js"><link rel="prefetch" href="/assets/js/49.999e5667.js"><link rel="prefetch" href="/assets/js/5.6f537172.js"><link rel="prefetch" href="/assets/js/50.fbbbd6a7.js"><link rel="prefetch" href="/assets/js/51.33a4569d.js"><link rel="prefetch" href="/assets/js/52.f3a03c7b.js"><link rel="prefetch" href="/assets/js/53.e69528b2.js"><link rel="prefetch" href="/assets/js/54.51efc700.js"><link rel="prefetch" href="/assets/js/55.5af734dc.js"><link rel="prefetch" href="/assets/js/56.30c2bd12.js"><link rel="prefetch" href="/assets/js/57.33297ccf.js"><link rel="prefetch" href="/assets/js/58.3e138383.js"><link rel="prefetch" href="/assets/js/59.5c6e3ff4.js"><link rel="prefetch" href="/assets/js/6.91d9df77.js"><link rel="prefetch" href="/assets/js/60.3dc7acc2.js"><link rel="prefetch" href="/assets/js/61.84325ecc.js"><link rel="prefetch" href="/assets/js/62.0cc3341a.js"><link rel="prefetch" href="/assets/js/63.8501fe03.js"><link rel="prefetch" href="/assets/js/64.ead31a44.js"><link rel="prefetch" href="/assets/js/65.1ba135f8.js"><link rel="prefetch" href="/assets/js/66.9b488819.js"><link rel="prefetch" href="/assets/js/67.e98f3437.js"><link rel="prefetch" href="/assets/js/68.318c6c22.js"><link rel="prefetch" href="/assets/js/69.268491dc.js"><link rel="prefetch" href="/assets/js/7.b7f07291.js"><link rel="prefetch" href="/assets/js/70.3e636659.js"><link rel="prefetch" href="/assets/js/71.e167de4f.js"><link rel="prefetch" href="/assets/js/72.b543b8c8.js"><link rel="prefetch" href="/assets/js/73.9d16024c.js"><link rel="prefetch" href="/assets/js/74.cbd90b74.js"><link rel="prefetch" href="/assets/js/75.068a9885.js"><link rel="prefetch" href="/assets/js/76.9cab3112.js"><link rel="prefetch" href="/assets/js/77.4bda8875.js"><link rel="prefetch" href="/assets/js/78.ec16a432.js"><link rel="prefetch" href="/assets/js/79.fa9ebda3.js"><link rel="prefetch" href="/assets/js/8.46b09777.js"><link rel="prefetch" href="/assets/js/80.1f9bbeef.js"><link rel="prefetch" href="/assets/js/81.10e48a00.js"><link rel="prefetch" href="/assets/js/82.29f30e7f.js"><link rel="prefetch" href="/assets/js/83.a31b8fc0.js"><link rel="prefetch" href="/assets/js/84.24d7e54f.js"><link rel="prefetch" href="/assets/js/85.0bf7958a.js"><link rel="prefetch" href="/assets/js/86.e95e433d.js"><link rel="prefetch" href="/assets/js/87.995e792b.js"><link rel="prefetch" href="/assets/js/88.b3fea108.js"><link rel="prefetch" href="/assets/js/89.f5880e17.js"><link rel="prefetch" href="/assets/js/9.efe42fe3.js"><link rel="prefetch" href="/assets/js/90.e7ab7970.js"><link rel="prefetch" href="/assets/js/91.c144e9ca.js"><link rel="prefetch" href="/assets/js/92.11ecee7a.js"><link rel="prefetch" href="/assets/js/93.fb488f44.js"><link rel="prefetch" href="/assets/js/94.dba39697.js"><link rel="prefetch" href="/assets/js/95.29a0fc11.js"><link rel="prefetch" href="/assets/js/97.9ed3c330.js"><link rel="prefetch" href="/assets/js/98.1aa45f8f.js"><link rel="prefetch" href="/assets/js/99.ed001c0f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.086c3bbe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">走不完的独木桥</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/前言/" class="nav-link">
+  前言
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作" class="dropdown-title"><span class="title">工作</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作" class="mobile-dropdown-title"><span class="title">工作</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/frontend/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-subitem"><a href="/frontend/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/frontend/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/frontend/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/frontend/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/frontend/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-subitem"><a href="/frontend/utils/" class="nav-link">
+  util
+</a></li><li class="dropdown-subitem"><a href="/frontend/performance/" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-subitem"><a href="/frontend/solution/" class="nav-link">
+  企业解决方案
+</a></li><li class="dropdown-subitem"><a href="/frontend/standard/" class="nav-link">
+  团队规范
+</a></li><li class="dropdown-subitem"><a href="/frontend/jest/" class="nav-link">
+  单元测试
+</a></li></ul></li><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-subitem"><a href="/frontend/data-structures-algorithms/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-subitem"><a href="/frontend/design/" class="nav-link">
+  设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/tools/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/tools/github/" class="nav-link">
+  github
+</a></li><li class="dropdown-subitem"><a href="/tools/gitlab/" class="nav-link">
+  gitlab
+</a></li><li class="dropdown-subitem"><a href="/tools/webstorm/" class="nav-link">
+  webstorm
+</a></li><li class="dropdown-subitem"><a href="/tools/chrome/" class="nav-link">
+  chrome
+</a></li><li class="dropdown-subitem"><a href="/tools/vscode/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-subitem"><a href="/tools/charles/" class="nav-link">
+  charles
+</a></li><li class="dropdown-subitem"><a href="/tools/mac/" class="nav-link">
+  mac
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/more/interview/" class="nav-link router-link-active">
+  面试题
+</a></li><li class="dropdown-subitem"><a href="/more/hodgepodge/" class="nav-link">
+  杂物室
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活/随笔/" class="nav-link">
+  随笔
+</a></li></ul></div></div> <a href="https://github.com/topseczbw/single-bridge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/前言/" class="nav-link">
+  前言
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作" class="dropdown-title"><span class="title">工作</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作" class="mobile-dropdown-title"><span class="title">工作</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/frontend/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-subitem"><a href="/frontend/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/frontend/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/frontend/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/frontend/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/frontend/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-subitem"><a href="/frontend/utils/" class="nav-link">
+  util
+</a></li><li class="dropdown-subitem"><a href="/frontend/performance/" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-subitem"><a href="/frontend/solution/" class="nav-link">
+  企业解决方案
+</a></li><li class="dropdown-subitem"><a href="/frontend/standard/" class="nav-link">
+  团队规范
+</a></li><li class="dropdown-subitem"><a href="/frontend/jest/" class="nav-link">
+  单元测试
+</a></li></ul></li><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-subitem"><a href="/frontend/data-structures-algorithms/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-subitem"><a href="/frontend/design/" class="nav-link">
+  设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/tools/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/tools/github/" class="nav-link">
+  github
+</a></li><li class="dropdown-subitem"><a href="/tools/gitlab/" class="nav-link">
+  gitlab
+</a></li><li class="dropdown-subitem"><a href="/tools/webstorm/" class="nav-link">
+  webstorm
+</a></li><li class="dropdown-subitem"><a href="/tools/chrome/" class="nav-link">
+  chrome
+</a></li><li class="dropdown-subitem"><a href="/tools/vscode/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-subitem"><a href="/tools/charles/" class="nav-link">
+  charles
+</a></li><li class="dropdown-subitem"><a href="/tools/mac/" class="nav-link">
+  mac
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/more/interview/" class="nav-link router-link-active">
+  面试题
+</a></li><li class="dropdown-subitem"><a href="/more/hodgepodge/" class="nav-link">
+  杂物室
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活/随笔/" class="nav-link">
+  随笔
+</a></li></ul></div></div> <a href="https://github.com/topseczbw/single-bridge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>INTERVIEW</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/more/interview/" aria-current="page" class="sidebar-link">面试题</a></li><li><a href="/more/interview/vue2.html" aria-current="page" class="active sidebar-link">vue2 面试题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/more/interview/vue2.html#v-for中为什么要加key" class="sidebar-link">v-for中为什么要加key</a></li><li class="sidebar-sub-header"><a href="/more/interview/vue2.html#计算属性" class="sidebar-link">计算属性</a></li><li class="sidebar-sub-header"><a href="/more/interview/vue2.html#watch" class="sidebar-link">watch</a></li><li class="sidebar-sub-header"><a href="/more/interview/vue2.html#watch-和-computed-区别" class="sidebar-link">watch 和 computed 区别</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="v-for中为什么要加key"><a href="#v-for中为什么要加key" class="header-anchor">#</a> v-for中为什么要加key</h2> <p>以倒序操作为例</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>a<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>b<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>c<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>d<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>d<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>c<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>b<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>a<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="key-是干啥的"><a href="#key-是干啥的" class="header-anchor">#</a> key 是干啥的</h3> <p>为vnode添加唯一标识，如果没有key，那vnode的唯一标识是tag</p> <p>在diff对比时,isSameNode方法中会用到</p> <h3 id="不加key-key-undefined-index"><a href="#不加key-key-undefined-index" class="header-anchor">#</a> 不加key key = undefined/index</h3> <p>以上更新，如果不加key，根据isSameNode方法，diff中会认为更新前后这是四个相同的node。</p> <p>在patch时，会复用。不会创建新的节点。但是后续比较vnode中的文本时，拿第一个标签为例，发现更新前后，文本不同，所以会操作dom对其进行修改。</p> <p>结果是操作四次dom</p> <h3 id="加唯一key"><a href="#加唯一key" class="header-anchor">#</a> 加唯一key</h3> <p>如果加唯一的key，diff对比时，在更新后 vue会认为第一个节点并不相同。</p> <p>然后你是不是会认为vue选择重新创建元素？不不不不，那这样的话岂不是更消耗性能。</p> <p>如果在四种优化对比策略（此处唯一标识也是 tag + key）后，如果还没有找到sameNode，会进行暴力比对，vue会在同级的vnode中寻找，是否有相同key和tag的元素（在updateChildren开始时，先循环oldChildren根据key作为唯一标识创建一个索引映射表），拿第一个标签为例，此时会找到具有相同key的元素，然后仍然进行patch</p> <p>这个时候在patch的时候，仍然也会复用元素，比较文本时，发现相同，就不在操作dom，只是会移动这个dom。</p> <p>结果是移动三次dom，想比操作四次dom，移动三次性能更好</p> <h3 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h3> <p>对于相同tag的元素，都会复用，但是加key会更</p> <h2 id="计算属性"><a href="#计算属性" class="header-anchor">#</a> 计算属性</h2> <h3 id="计算属性特点"><a href="#计算属性特点" class="header-anchor">#</a> 计算属性特点</h3> <p>计算属性是一个函数，具有缓存功能，依赖改变才会重新计算。</p> <p>可以在模板中使用</p> <p>初始化第一次是不会取值的，只有当依赖改变之后才会取值</p> <h3 id="计算属性实现"><a href="#计算属性实现" class="header-anchor">#</a> 计算属性实现</h3> <p>内部也是通过new watcher实现的。 new watcher的四个参数（vm, exprOrFn, callback, options）</p> <p>option</p> <h2 id="watch"><a href="#watch" class="header-anchor">#</a> watch</h2> <h3 id="watch的使用"><a href="#watch的使用" class="header-anchor">#</a> watch的使用</h3> <p>key是表达式，value有可能是 字符串、数组、对象、函数</p> <h3 id="watch的具体实现过程"><a href="#watch的具体实现过程" class="header-anchor">#</a> watch的具体实现过程</h3> <p>initWatchMixin =&gt; createWatcher =&gt; $watch</p> <p>用户使用watch有很多种写法，源码中首先将多种写法，都格式化成了一种：exprOrFn、 handler函数 、options选项（watch的选项）</p> <p>最后调用vm.$watch方法：vm.$watch(key, handler, options)，Key是取值表达式，handler是用户定义的函数，option是用户定义的选项包括 sync deep等</p> <p>所以watch的原理是基于$watch  $watch原理就是创建一个用户watcher</p> <p>既然说到watcher，一定会涉及到两个过程  1. vm实例的属性收集watcher 2.实例属性改动，触发watcher</p> <p>触发watcher没什么好说的。只要修改属性，就会触发该属性dep实例上的watcher队列执行。</p> <p>关键在与如何收集到这个用户watcher</p> <p>之前渲染函数传入的exprOrFn 是 render方法，执行时，会对组件属性进行取值。那么此时的用户watcher 的getter方法也应该是对属性取值，此处是将 getter 设置为一个  使用vm实例和属性表达式， + 循环取值的方法</p> <p>后续同渲染watcher一样 ，先将当前watcher 放置到 target上，然后执行getter 触发 属性的getter方法 将这个用户watcher收集起来</p> <p>vm.$watch中会new一个新的用户watcher， 在执行new watcher构造函数时，此处使用user选项确定是watch的用户watcher，也可以获取到用户watcher的其他选项如 sync deep 。</p> <p>不同与渲染watcher的是。 此处的getter函数是 通过 返回 表达式和vm实例 通过循环最终取到的值的函数，即执行这个函数值，会对监听的属性进行取值。而渲染watcher 是调用_render方法生成虚拟dom =》patch 真实dom</p> <p>后续依然是 先将当前watcher放在target上，后调用getter方法， 此时getter 会使用key（属性表达式），在vm中取值，取值时，在这个属性值的依赖dep实例中，将这个用户watcher 收集起来， 之后这属性值修改时，调用这个watcher队列函数执行，只不过先前是 调用渲染watcher中的 updateComponent方法， 此时是调用 用户传入的callback ，并将新旧值传入。</p> <h3 id="如果获取新旧值"><a href="#如果获取新旧值" class="header-anchor">#</a> 如果获取新旧值</h3> <p>将当前值（旧值）在new的时候 先保存在watcher实例属性this.value上，在实例属性修改后，调用watcher的run方法  再次取值 即 属性的dep通知watcher队列执行，可以获取到新值，并更新 watcher实例 value属性。</p> <p>得到新值老值后再去调用户传入的回调callback</p> <p>取值的时机都是，执行getter方法时，使用属性表达式在实例上循环取值操作时，</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">Watcher</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">vm<span class="token punctuation">,</span> exprOrFn<span class="token punctuation">,</span> callback<span class="token punctuation">,</span> options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// ...</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>user <span class="token operator">=</span> <span class="token operator">!</span><span class="token operator">!</span> options<span class="token punctuation">.</span>user
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> exprOrFn <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>getter <span class="token operator">=</span> exprOrFn<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function-variable function">getter</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">// 将表达式转换成函数</span>
+                <span class="token keyword">let</span> path <span class="token operator">=</span> exprOrFn<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">let</span> obj <span class="token operator">=</span> vm<span class="token punctuation">;</span>
+                <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> path<span class="token punctuation">.</span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    obj <span class="token operator">=</span> obj<span class="token punctuation">[</span>path<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span>
+                <span class="token keyword">return</span> obj<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 将初始值记录到value属性上</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">pushTarget</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 把用户定义的watcher存起来</span>
+        <span class="token keyword">const</span> value <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getter</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>vm<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 执行函数 （依赖收集）</span>
+        <span class="token function">popTarget</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 移除watcher</span>
+        <span class="token keyword">return</span> value<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">let</span> value <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 获取新值</span>
+        <span class="token keyword">let</span> oldValue <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">;</span> <span class="token comment">// 获取老值</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> value<span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>user<span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">// 如果是用户watcher 则调用用户传入的callback</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">callback</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>vm<span class="token punctuation">,</span>value<span class="token punctuation">,</span>oldValue<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="watch-和-computed-区别"><a href="#watch-和-computed-区别" class="header-anchor">#</a> watch 和 computed 区别</h2> <ol><li>watch 内部默认会对变量取值
+computed 是不会的 只有取值之后，才会调用 vm.allName 修改依赖属性之后才会取值</li> <li>计算属性 依赖的值不变 就不会调用 有缓存</li> <li>计算属性还可以放在模板中  watch 不可以</li> <li>213</li></ol> <p>相同点：</p> <ol><li>内部都是使用watcher实现的</li></ol></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/topseczbw/single-bridge/edit/main/docs/more/interview/vue2.md" target="_blank" rel="noopener noreferrer">帮助改善此页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021年4月22日星期四凌晨2点12分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/more/interview/" class="prev router-link-active">
+        面试题
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.2fd69221.js" defer></script><script src="/assets/js/2.c8687347.js" defer></script><script src="/assets/js/96.deae8079.js" defer></script>
+  </body>
+</html>

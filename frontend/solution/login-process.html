@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>登录流程 | 走不完的独木桥</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="">
+    <meta name="keyword" content="前端，笔记，走不完的独木桥，zbw">
+    <meta name="author" content="zbw">
+    
+    <link rel="preload" href="/assets/css/0.styles.086c3bbe.css" as="style"><link rel="preload" href="/assets/js/app.2fd69221.js" as="script"><link rel="preload" href="/assets/js/2.c8687347.js" as="script"><link rel="preload" href="/assets/js/51.33a4569d.js" as="script"><link rel="prefetch" href="/assets/js/10.0a6d1513.js"><link rel="prefetch" href="/assets/js/100.88ab4f33.js"><link rel="prefetch" href="/assets/js/101.a7145a26.js"><link rel="prefetch" href="/assets/js/102.cc782542.js"><link rel="prefetch" href="/assets/js/11.31ee87c9.js"><link rel="prefetch" href="/assets/js/12.26e76308.js"><link rel="prefetch" href="/assets/js/13.60adb3a1.js"><link rel="prefetch" href="/assets/js/14.aae6515a.js"><link rel="prefetch" href="/assets/js/15.fbb6c346.js"><link rel="prefetch" href="/assets/js/16.886b3270.js"><link rel="prefetch" href="/assets/js/17.11f72f05.js"><link rel="prefetch" href="/assets/js/18.4c867756.js"><link rel="prefetch" href="/assets/js/19.2f34ae88.js"><link rel="prefetch" href="/assets/js/20.56757e39.js"><link rel="prefetch" href="/assets/js/21.2ba59bc6.js"><link rel="prefetch" href="/assets/js/22.cc67e65b.js"><link rel="prefetch" href="/assets/js/23.577ec706.js"><link rel="prefetch" href="/assets/js/24.c6441ab6.js"><link rel="prefetch" href="/assets/js/25.eff16abc.js"><link rel="prefetch" href="/assets/js/26.534b72b6.js"><link rel="prefetch" href="/assets/js/27.979d7675.js"><link rel="prefetch" href="/assets/js/28.b109d1d6.js"><link rel="prefetch" href="/assets/js/29.b7031a81.js"><link rel="prefetch" href="/assets/js/3.b390b88e.js"><link rel="prefetch" href="/assets/js/30.cdcc2549.js"><link rel="prefetch" href="/assets/js/31.27237d4a.js"><link rel="prefetch" href="/assets/js/32.c1105f6c.js"><link rel="prefetch" href="/assets/js/33.a5e761f5.js"><link rel="prefetch" href="/assets/js/34.b655b340.js"><link rel="prefetch" href="/assets/js/35.322eee2b.js"><link rel="prefetch" href="/assets/js/36.894007d3.js"><link rel="prefetch" href="/assets/js/37.14f0f34e.js"><link rel="prefetch" href="/assets/js/38.c6f65776.js"><link rel="prefetch" href="/assets/js/39.3005276a.js"><link rel="prefetch" href="/assets/js/4.effdd555.js"><link rel="prefetch" href="/assets/js/40.3fb95f80.js"><link rel="prefetch" href="/assets/js/41.41316344.js"><link rel="prefetch" href="/assets/js/42.dc50ea3c.js"><link rel="prefetch" href="/assets/js/43.6a60a50c.js"><link rel="prefetch" href="/assets/js/44.5ab33295.js"><link rel="prefetch" href="/assets/js/45.1fabd84e.js"><link rel="prefetch" href="/assets/js/46.6e4c52df.js"><link rel="prefetch" href="/assets/js/47.99ee9c3d.js"><link rel="prefetch" href="/assets/js/48.a0b8a5fc.js"><link rel="prefetch" href="/assets/js/49.999e5667.js"><link rel="prefetch" href="/assets/js/5.6f537172.js"><link rel="prefetch" href="/assets/js/50.fbbbd6a7.js"><link rel="prefetch" href="/assets/js/52.f3a03c7b.js"><link rel="prefetch" href="/assets/js/53.e69528b2.js"><link rel="prefetch" href="/assets/js/54.51efc700.js"><link rel="prefetch" href="/assets/js/55.5af734dc.js"><link rel="prefetch" href="/assets/js/56.30c2bd12.js"><link rel="prefetch" href="/assets/js/57.33297ccf.js"><link rel="prefetch" href="/assets/js/58.3e138383.js"><link rel="prefetch" href="/assets/js/59.5c6e3ff4.js"><link rel="prefetch" href="/assets/js/6.91d9df77.js"><link rel="prefetch" href="/assets/js/60.3dc7acc2.js"><link rel="prefetch" href="/assets/js/61.84325ecc.js"><link rel="prefetch" href="/assets/js/62.0cc3341a.js"><link rel="prefetch" href="/assets/js/63.8501fe03.js"><link rel="prefetch" href="/assets/js/64.ead31a44.js"><link rel="prefetch" href="/assets/js/65.1ba135f8.js"><link rel="prefetch" href="/assets/js/66.9b488819.js"><link rel="prefetch" href="/assets/js/67.e98f3437.js"><link rel="prefetch" href="/assets/js/68.318c6c22.js"><link rel="prefetch" href="/assets/js/69.268491dc.js"><link rel="prefetch" href="/assets/js/7.b7f07291.js"><link rel="prefetch" href="/assets/js/70.3e636659.js"><link rel="prefetch" href="/assets/js/71.e167de4f.js"><link rel="prefetch" href="/assets/js/72.b543b8c8.js"><link rel="prefetch" href="/assets/js/73.9d16024c.js"><link rel="prefetch" href="/assets/js/74.cbd90b74.js"><link rel="prefetch" href="/assets/js/75.068a9885.js"><link rel="prefetch" href="/assets/js/76.9cab3112.js"><link rel="prefetch" href="/assets/js/77.4bda8875.js"><link rel="prefetch" href="/assets/js/78.ec16a432.js"><link rel="prefetch" href="/assets/js/79.fa9ebda3.js"><link rel="prefetch" href="/assets/js/8.46b09777.js"><link rel="prefetch" href="/assets/js/80.1f9bbeef.js"><link rel="prefetch" href="/assets/js/81.10e48a00.js"><link rel="prefetch" href="/assets/js/82.29f30e7f.js"><link rel="prefetch" href="/assets/js/83.a31b8fc0.js"><link rel="prefetch" href="/assets/js/84.24d7e54f.js"><link rel="prefetch" href="/assets/js/85.0bf7958a.js"><link rel="prefetch" href="/assets/js/86.e95e433d.js"><link rel="prefetch" href="/assets/js/87.995e792b.js"><link rel="prefetch" href="/assets/js/88.b3fea108.js"><link rel="prefetch" href="/assets/js/89.f5880e17.js"><link rel="prefetch" href="/assets/js/9.efe42fe3.js"><link rel="prefetch" href="/assets/js/90.e7ab7970.js"><link rel="prefetch" href="/assets/js/91.c144e9ca.js"><link rel="prefetch" href="/assets/js/92.11ecee7a.js"><link rel="prefetch" href="/assets/js/93.fb488f44.js"><link rel="prefetch" href="/assets/js/94.dba39697.js"><link rel="prefetch" href="/assets/js/95.29a0fc11.js"><link rel="prefetch" href="/assets/js/96.deae8079.js"><link rel="prefetch" href="/assets/js/97.9ed3c330.js"><link rel="prefetch" href="/assets/js/98.1aa45f8f.js"><link rel="prefetch" href="/assets/js/99.ed001c0f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.086c3bbe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">走不完的独木桥</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/前言/" class="nav-link">
+  前言
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作" class="dropdown-title"><span class="title">工作</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作" class="mobile-dropdown-title"><span class="title">工作</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/frontend/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-subitem"><a href="/frontend/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/frontend/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/frontend/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/frontend/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/frontend/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-subitem"><a href="/frontend/utils/" class="nav-link">
+  util
+</a></li><li class="dropdown-subitem"><a href="/frontend/performance/" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-subitem"><a href="/frontend/solution/" class="nav-link router-link-active">
+  企业解决方案
+</a></li><li class="dropdown-subitem"><a href="/frontend/standard/" class="nav-link">
+  团队规范
+</a></li><li class="dropdown-subitem"><a href="/frontend/jest/" class="nav-link">
+  单元测试
+</a></li></ul></li><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-subitem"><a href="/frontend/data-structures-algorithms/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-subitem"><a href="/frontend/design/" class="nav-link">
+  设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/tools/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/tools/github/" class="nav-link">
+  github
+</a></li><li class="dropdown-subitem"><a href="/tools/gitlab/" class="nav-link">
+  gitlab
+</a></li><li class="dropdown-subitem"><a href="/tools/webstorm/" class="nav-link">
+  webstorm
+</a></li><li class="dropdown-subitem"><a href="/tools/chrome/" class="nav-link">
+  chrome
+</a></li><li class="dropdown-subitem"><a href="/tools/vscode/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-subitem"><a href="/tools/charles/" class="nav-link">
+  charles
+</a></li><li class="dropdown-subitem"><a href="/tools/mac/" class="nav-link">
+  mac
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/more/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-subitem"><a href="/more/hodgepodge/" class="nav-link">
+  杂物室
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活/随笔/" class="nav-link">
+  随笔
+</a></li></ul></div></div> <a href="https://github.com/topseczbw/single-bridge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/前言/" class="nav-link">
+  前言
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作" class="dropdown-title"><span class="title">工作</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作" class="mobile-dropdown-title"><span class="title">工作</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/frontend/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-subitem"><a href="/frontend/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/frontend/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/frontend/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/frontend/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/frontend/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-subitem"><a href="/frontend/utils/" class="nav-link">
+  util
+</a></li><li class="dropdown-subitem"><a href="/frontend/performance/" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-subitem"><a href="/frontend/solution/" class="nav-link router-link-active">
+  企业解决方案
+</a></li><li class="dropdown-subitem"><a href="/frontend/standard/" class="nav-link">
+  团队规范
+</a></li><li class="dropdown-subitem"><a href="/frontend/jest/" class="nav-link">
+  单元测试
+</a></li></ul></li><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-subitem"><a href="/frontend/data-structures-algorithms/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-subitem"><a href="/frontend/design/" class="nav-link">
+  设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/tools/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/tools/github/" class="nav-link">
+  github
+</a></li><li class="dropdown-subitem"><a href="/tools/gitlab/" class="nav-link">
+  gitlab
+</a></li><li class="dropdown-subitem"><a href="/tools/webstorm/" class="nav-link">
+  webstorm
+</a></li><li class="dropdown-subitem"><a href="/tools/chrome/" class="nav-link">
+  chrome
+</a></li><li class="dropdown-subitem"><a href="/tools/vscode/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-subitem"><a href="/tools/charles/" class="nav-link">
+  charles
+</a></li><li class="dropdown-subitem"><a href="/tools/mac/" class="nav-link">
+  mac
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/more/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-subitem"><a href="/more/hodgepodge/" class="nav-link">
+  杂物室
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活/随笔/" class="nav-link">
+  随笔
+</a></li></ul></div></div> <a href="https://github.com/topseczbw/single-bridge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>SOLUTION</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend/solution/" aria-current="page" class="sidebar-link">首页</a></li><li><a href="/frontend/solution/fe-distinguish-env.html" class="sidebar-link">前端代码中区分环境（开发、生产）</a></li><li><a href="/frontend/solution/img-spin.html" class="sidebar-link">前端上传图片到阿里云后，图片被旋转</a></li><li><a href="/frontend/solution/login-process.html" aria-current="page" class="active sidebar-link">登录流程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/solution/login-process.html#普通登录" class="sidebar-link">普通登录</a></li><li class="sidebar-sub-header"><a href="/frontend/solution/login-process.html#二维码登录" class="sidebar-link">二维码登录</a></li></ul></li><li><a href="/frontend/solution/mobile-debugge.html" class="sidebar-link">如何调试移动端应用</a></li><li><a href="/frontend/solution/use-ali-monitor.html" class="sidebar-link">使用阿里云前端监控</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="普通登录"><a href="#普通登录" class="header-anchor">#</a> 普通登录</h2> <h3 id="使用token"><a href="#使用token" class="header-anchor">#</a> 使用token</h3> <p>客户端把username和password，提交到服务端的登录api。</p> <p>服务端验证正确后，生成一个token，并把token和userId，存在缓存里（推荐redis数据库），然后把token返回给前端。</p> <p>前端每次的请求头中带token，这样就能够轻松的实现。</p> <h3 id="使用cookie"><a href="#使用cookie" class="header-anchor">#</a> 使用cookie</h3> <p>客户端发送username和password到server。</p> <p>server验证成功后, 写入cookie到客户端，返回200的response，其中cookie的key要存储在redis中，value就是用户信息，并且要设置key的超时时间，如:60分钟。</p> <p>client收到200后，进行相应的业务操作，并且设置以后每次请求server都会自动带上cookie, 不用你写代码</p> <p>server端的filter(你肯定用filter来实现)中会每次验证传过来的cookie的key在redis中是否存在, 有就代表登录成功过可以操作, 没有就返回错误标识注意: 在登录成功后, 每次调用服务器接口时候, 都要为redis的key进行续期,如60分钟</p> <p>当redis的key超过60分钟, 自己会删除这个key, 那么再次请求server时, 就会收到需要登录的返回值</p> <p>当用户主动退出系统的时候, 也要在server中删除redis的key。</p> <h4 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// webpack.dev.config.js</span>
+
+<span class="token keyword">var</span> host <span class="token operator">=</span> <span class="token string">'devtk.aibeike.com'</span>
+<span class="token keyword">var</span> backendPort <span class="token operator">=</span> <span class="token number">443</span>
+
+<span class="token comment">// 后台登录接口配置</span>
+<span class="token keyword">var</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
+    hostname<span class="token operator">:</span> host<span class="token punctuation">,</span>
+    port<span class="token operator">:</span> backendPort<span class="token punctuation">,</span>
+    path<span class="token operator">:</span> <span class="token string">'/entrance/login'</span><span class="token punctuation">,</span>
+    method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+    headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'Content-Type'</span><span class="token operator">:</span> <span class="token string">'application/x-www-form-urlencoded'</span><span class="token punctuation">,</span>
+    <span class="token string">'Content-Length'</span><span class="token operator">:</span> postData<span class="token punctuation">.</span>length
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 当前cookie</span>
+<span class="token keyword">var</span> currentCookie
+<span class="token comment">// 上次请求时间纪录，每8分钟重新登录一次，后台设置cookie时效为10分钟</span>
+<span class="token keyword">var</span> lastRquestTime <span class="token operator">=</span> <span class="token number">0</span>
+
+<span class="token keyword">var</span> <span class="token function-variable function">setCookie</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">cb</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> lastRquestTime <span class="token operator">&gt;=</span> <span class="token number">4</span> <span class="token operator">*</span> <span class="token number">60</span> <span class="token operator">*</span> <span class="token number">1000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> req <span class="token operator">=</span> https<span class="token punctuation">.</span><span class="token function">request</span><span class="token punctuation">(</span>options<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        res<span class="token punctuation">.</span><span class="token function">setEncoding</span><span class="token punctuation">(</span><span class="token string">'utf8'</span><span class="token punctuation">)</span>
+        res<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">chunk</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">BODY: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>chunk<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        res<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        currentCookie <span class="token operator">=</span> res<span class="token punctuation">.</span>headers<span class="token punctuation">[</span><span class="token string">'set-cookie'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+        lastRquestTime <span class="token operator">=</span> Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'cookie 获取成功：'</span> <span class="token operator">+</span> currentCookie <span class="token operator">+</span> <span class="token string">' cookie获取时间为：'</span> <span class="token operator">+</span> lastRquestTime<span class="token punctuation">)</span>
+        <span class="token function">cb</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    req<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">problem with request: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>e<span class="token punctuation">.</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token comment">// write data to request body</span>
+    req<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>postData<span class="token punctuation">)</span>
+    req<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token function">cb</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token function">setCookie</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 在webpack的配置中设置</span>
+proxy<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'/'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    target<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>host<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>backendPort<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    changeOrigin<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">onProxyReq</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">proxyReq<span class="token punctuation">,</span> req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        proxyReq<span class="token punctuation">.</span><span class="token function">setHeader</span><span class="token punctuation">(</span><span class="token string">'Cookie'</span><span class="token punctuation">,</span> currentCookie<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="二维码登录"><a href="#二维码登录" class="header-anchor">#</a> 二维码登录</h2> <p>二维码简称qr</p> <ol><li>首先我们要知道如何获取并展示qr</li></ol> <p>一般是用 <code>qrcodejs</code> 这个库传入一个url地址和指定的dom标识（为了展示）生成一个二维码对象</p> <p><a href="https://github.com/davidshimjs/qrcodejs" target="_blank" rel="noopener noreferrer">github<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>我们进入页面时先调用一个获取qr信息的接口，然后生成qr</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;success&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;获取二维码成功&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;nextcall_eg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://api.service.100tal.com/sso/qrcode/status?callback=__cb&amp;uuid=094c619e-7ea5-11e9-826a-1866da4d8720&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;qrcode&quot;</span><span class="token operator">:</span> <span class="token string">&quot;https://service.100tal.com/sso/login/236049354?uuid=094c619e-7ea5-11e9-826a-1866da4d8720&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;uuid&quot;</span><span class="token operator">:</span> <span class="token string">&quot;094c619e-7ea5-11e9-826a-1866da4d8720&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;errmsg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ok&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;errcode&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 生成二维码</span>
+<span class="token function">getEwmCode</span> <span class="token punctuation">(</span><span class="token parameter">qrcode</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">QRCode</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'qrcodeId'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    text<span class="token operator">:</span> qrcode<span class="token punctuation">,</span>
+    width<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+    height<span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>此时qr已经显示出来</p> <p>核心就是在生成二维码之后，使用用户的唯一标识uuid循环的调用查询qr登录状态的接口</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 初始化数据</span>
+<span class="token function">initData</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> locEmail <span class="token operator">=</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'accountVal'</span><span class="token punctuation">)</span>
+    <span class="token comment">// 反填用户名和密码</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>accountVal <span class="token operator">=</span> <span class="token operator">!</span>locEmail <span class="token operator">?</span> <span class="token string">''</span> <span class="token operator">:</span> <span class="token constant">AES</span><span class="token punctuation">.</span><span class="token function">decrypt</span><span class="token punctuation">(</span>locEmail<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'accountVal'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token constant">ENCUTF8</span><span class="token punctuation">)</span>
+    <span class="token comment">// 修改输入框状态</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>locEmail<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">this</span><span class="token punctuation">.</span>ifAccountRight <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">requestQRCodeCb</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token function">initQequest</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">requestQRCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token comment">// 请求二维码链接</span>
+<span class="token function">requestQRCode</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getLoginQRCode</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>qrcode<span class="token punctuation">,</span> uuid<span class="token punctuation">}</span> <span class="token operator">=</span> data
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+    <span class="token comment">// 生成二维码图片</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>qrcodeObj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>qrcodeObj<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>qrcodeObj<span class="token punctuation">.</span><span class="token function">makeCode</span><span class="token punctuation">(</span>qrcode<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>qrcodeObj <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getEwmCode</span><span class="token punctuation">(</span>qrcode<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>ewmStatus <span class="token operator">=</span> <span class="token number">1</span>
+    <span class="token comment">// 循环调用QR登录状态查询接口 1s/次</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>queryStatusInteral <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">jsonpRequest</span><span class="token punctuation">(</span>uuid<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">msgAlert</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>message<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token comment">// 生成二维码</span>
+<span class="token function">getEwmCode</span> <span class="token punctuation">(</span><span class="token parameter">qrcode</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">QRCode</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'qrcodeId'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    text<span class="token operator">:</span> qrcode<span class="token punctuation">,</span>
+    width<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+    height<span class="token operator">:</span> <span class="token number">200</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token comment">// jsonp跨域请求</span>
+<span class="token function">jsonpRequest</span> <span class="token punctuation">(</span><span class="token parameter">uuid</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> script <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'script'</span><span class="token punctuation">)</span>
+    script<span class="token punctuation">.</span>src <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://api.service.100tal.com/sso/qrcode/status?uuid=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>uuid<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&amp;callback=qrcodeStatus</span><span class="token template-punctuation string">`</span></span>
+    document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">insertBefore</span><span class="token punctuation">(</span>script<span class="token punctuation">,</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>firstChild<span class="token punctuation">)</span>
+    document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>script<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token comment">// 请求登录状态回调</span>
+<span class="token function">requestQRCodeCb</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// QR登录状态查询接口回调</span>
+    window<span class="token punctuation">.</span><span class="token function-variable function">qrcodeStatus</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>errcode<span class="token punctuation">,</span> stage<span class="token punctuation">,</span> token<span class="token punctuation">}</span> <span class="token operator">=</span> data
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>errcode <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// stage(登录状态)0:未扫码,1:已扫码，-1:凭据已过期,-2:凭据已经登录，9:登录成功</span>
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span>stage<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> <span class="token number">1</span><span class="token operator">:</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>ewmStatus <span class="token operator">=</span> <span class="token number">2</span>
+            <span class="token keyword">break</span>
+        <span class="token keyword">case</span> <span class="token operator">-</span><span class="token number">1</span><span class="token operator">:</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>ewmStatus <span class="token operator">=</span> <span class="token number">3</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">clearIntervalFn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token keyword">break</span>
+        <span class="token keyword">case</span> <span class="token number">9</span><span class="token operator">:</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">clearIntervalFn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token comment">// 请求登录页</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">requestDingdingLogin</span><span class="token punctuation">(</span>token<span class="token punctuation">)</span>
+            <span class="token keyword">break</span>
+        <span class="token keyword">default</span><span class="token operator">:</span>
+            <span class="token keyword">break</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 钉钉登录状态获取失败</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">msgAlert</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span>errmsg<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token comment">// 钉钉登录</span>
+<span class="token function">requestDingdingLogin</span> <span class="token punctuation">(</span><span class="token parameter">token</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">dingdingLogin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>params<span class="token operator">:</span> <span class="token punctuation">{</span>token<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 跳转</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">goToHomePage</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 钉钉登录失败</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">msgAlert</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>message<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token comment">// 清除定时器</span>
+<span class="token function">clearIntervalFn</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>queryStatusInteral<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">clearInterval</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>queryStatusInteral<span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>queryStatusInteral <span class="token operator">=</span> <span class="token keyword">null</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+    <span class="token function">destroy</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">delete</span> window<span class="token punctuation">.</span>qrcodeStatus
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">created</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">initData</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">initQequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/topseczbw/single-bridge/edit/main/docs/frontend/solution/login-process.md" target="_blank" rel="noopener noreferrer">帮助改善此页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021年4月22日星期四凌晨2点12分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/solution/img-spin.html" class="prev">
+        前端上传图片到阿里云后，图片被旋转
+      </a></span> <span class="next"><a href="/frontend/solution/mobile-debugge.html">
+        如何调试移动端应用
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.2fd69221.js" defer></script><script src="/assets/js/2.c8687347.js" defer></script><script src="/assets/js/51.33a4569d.js" defer></script>
+  </body>
+</html>

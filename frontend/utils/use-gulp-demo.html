@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用gulp构建项目 | 走不完的独木桥</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="">
+    <meta name="keyword" content="前端，笔记，走不完的独木桥，zbw">
+    <meta name="author" content="zbw">
+    
+    <link rel="preload" href="/assets/css/0.styles.086c3bbe.css" as="style"><link rel="preload" href="/assets/js/app.2fd69221.js" as="script"><link rel="preload" href="/assets/js/2.c8687347.js" as="script"><link rel="preload" href="/assets/js/78.ec16a432.js" as="script"><link rel="prefetch" href="/assets/js/10.0a6d1513.js"><link rel="prefetch" href="/assets/js/100.88ab4f33.js"><link rel="prefetch" href="/assets/js/101.a7145a26.js"><link rel="prefetch" href="/assets/js/102.cc782542.js"><link rel="prefetch" href="/assets/js/11.31ee87c9.js"><link rel="prefetch" href="/assets/js/12.26e76308.js"><link rel="prefetch" href="/assets/js/13.60adb3a1.js"><link rel="prefetch" href="/assets/js/14.aae6515a.js"><link rel="prefetch" href="/assets/js/15.fbb6c346.js"><link rel="prefetch" href="/assets/js/16.886b3270.js"><link rel="prefetch" href="/assets/js/17.11f72f05.js"><link rel="prefetch" href="/assets/js/18.4c867756.js"><link rel="prefetch" href="/assets/js/19.2f34ae88.js"><link rel="prefetch" href="/assets/js/20.56757e39.js"><link rel="prefetch" href="/assets/js/21.2ba59bc6.js"><link rel="prefetch" href="/assets/js/22.cc67e65b.js"><link rel="prefetch" href="/assets/js/23.577ec706.js"><link rel="prefetch" href="/assets/js/24.c6441ab6.js"><link rel="prefetch" href="/assets/js/25.eff16abc.js"><link rel="prefetch" href="/assets/js/26.534b72b6.js"><link rel="prefetch" href="/assets/js/27.979d7675.js"><link rel="prefetch" href="/assets/js/28.b109d1d6.js"><link rel="prefetch" href="/assets/js/29.b7031a81.js"><link rel="prefetch" href="/assets/js/3.b390b88e.js"><link rel="prefetch" href="/assets/js/30.cdcc2549.js"><link rel="prefetch" href="/assets/js/31.27237d4a.js"><link rel="prefetch" href="/assets/js/32.c1105f6c.js"><link rel="prefetch" href="/assets/js/33.a5e761f5.js"><link rel="prefetch" href="/assets/js/34.b655b340.js"><link rel="prefetch" href="/assets/js/35.322eee2b.js"><link rel="prefetch" href="/assets/js/36.894007d3.js"><link rel="prefetch" href="/assets/js/37.14f0f34e.js"><link rel="prefetch" href="/assets/js/38.c6f65776.js"><link rel="prefetch" href="/assets/js/39.3005276a.js"><link rel="prefetch" href="/assets/js/4.effdd555.js"><link rel="prefetch" href="/assets/js/40.3fb95f80.js"><link rel="prefetch" href="/assets/js/41.41316344.js"><link rel="prefetch" href="/assets/js/42.dc50ea3c.js"><link rel="prefetch" href="/assets/js/43.6a60a50c.js"><link rel="prefetch" href="/assets/js/44.5ab33295.js"><link rel="prefetch" href="/assets/js/45.1fabd84e.js"><link rel="prefetch" href="/assets/js/46.6e4c52df.js"><link rel="prefetch" href="/assets/js/47.99ee9c3d.js"><link rel="prefetch" href="/assets/js/48.a0b8a5fc.js"><link rel="prefetch" href="/assets/js/49.999e5667.js"><link rel="prefetch" href="/assets/js/5.6f537172.js"><link rel="prefetch" href="/assets/js/50.fbbbd6a7.js"><link rel="prefetch" href="/assets/js/51.33a4569d.js"><link rel="prefetch" href="/assets/js/52.f3a03c7b.js"><link rel="prefetch" href="/assets/js/53.e69528b2.js"><link rel="prefetch" href="/assets/js/54.51efc700.js"><link rel="prefetch" href="/assets/js/55.5af734dc.js"><link rel="prefetch" href="/assets/js/56.30c2bd12.js"><link rel="prefetch" href="/assets/js/57.33297ccf.js"><link rel="prefetch" href="/assets/js/58.3e138383.js"><link rel="prefetch" href="/assets/js/59.5c6e3ff4.js"><link rel="prefetch" href="/assets/js/6.91d9df77.js"><link rel="prefetch" href="/assets/js/60.3dc7acc2.js"><link rel="prefetch" href="/assets/js/61.84325ecc.js"><link rel="prefetch" href="/assets/js/62.0cc3341a.js"><link rel="prefetch" href="/assets/js/63.8501fe03.js"><link rel="prefetch" href="/assets/js/64.ead31a44.js"><link rel="prefetch" href="/assets/js/65.1ba135f8.js"><link rel="prefetch" href="/assets/js/66.9b488819.js"><link rel="prefetch" href="/assets/js/67.e98f3437.js"><link rel="prefetch" href="/assets/js/68.318c6c22.js"><link rel="prefetch" href="/assets/js/69.268491dc.js"><link rel="prefetch" href="/assets/js/7.b7f07291.js"><link rel="prefetch" href="/assets/js/70.3e636659.js"><link rel="prefetch" href="/assets/js/71.e167de4f.js"><link rel="prefetch" href="/assets/js/72.b543b8c8.js"><link rel="prefetch" href="/assets/js/73.9d16024c.js"><link rel="prefetch" href="/assets/js/74.cbd90b74.js"><link rel="prefetch" href="/assets/js/75.068a9885.js"><link rel="prefetch" href="/assets/js/76.9cab3112.js"><link rel="prefetch" href="/assets/js/77.4bda8875.js"><link rel="prefetch" href="/assets/js/79.fa9ebda3.js"><link rel="prefetch" href="/assets/js/8.46b09777.js"><link rel="prefetch" href="/assets/js/80.1f9bbeef.js"><link rel="prefetch" href="/assets/js/81.10e48a00.js"><link rel="prefetch" href="/assets/js/82.29f30e7f.js"><link rel="prefetch" href="/assets/js/83.a31b8fc0.js"><link rel="prefetch" href="/assets/js/84.24d7e54f.js"><link rel="prefetch" href="/assets/js/85.0bf7958a.js"><link rel="prefetch" href="/assets/js/86.e95e433d.js"><link rel="prefetch" href="/assets/js/87.995e792b.js"><link rel="prefetch" href="/assets/js/88.b3fea108.js"><link rel="prefetch" href="/assets/js/89.f5880e17.js"><link rel="prefetch" href="/assets/js/9.efe42fe3.js"><link rel="prefetch" href="/assets/js/90.e7ab7970.js"><link rel="prefetch" href="/assets/js/91.c144e9ca.js"><link rel="prefetch" href="/assets/js/92.11ecee7a.js"><link rel="prefetch" href="/assets/js/93.fb488f44.js"><link rel="prefetch" href="/assets/js/94.dba39697.js"><link rel="prefetch" href="/assets/js/95.29a0fc11.js"><link rel="prefetch" href="/assets/js/96.deae8079.js"><link rel="prefetch" href="/assets/js/97.9ed3c330.js"><link rel="prefetch" href="/assets/js/98.1aa45f8f.js"><link rel="prefetch" href="/assets/js/99.ed001c0f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.086c3bbe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">走不完的独木桥</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/前言/" class="nav-link">
+  前言
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作" class="dropdown-title"><span class="title">工作</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作" class="mobile-dropdown-title"><span class="title">工作</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/frontend/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-subitem"><a href="/frontend/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/frontend/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/frontend/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/frontend/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/frontend/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-subitem"><a href="/frontend/utils/" class="nav-link router-link-active">
+  util
+</a></li><li class="dropdown-subitem"><a href="/frontend/performance/" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-subitem"><a href="/frontend/solution/" class="nav-link">
+  企业解决方案
+</a></li><li class="dropdown-subitem"><a href="/frontend/standard/" class="nav-link">
+  团队规范
+</a></li><li class="dropdown-subitem"><a href="/frontend/jest/" class="nav-link">
+  单元测试
+</a></li></ul></li><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-subitem"><a href="/frontend/data-structures-algorithms/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-subitem"><a href="/frontend/design/" class="nav-link">
+  设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/tools/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/tools/github/" class="nav-link">
+  github
+</a></li><li class="dropdown-subitem"><a href="/tools/gitlab/" class="nav-link">
+  gitlab
+</a></li><li class="dropdown-subitem"><a href="/tools/webstorm/" class="nav-link">
+  webstorm
+</a></li><li class="dropdown-subitem"><a href="/tools/chrome/" class="nav-link">
+  chrome
+</a></li><li class="dropdown-subitem"><a href="/tools/vscode/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-subitem"><a href="/tools/charles/" class="nav-link">
+  charles
+</a></li><li class="dropdown-subitem"><a href="/tools/mac/" class="nav-link">
+  mac
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/more/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-subitem"><a href="/more/hodgepodge/" class="nav-link">
+  杂物室
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活/随笔/" class="nav-link">
+  随笔
+</a></li></ul></div></div> <a href="https://github.com/topseczbw/single-bridge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/前言/" class="nav-link">
+  前言
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作" class="dropdown-title"><span class="title">工作</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作" class="mobile-dropdown-title"><span class="title">工作</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/frontend/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-subitem"><a href="/frontend/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/frontend/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/frontend/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/frontend/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/frontend/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-subitem"><a href="/frontend/utils/" class="nav-link router-link-active">
+  util
+</a></li><li class="dropdown-subitem"><a href="/frontend/performance/" class="nav-link">
+  性能优化
+</a></li><li class="dropdown-subitem"><a href="/frontend/solution/" class="nav-link">
+  企业解决方案
+</a></li><li class="dropdown-subitem"><a href="/frontend/standard/" class="nav-link">
+  团队规范
+</a></li><li class="dropdown-subitem"><a href="/frontend/jest/" class="nav-link">
+  单元测试
+</a></li></ul></li><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-subitem"><a href="/frontend/data-structures-algorithms/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-subitem"><a href="/frontend/design/" class="nav-link">
+  设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/tools/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/tools/github/" class="nav-link">
+  github
+</a></li><li class="dropdown-subitem"><a href="/tools/gitlab/" class="nav-link">
+  gitlab
+</a></li><li class="dropdown-subitem"><a href="/tools/webstorm/" class="nav-link">
+  webstorm
+</a></li><li class="dropdown-subitem"><a href="/tools/chrome/" class="nav-link">
+  chrome
+</a></li><li class="dropdown-subitem"><a href="/tools/vscode/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-subitem"><a href="/tools/charles/" class="nav-link">
+  charles
+</a></li><li class="dropdown-subitem"><a href="/tools/mac/" class="nav-link">
+  mac
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/more/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-subitem"><a href="/more/hodgepodge/" class="nav-link">
+  杂物室
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活/随笔/" class="nav-link">
+  随笔
+</a></li></ul></div></div> <a href="https://github.com/topseczbw/single-bridge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>UTILS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend/utils/" aria-current="page" class="sidebar-link">首页</a></li><li><a href="/frontend/utils/antd-form-use.html" class="sidebar-link">使用 Antd4 Form</a></li><li><a href="/frontend/utils/lodash.html" class="sidebar-link">lodash</a></li><li><a href="/frontend/utils/tools.html" class="sidebar-link">常用工具函数</a></li><li><a href="/frontend/utils/use-gulp-demo.html" aria-current="page" class="active sidebar-link">使用gulp构建项目</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/utils/use-gulp-demo.html#目标" class="sidebar-link">目标</a></li><li class="sidebar-sub-header"><a href="/frontend/utils/use-gulp-demo.html#步骤" class="sidebar-link">步骤</a></li><li class="sidebar-sub-header"><a href="/frontend/utils/use-gulp-demo.html#gulp命令" class="sidebar-link">gulp命令</a></li><li class="sidebar-sub-header"><a href="/frontend/utils/use-gulp-demo.html#gulp插件" class="sidebar-link">gulp插件</a></li><li class="sidebar-sub-header"><a href="/frontend/utils/use-gulp-demo.html#注意" class="sidebar-link">注意</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="目标"><a href="#目标" class="header-anchor">#</a> 目标</h2> <p>使用gulp从零构建一个登录页面</p> <h2 id="步骤"><a href="#步骤" class="header-anchor">#</a> 步骤</h2> <ol><li><p><code>npm init -y</code></p></li> <li><p><code>git init</code> 建立git仓库</p> <p>设置 <code>.gitignore</code></p> <div class="language-js extra-class"><pre class="language-js"><code>node_modules
+<span class="token punctuation">.</span>idea
+</code></pre></div></li> <li><p>安装gulp</p> <div class="language-js extra-class"><pre class="language-js"><code>npm install <span class="token operator">--</span>global gulp<span class="token operator">-</span>cli
+
+npm i <span class="token operator">-</span><span class="token constant">D</span> gulp
+</code></pre></div></li> <li><p>创建一个简单的gulpfile</p> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> series<span class="token punctuation">,</span> src<span class="token punctuation">,</span> dest <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">jsTask</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+ <span class="token keyword">return</span> <span class="token function">src</span><span class="token punctuation">(</span><span class="token string">'src/**/*.js'</span><span class="token punctuation">)</span>
+         <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">dest</span><span class="token punctuation">(</span><span class="token string">'dist'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+exports<span class="token punctuation">.</span>default <span class="token operator">=</span> <span class="token function">series</span><span class="token punctuation">(</span>jsTask<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></li></ol> <h2 id="gulp命令"><a href="#gulp命令" class="header-anchor">#</a> gulp命令</h2> <ol><li><p>查看帮助</p> <p><code>gulp -h</code></p></li> <li><p>查看所有任务</p> <p><code>gulp --tasks</code></p></li> <li><p>执行任务</p> <p><code>gulp [任务名称]</code></p></li></ol> <h2 id="gulp插件"><a href="#gulp插件" class="header-anchor">#</a> gulp插件</h2> <h3 id="删除dist目录"><a href="#删除dist目录" class="header-anchor">#</a> 删除dist目录</h3> <p><code>npm i -D del</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> del <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'del'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">cleanTask</span><span class="token punctuation">(</span><span class="token parameter">done</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  del<span class="token punctuation">.</span><span class="token function">sync</span><span class="token punctuation">(</span><span class="token string">'dist'</span><span class="token punctuation">)</span>
+    <span class="token function">done</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="压缩、混淆"><a href="#压缩、混淆" class="header-anchor">#</a> 压缩、混淆</h3> <p><code>npm i -D gulp-uglify</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> uglify <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-uglify'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+ <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">uglify</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">// 压缩、混淆</span>
+</code></pre></div><h3 id="使用es6"><a href="#使用es6" class="header-anchor">#</a> 使用es6</h3> <p><code>npm i -D @babel/core @babel/preset-env gulp-babel</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> babel <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-babel'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+ <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">babel</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            presets<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'@babel/env'</span><span class="token punctuation">]</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="文件重命名"><a href="#文件重命名" class="header-anchor">#</a> 文件重命名</h3> <p><code>npm i -D gulp-rename</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> rename <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;gulp-rename&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">rename</span><span class="token punctuation">(</span><span class="token string">'zbw.js'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">rename</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">path</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    path<span class="token punctuation">.</span>dirname <span class="token operator">+=</span> <span class="token string">&quot;/ciao&quot;</span><span class="token punctuation">;</span>
+    path<span class="token punctuation">.</span>basename <span class="token operator">+=</span> <span class="token string">&quot;-goodbye&quot;</span><span class="token punctuation">;</span>
+    path<span class="token punctuation">.</span>extname <span class="token operator">=</span> <span class="token string">&quot;.md&quot;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">rename</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    dirname<span class="token operator">:</span> <span class="token string">&quot;main/text/ciao&quot;</span><span class="token punctuation">,</span>
+    basename<span class="token operator">:</span> <span class="token string">&quot;aloha&quot;</span><span class="token punctuation">,</span>
+    prefix<span class="token operator">:</span> <span class="token string">&quot;bonjour-&quot;</span><span class="token punctuation">,</span>
+    suffix<span class="token operator">:</span> <span class="token string">&quot;-hola&quot;</span><span class="token punctuation">,</span>
+    extname<span class="token operator">:</span> <span class="token string">&quot;.md&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="合并多文件-输出单一文件"><a href="#合并多文件-输出单一文件" class="header-anchor">#</a> 合并多文件，输出单一文件</h3> <p><code>npm i -D gulp-concat</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> concat <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;gulp-concat&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+ <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">concat</span><span class="token punctuation">(</span><span class="token string">'all.js'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="处理css浏览器兼容性前缀"><a href="#处理css浏览器兼容性前缀" class="header-anchor">#</a> 处理css浏览器兼容性前缀</h3> <p><code>npm i -D gulp-autoprefixer</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> autoprefixer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-autoprefixer'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+ <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">autoprefixer</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            cascade<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+            remove<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token comment">// 删除过时的prefixer</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+ <span class="token string">&quot;browserslist&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;last 2 version&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;&gt; 2%&quot;</span>
+  <span class="token punctuation">]</span>
+</code></pre></div><h3 id="处理sass-编译压缩"><a href="#处理sass-编译压缩" class="header-anchor">#</a> 处理sass，编译压缩</h3> <p><code>npm i -D gulp-sass</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> sass <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-sass'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">sass</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+          outputStyle<span class="token operator">:</span> <span class="token string">'compressed'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="起一个本地服务-开始调接口吧"><a href="#起一个本地服务-开始调接口吧" class="header-anchor">#</a> 起一个本地服务，开始调接口吧</h3> <h4 id="browser-sync"><a href="#browser-sync" class="header-anchor">#</a> browser-sync</h4> <p><code>npm i -D browser-sync</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> browserSync <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'browser-sync'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> reload <span class="token operator">=</span> browserSync<span class="token punctuation">.</span>reload<span class="token punctuation">;</span>
+
+<span class="token comment">// 在js任务后</span>
+<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">dest</span><span class="token punctuation">(</span><span class="token string">'./dist/js/'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">// 输出到根目录下dist文件夹</span>
+<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token punctuation">{</span> stream<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 在css任务后</span>
+<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">dest</span><span class="token punctuation">(</span><span class="token string">'./dist'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token punctuation">{</span> stream<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">function</span> <span class="token function">server</span><span class="token punctuation">(</span><span class="token parameter">done</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  browserSync<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    server<span class="token operator">:</span> <span class="token punctuation">{</span>
+      baseDir<span class="token operator">:</span> <span class="token string">'./'</span>  <span class="token comment">// 指定根目录</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token function">done</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> buildTask <span class="token operator">=</span> <span class="token function">series</span><span class="token punctuation">(</span><span class="token punctuation">[</span>cleanTask<span class="token punctuation">,</span> jsTask<span class="token punctuation">,</span> cssTask<span class="token punctuation">,</span> server<span class="token punctuation">,</span> watcherTask<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+exports<span class="token punctuation">.</span>default <span class="token operator">=</span> buildTask<span class="token punctuation">;</span>
+</code></pre></div><h4 id="gulp-connect-http-proxy-middleware"><a href="#gulp-connect-http-proxy-middleware" class="header-anchor">#</a> gulp-connect + http-proxy-middleware</h4> <p><code>gulp-connect</code> 用来起服务，配合 <code>http-proxy-middleware</code> 做代理，解决跨域问题</p> <p><code>npm i -D gulp-connect http-proxy-middleware</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> connect <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-connect'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> proxy <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http-proxy-middleware'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * @description 起服务
+ */</span>
+<span class="token keyword">function</span> <span class="token function">serverTask</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  connect<span class="token punctuation">.</span><span class="token function">server</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    root<span class="token operator">:</span> <span class="token string">'./dist'</span><span class="token punctuation">,</span>
+    port<span class="token operator">:</span> <span class="token number">8888</span><span class="token punctuation">,</span>
+    livereload<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">middleware</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">connect<span class="token punctuation">,</span> opt</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>
+            <span class="token function">proxy</span><span class="token punctuation">(</span><span class="token string">'/api/'</span><span class="token punctuation">,</span>  <span class="token punctuation">{</span>
+                target<span class="token operator">:</span> <span class="token string">'https://devtk.aibeike.com'</span><span class="token punctuation">,</span>
+                changeOrigin<span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+                pathRewrite<span class="token operator">:</span> <span class="token punctuation">{</span>  <span class="token comment">// 覆写路径</span>
+                  <span class="token string">'^/api/'</span><span class="token operator">:</span> <span class="token string">''</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/**
+ * @description 处理html任务
+ * @returns
+ */</span>
+<span class="token keyword">function</span> <span class="token function">htmlTask</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token function">src</span><span class="token punctuation">(</span><span class="token string">'src/index.html'</span><span class="token punctuation">)</span>
+          <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">dest</span><span class="token punctuation">(</span><span class="token string">'dist'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+          <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>connect<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// reload解决热加载问题，js和css资源同理</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// serverTask任务和watcherTask任务要并行处理，否则执行到serverTask服务器启动后，任务就自动关闭了，热加载功能会丢失</span>
+<span class="token keyword">const</span> assetsTask <span class="token operator">=</span> <span class="token function">series</span><span class="token punctuation">(</span>cleanTask<span class="token punctuation">,</span> htmlTask<span class="token punctuation">,</span> jsTask<span class="token punctuation">,</span> cssTask<span class="token punctuation">,</span> serverTask<span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> buildTask <span class="token operator">=</span> <span class="token function">parallel</span><span class="token punctuation">(</span>assetsTask<span class="token punctuation">,</span> watcherTask<span class="token punctuation">)</span>
+
+exports<span class="token punctuation">.</span>default <span class="token operator">=</span> buildTask<span class="token punctuation">;</span>
+</code></pre></div><h4 id="browser-sync-与-gulp-connect-区别"><a href="#browser-sync-与-gulp-connect-区别" class="header-anchor">#</a> browser-sync 与 gulp-connect 区别</h4> <p><code>browser-sync</code> 没有配合使用的代理插件，在解决跨域问题有些鸡肋</p> <p><code>gulp-connect</code> 配合 <code>http-proxy-middleware</code> 使用可以很方便的解决跨域问题</p> <h2 id="注意"><a href="#注意" class="header-anchor">#</a> 注意</h2> <h3 id="return-和-done-有什么区别"><a href="#return-和-done-有什么区别" class="header-anchor">#</a> return 和 done() 有什么区别</h3> <p>return 是当返回promise时</p> <p>done回调方法比较通用，比如热刷新reload时，return就不好使了</p> <h3 id="为什么热刷新不好使"><a href="#为什么热刷新不好使" class="header-anchor">#</a> 为什么热刷新不好使</h3> <p>这段代码不可以写成return，只能写成done</p> <h3 id="做代理解决跨域问题时-遇到404问题"><a href="#做代理解决跨域问题时-遇到404问题" class="header-anchor">#</a> 做代理解决跨域问题时，遇到404问题</h3> <p>遇到404的一种很常见的情况是，在proxy时，使用了 <code>/api</code> 作为请求接口的前缀链接，但是真正的接口地址中是不存在 <code>/api</code> 这样的路径的，此处需要使用 <code>pathRewrite</code> 覆写删除 <code>/api</code>。</p> <p>同样的问题，参考资料：<a href="https://ymbo.github.io/2018/01/09/http-proxy-middleware%E9%85%8D%E5%90%88gulp%E4%BD%BF%E7%94%A8%E6%97%B6%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9D%91/" target="_blank" rel="noopener noreferrer">http-proxy-middleware配合gulp使用时的一些坑<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="为什么引入第三方依赖包如jquery后-源代码找不到"><a href="#为什么引入第三方依赖包如jquery后-源代码找不到" class="header-anchor">#</a> 为什么引入第三方依赖包如jquery后，源代码找不到$</h3> <p>处理js资源时，src方法读取js文件的顺序是有要求的。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @description 处理js任务
+ * @returns
+ */</span>
+<span class="token keyword">function</span> <span class="token function">jsTask</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 读取src文件夹下所有js文件</span>
+  <span class="token comment">// 注意js文件打包引入的先后顺序，先导入lib，再导入应用代码</span>
+  <span class="token keyword">return</span> <span class="token function">src</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'src/lib/*.js'</span><span class="token punctuation">,</span> <span class="token string">'src/js/*.js'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+          <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">babel</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token comment">// 编译es6</span>
+            presets<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'@babel/env'</span><span class="token punctuation">]</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+          <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">uglify</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">// 压缩、混淆</span>
+          <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">concat</span><span class="token punctuation">(</span><span class="token string">'bundle.js'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 合并所有文件，输出all.js文件</span>
+          <span class="token comment">// .pipe(rename('bundle.js')) // 重命名为zbw.js</span>
+          <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">dest</span><span class="token punctuation">(</span><span class="token string">'./dist/js/'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">// 输出到根目录下dist文件夹</span>
+          <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>connect<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 热加载</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/topseczbw/single-bridge/edit/main/docs/frontend/utils/use-gulp-demo.md" target="_blank" rel="noopener noreferrer">帮助改善此页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021年4月22日星期四凌晨2点12分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/utils/tools.html" class="prev">
+        常用工具函数
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.2fd69221.js" defer></script><script src="/assets/js/2.c8687347.js" defer></script><script src="/assets/js/78.ec16a432.js" defer></script>
+  </body>
+</html>

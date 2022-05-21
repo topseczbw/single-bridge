@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>http 优化 | 走不完的独木桥</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="">
+    <meta name="keyword" content="前端，笔记，走不完的独木桥，zbw">
+    <meta name="author" content="zbw">
+    
+    <link rel="preload" href="/assets/css/0.styles.086c3bbe.css" as="style"><link rel="preload" href="/assets/js/app.2fd69221.js" as="script"><link rel="preload" href="/assets/js/2.c8687347.js" as="script"><link rel="preload" href="/assets/js/44.5ab33295.js" as="script"><link rel="prefetch" href="/assets/js/10.0a6d1513.js"><link rel="prefetch" href="/assets/js/100.88ab4f33.js"><link rel="prefetch" href="/assets/js/101.a7145a26.js"><link rel="prefetch" href="/assets/js/102.cc782542.js"><link rel="prefetch" href="/assets/js/11.31ee87c9.js"><link rel="prefetch" href="/assets/js/12.26e76308.js"><link rel="prefetch" href="/assets/js/13.60adb3a1.js"><link rel="prefetch" href="/assets/js/14.aae6515a.js"><link rel="prefetch" href="/assets/js/15.fbb6c346.js"><link rel="prefetch" href="/assets/js/16.886b3270.js"><link rel="prefetch" href="/assets/js/17.11f72f05.js"><link rel="prefetch" href="/assets/js/18.4c867756.js"><link rel="prefetch" href="/assets/js/19.2f34ae88.js"><link rel="prefetch" href="/assets/js/20.56757e39.js"><link rel="prefetch" href="/assets/js/21.2ba59bc6.js"><link rel="prefetch" href="/assets/js/22.cc67e65b.js"><link rel="prefetch" href="/assets/js/23.577ec706.js"><link rel="prefetch" href="/assets/js/24.c6441ab6.js"><link rel="prefetch" href="/assets/js/25.eff16abc.js"><link rel="prefetch" href="/assets/js/26.534b72b6.js"><link rel="prefetch" href="/assets/js/27.979d7675.js"><link rel="prefetch" href="/assets/js/28.b109d1d6.js"><link rel="prefetch" href="/assets/js/29.b7031a81.js"><link rel="prefetch" href="/assets/js/3.b390b88e.js"><link rel="prefetch" href="/assets/js/30.cdcc2549.js"><link rel="prefetch" href="/assets/js/31.27237d4a.js"><link rel="prefetch" href="/assets/js/32.c1105f6c.js"><link rel="prefetch" href="/assets/js/33.a5e761f5.js"><link rel="prefetch" href="/assets/js/34.b655b340.js"><link rel="prefetch" href="/assets/js/35.322eee2b.js"><link rel="prefetch" href="/assets/js/36.894007d3.js"><link rel="prefetch" href="/assets/js/37.14f0f34e.js"><link rel="prefetch" href="/assets/js/38.c6f65776.js"><link rel="prefetch" href="/assets/js/39.3005276a.js"><link rel="prefetch" href="/assets/js/4.effdd555.js"><link rel="prefetch" href="/assets/js/40.3fb95f80.js"><link rel="prefetch" href="/assets/js/41.41316344.js"><link rel="prefetch" href="/assets/js/42.dc50ea3c.js"><link rel="prefetch" href="/assets/js/43.6a60a50c.js"><link rel="prefetch" href="/assets/js/45.1fabd84e.js"><link rel="prefetch" href="/assets/js/46.6e4c52df.js"><link rel="prefetch" href="/assets/js/47.99ee9c3d.js"><link rel="prefetch" href="/assets/js/48.a0b8a5fc.js"><link rel="prefetch" href="/assets/js/49.999e5667.js"><link rel="prefetch" href="/assets/js/5.6f537172.js"><link rel="prefetch" href="/assets/js/50.fbbbd6a7.js"><link rel="prefetch" href="/assets/js/51.33a4569d.js"><link rel="prefetch" href="/assets/js/52.f3a03c7b.js"><link rel="prefetch" href="/assets/js/53.e69528b2.js"><link rel="prefetch" href="/assets/js/54.51efc700.js"><link rel="prefetch" href="/assets/js/55.5af734dc.js"><link rel="prefetch" href="/assets/js/56.30c2bd12.js"><link rel="prefetch" href="/assets/js/57.33297ccf.js"><link rel="prefetch" href="/assets/js/58.3e138383.js"><link rel="prefetch" href="/assets/js/59.5c6e3ff4.js"><link rel="prefetch" href="/assets/js/6.91d9df77.js"><link rel="prefetch" href="/assets/js/60.3dc7acc2.js"><link rel="prefetch" href="/assets/js/61.84325ecc.js"><link rel="prefetch" href="/assets/js/62.0cc3341a.js"><link rel="prefetch" href="/assets/js/63.8501fe03.js"><link rel="prefetch" href="/assets/js/64.ead31a44.js"><link rel="prefetch" href="/assets/js/65.1ba135f8.js"><link rel="prefetch" href="/assets/js/66.9b488819.js"><link rel="prefetch" href="/assets/js/67.e98f3437.js"><link rel="prefetch" href="/assets/js/68.318c6c22.js"><link rel="prefetch" href="/assets/js/69.268491dc.js"><link rel="prefetch" href="/assets/js/7.b7f07291.js"><link rel="prefetch" href="/assets/js/70.3e636659.js"><link rel="prefetch" href="/assets/js/71.e167de4f.js"><link rel="prefetch" href="/assets/js/72.b543b8c8.js"><link rel="prefetch" href="/assets/js/73.9d16024c.js"><link rel="prefetch" href="/assets/js/74.cbd90b74.js"><link rel="prefetch" href="/assets/js/75.068a9885.js"><link rel="prefetch" href="/assets/js/76.9cab3112.js"><link rel="prefetch" href="/assets/js/77.4bda8875.js"><link rel="prefetch" href="/assets/js/78.ec16a432.js"><link rel="prefetch" href="/assets/js/79.fa9ebda3.js"><link rel="prefetch" href="/assets/js/8.46b09777.js"><link rel="prefetch" href="/assets/js/80.1f9bbeef.js"><link rel="prefetch" href="/assets/js/81.10e48a00.js"><link rel="prefetch" href="/assets/js/82.29f30e7f.js"><link rel="prefetch" href="/assets/js/83.a31b8fc0.js"><link rel="prefetch" href="/assets/js/84.24d7e54f.js"><link rel="prefetch" href="/assets/js/85.0bf7958a.js"><link rel="prefetch" href="/assets/js/86.e95e433d.js"><link rel="prefetch" href="/assets/js/87.995e792b.js"><link rel="prefetch" href="/assets/js/88.b3fea108.js"><link rel="prefetch" href="/assets/js/89.f5880e17.js"><link rel="prefetch" href="/assets/js/9.efe42fe3.js"><link rel="prefetch" href="/assets/js/90.e7ab7970.js"><link rel="prefetch" href="/assets/js/91.c144e9ca.js"><link rel="prefetch" href="/assets/js/92.11ecee7a.js"><link rel="prefetch" href="/assets/js/93.fb488f44.js"><link rel="prefetch" href="/assets/js/94.dba39697.js"><link rel="prefetch" href="/assets/js/95.29a0fc11.js"><link rel="prefetch" href="/assets/js/96.deae8079.js"><link rel="prefetch" href="/assets/js/97.9ed3c330.js"><link rel="prefetch" href="/assets/js/98.1aa45f8f.js"><link rel="prefetch" href="/assets/js/99.ed001c0f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.086c3bbe.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">走不完的独木桥</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/前言/" class="nav-link">
+  前言
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作" class="dropdown-title"><span class="title">工作</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作" class="mobile-dropdown-title"><span class="title">工作</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/frontend/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-subitem"><a href="/frontend/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/frontend/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/frontend/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/frontend/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/frontend/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-subitem"><a href="/frontend/utils/" class="nav-link">
+  util
+</a></li><li class="dropdown-subitem"><a href="/frontend/performance/" class="nav-link router-link-active">
+  性能优化
+</a></li><li class="dropdown-subitem"><a href="/frontend/solution/" class="nav-link">
+  企业解决方案
+</a></li><li class="dropdown-subitem"><a href="/frontend/standard/" class="nav-link">
+  团队规范
+</a></li><li class="dropdown-subitem"><a href="/frontend/jest/" class="nav-link">
+  单元测试
+</a></li></ul></li><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-subitem"><a href="/frontend/data-structures-algorithms/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-subitem"><a href="/frontend/design/" class="nav-link">
+  设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/tools/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/tools/github/" class="nav-link">
+  github
+</a></li><li class="dropdown-subitem"><a href="/tools/gitlab/" class="nav-link">
+  gitlab
+</a></li><li class="dropdown-subitem"><a href="/tools/webstorm/" class="nav-link">
+  webstorm
+</a></li><li class="dropdown-subitem"><a href="/tools/chrome/" class="nav-link">
+  chrome
+</a></li><li class="dropdown-subitem"><a href="/tools/vscode/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-subitem"><a href="/tools/charles/" class="nav-link">
+  charles
+</a></li><li class="dropdown-subitem"><a href="/tools/mac/" class="nav-link">
+  mac
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/more/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-subitem"><a href="/more/hodgepodge/" class="nav-link">
+  杂物室
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活/随笔/" class="nav-link">
+  随笔
+</a></li></ul></div></div> <a href="https://github.com/topseczbw/single-bridge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/前言/" class="nav-link">
+  前言
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="工作" class="dropdown-title"><span class="title">工作</span> <span class="arrow down"></span></button> <button type="button" aria-label="工作" class="mobile-dropdown-title"><span class="title">工作</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          前端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/frontend/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-subitem"><a href="/frontend/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-subitem"><a href="/frontend/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/frontend/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-subitem"><a href="/frontend/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-subitem"><a href="/frontend/typescript/" class="nav-link">
+  typescript
+</a></li><li class="dropdown-subitem"><a href="/frontend/utils/" class="nav-link">
+  util
+</a></li><li class="dropdown-subitem"><a href="/frontend/performance/" class="nav-link router-link-active">
+  性能优化
+</a></li><li class="dropdown-subitem"><a href="/frontend/solution/" class="nav-link">
+  企业解决方案
+</a></li><li class="dropdown-subitem"><a href="/frontend/standard/" class="nav-link">
+  团队规范
+</a></li><li class="dropdown-subitem"><a href="/frontend/jest/" class="nav-link">
+  单元测试
+</a></li></ul></li><li class="dropdown-item"><h4>
+          后端
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/node/" class="nav-link">
+  node
+</a></li></ul></li><li class="dropdown-item"><h4>
+          通用
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/backend/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-subitem"><a href="/frontend/data-structures-algorithms/" class="nav-link">
+  数据结构与算法
+</a></li><li class="dropdown-subitem"><a href="/frontend/design/" class="nav-link">
+  设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          工具
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/tools/git/" class="nav-link">
+  git
+</a></li><li class="dropdown-subitem"><a href="/tools/github/" class="nav-link">
+  github
+</a></li><li class="dropdown-subitem"><a href="/tools/gitlab/" class="nav-link">
+  gitlab
+</a></li><li class="dropdown-subitem"><a href="/tools/webstorm/" class="nav-link">
+  webstorm
+</a></li><li class="dropdown-subitem"><a href="/tools/chrome/" class="nav-link">
+  chrome
+</a></li><li class="dropdown-subitem"><a href="/tools/vscode/" class="nav-link">
+  vscode
+</a></li><li class="dropdown-subitem"><a href="/tools/charles/" class="nav-link">
+  charles
+</a></li><li class="dropdown-subitem"><a href="/tools/mac/" class="nav-link">
+  mac
+</a></li></ul></li><li class="dropdown-item"><h4>
+          其他
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/more/interview/" class="nav-link">
+  面试题
+</a></li><li class="dropdown-subitem"><a href="/more/hodgepodge/" class="nav-link">
+  杂物室
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><span class="title">生活</span> <span class="arrow down"></span></button> <button type="button" aria-label="生活" class="mobile-dropdown-title"><span class="title">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/生活/随笔/" class="nav-link">
+  随笔
+</a></li></ul></div></div> <a href="https://github.com/topseczbw/single-bridge" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>PERFORMANCE</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend/performance/" aria-current="page" class="sidebar-link">首页</a></li><li><a href="/frontend/performance/http.html" aria-current="page" class="active sidebar-link">http 优化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend/performance/http.html#http主要优化方式" class="sidebar-link">http主要优化方式</a></li><li class="sidebar-sub-header"><a href="/frontend/performance/http.html#压缩" class="sidebar-link">压缩</a></li><li class="sidebar-sub-header"><a href="/frontend/performance/http.html#缓存" class="sidebar-link">缓存</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="http主要优化方式"><a href="#http主要优化方式" class="header-anchor">#</a> http主要优化方式</h2> <ol><li><strong>压缩</strong></li> <li><strong>缓存</strong></li></ol> <h2 id="压缩"><a href="#压缩" class="header-anchor">#</a> 压缩</h2> <h3 id="http压缩与uglify压缩区别"><a href="#http压缩与uglify压缩区别" class="header-anchor">#</a> http压缩与uglify压缩区别</h3> <ol><li><p>uglify压缩js代码中的空格、空行，混淆代码指将过长变量名统一替换成简单字符</p></li> <li><p>http压缩是将文件内容中重复的部分进行压缩，如html中重复的标签名，重复的部分越多，压缩质量越高</p> <p>视频，音频相关的文件，压缩质量很低</p> <p>压缩完是可以解压的，而不是删除内容</p></li></ol> <h3 id="压缩流程"><a href="#压缩流程" class="header-anchor">#</a> 压缩流程</h3> <ol><li><p>客户端发出http请求文件时，请求头中的 <code>Accept-Encoding</code> 字段告知服务器，自身支持哪种压缩格式</p> <p>例：<code>Accept-Encoding: br;q=1.0, gzip;q=0.8, *;q=0.1</code></p> <p>q是权重 1最高</p></li> <li><p>服务器收到请求后，根据请求头中的 <code>Accept-Encoding</code>  字段知道了客户端浏览器支持的压缩格式，如果有压缩，没有就不压缩。压缩完成后，写入文件，返回给客户端浏览器</p> <p>并在 <code>response Header</code> 中返回 <code>content-encoding</code> 字段告知浏览器，文件是以什么样的格式进行压缩的，否则浏览器无法正确解析压缩过后的文件，会出现乱码</p> <p>例：<code>content-encoding: gzip</code></p> <p>node压缩格式一般是 <code>gzip、 deflate</code></p></li></ol> <h3 id="压缩原理"><a href="#压缩原理" class="header-anchor">#</a> 压缩原理</h3> <p>压缩功能实现是使用node专用于做压缩的zlib模块，zlib模块压缩方式：</p> <ol><li><p>同步压缩：等文件所有内容压缩完，在返回给客户端</p></li> <li><p>流式压缩：一边压缩一边返回</p> <p>实际上是借助<strong>转换流</strong>的概念，将目标文件读取出来，经过转换流压缩，在返回给客户端。</p> <p><code>可读流.pipe(zlib.createGzip()).pipe(可写流)</code></p></li></ol> <h3 id="压缩实战"><a href="#压缩实战" class="header-anchor">#</a> 压缩实战</h3> <ol><li>webpack 的 devServer 中的 <code>compress</code> 属性</li></ol> <h2 id="缓存"><a href="#缓存" class="header-anchor">#</a> 缓存</h2> <p>缓存指，客户端浏览器请求服务器获取到资源后，同时会将资源复制一份缓存至本地硬盘中的一个文件内。</p> <p>再次请求服务器同一资源时，会被服务器返回的信息告知从自己的缓存文件夹中获取即可。</p> <p>这个交互过程实现了资源的缓存</p> <h3 id="缓存的方式"><a href="#缓存的方式" class="header-anchor">#</a> 缓存的方式</h3> <ol><li><strong>强制缓存</strong></li> <li><strong>对比缓存（协商缓存）</strong></li> <li><strong>指纹缓存</strong></li></ol> <h3 id="强制缓存"><a href="#强制缓存" class="header-anchor">#</a> 强制缓存</h3> <h4 id="什么是强制缓存"><a href="#什么是强制缓存" class="header-anchor">#</a> 什么是强制缓存</h4> <p>客户端发起请求，服务器在返回资源的同时，在<strong>响应中</strong>设置 <code>Cache-Control</code> 或者 <code>Expires</code> 告知客户端浏览器：<strong>10秒之内</strong>、或在<strong>规定日期之前</strong>不要再找我了，从你的缓存文件夹中取！</p> <p>走强制缓存时，响应状态码为200</p> <h4 id="cache-control-与-expires-区别"><a href="#cache-control-与-expires-区别" class="header-anchor">#</a> Cache-Control 与 Expires 区别</h4> <ol><li><p>写法不同</p> <p><code>Cache-Control: max-age=10</code></p> <p><code>Expires: Expires: Wed, 21 Oct 2015 07:28:00 GMT</code></p></li> <li><p>单位不同</p> <p>Cache-Control 单位是秒，是<strong>相对时间</strong>，表示多少秒之后</p> <p>Expires 单位是UTC，也就是我们所说的<strong>格林威治时间</strong>，指的是time中的<strong>世界时间标准</strong>。是绝对时间，表示过期时间是什么时候。</p></li> <li><p>权重不同</p> <p>因为Expires是老版本设置， 设置Cache-Control 会覆盖掉 Expires</p></li></ol> <h4 id="强制缓存缺点"><a href="#强制缓存缺点" class="header-anchor">#</a> 强制缓存缺点</h4> <p>服务器文件更新之后，在没有超过规定时间时，客户端浏览器仍会走缓存，访问旧文件</p> <h3 id="对比缓存-协商缓存-304"><a href="#对比缓存-协商缓存-304" class="header-anchor">#</a> 对比缓存（协商缓存）304</h3> <h4 id="什么是对比缓存"><a href="#什么是对比缓存" class="header-anchor">#</a> 什么是对比缓存</h4> <p>客户端请求第一次时，服务器在response中设置 <code>Last-Modified</code> ，告之客户端这个文件最新修改时间。</p> <p>客户端下次再请求时，在request中会携带 <code>If-Modified-Since</code> 这个时间戳标识，服务器比较标识，如果标识不同，证明后来又被修改过，返回新文件。否则告知客户端：文件没有变化，从缓存中去取吧。</p> <p>走对比缓存时，<strong>响应状态码为304</strong></p> <h4 id="对比缓存缺点"><a href="#对比缓存缺点" class="header-anchor">#</a> 对比缓存缺点</h4> <ol><li>反复操作文件，虽然文件内容没变，但是最后修改时间改了。客户端不会走缓存。</li> <li>cdn分发时间不同，会导致得到不一样的结果</li></ol> <h3 id="指纹缓存"><a href="#指纹缓存" class="header-anchor">#</a> 指纹缓存</h3> <h4 id="什么是指纹缓存"><a href="#什么是指纹缓存" class="header-anchor">#</a> 什么是指纹缓存</h4> <p>首次接到请求后，摘要/加盐文件部分内容，生成唯一key，名为 <code>Etag</code> 传给客户端。</p> <p>客户端下次再请求同一文件时，在request中加入请求头 <code>If-None-Match</code></p> <p>服务器端收到后作比较，更加准确的判断文件是否被修改过，后续同对比缓存</p> <p>例</p> <p><code>ETag: &quot;33a64df551425fcc55e4d42a148795d9f25f89d4&quot;</code></p> <p><code>If-None-Match: &quot;33a64df551425fcc55e4d42a148795d9f25f89d4&quot;</code></p> <h4 id="什么是md5"><a href="#什么是md5" class="header-anchor">#</a> 什么是MD5</h4> <p>MD5是一种信息摘要算法，摘取文件部分内容。</p> <p>MD5本来也不是作加密使用，而是用来<strong>校验数据的完整性</strong>。</p> <p>MD5不算是加密算法，因为摘要不代表全部内容，不可解密，不可反推，就是无论多大数据，经过算法运算后都是<strong>生成固定长度</strong>的数据。</p> <p>相同的内容摘要的结果相同。有一点不同，摘要的结果完全不同。</p> <h4 id="使用md5"><a href="#使用md5" class="header-anchor">#</a> 使用MD5</h4> <p><code>Crypto.createHash('md5').update('文件部分内容' + random() ).digest('base64')</code></p> <p>由于MD5大家都知道，很容易被猜到，所以在摘要时加一个随机数。</p> <h4 id="什么是加盐"><a href="#什么是加盐" class="header-anchor">#</a> 什么是加盐</h4> <p>使用 <code>sha1</code> <code>sha256</code> 这种加密算法，流程同MD5相同</p> <h3 id="最佳实践"><a href="#最佳实践" class="header-anchor">#</a> 最佳实践</h3> <p>开启所有类型缓存，只要有一个失效，就算失效。</p> <p>先<strong>强制缓存（200）</strong>——再对比缓存和指纹缓存（两者有一个失效就算过期）</p> <p>那么<strong>问题来了</strong>，这样设置时，在强制缓存下，缓存没过期时，服务器端更改了文件，客户端不一样拿不到最新的文件吗。</p> <p>我们所说的缓存多用于静态资源和图片（static文件夹），对于经常改编的js逻辑，在正式生产环境打包时，会生成不同的hash值。</p> <p>由于index.html文件不会被缓存，所以该文件中引入的js文件即时打包生成带有最新的hash值的js。所以请求会指向新的URI，不会走缓存。</p> <h3 id="常见问题总结"><a href="#常见问题总结" class="header-anchor">#</a> 常见问题总结</h3> <ol><li><p>缓存设置操作只能在服务器端进行，客户端浏览器能做什么？</p> <p>前端并不能做什么。缓存这件事，让服务器端去搞。</p></li> <li><p>首页index.html即使没有加hash戳也是不会被缓存的，防止出现断网时仍能访问页面的情况</p></li> <li><p>浏览器network上，有一个小按钮，可以禁用所有缓存</p></li> <li><p>关于 <code>Cache-Control</code> 响应头的值，当服务器设置为 <code>no-cache</code> 时，代表每次请求会都访问服务器，但是也会走缓存。当值为 <code>no-store</code> 才表示所有的请求，都不会走缓存</p></li> <li><p>在进行指纹缓存时，node服务器端多使用 <code>Crypto</code> 第三方模块</p></li> <li><p>服务器端设置各种响应头标识（<code>Last-Modified等</code>）当前文件最新状态，那客户端浏览器第二次发给服务器时，需要手动把这个标识设置到请求头吗？</p> <p>不需要，浏览器会携带</p></li></ol> <p><img src="https://user-images.githubusercontent.com/33987402/77244026-b13af700-6c4b-11ea-86e6-914e8e543caa.png" alt="性能优化—http"></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/topseczbw/single-bridge/edit/main/docs/frontend/performance/http.md" target="_blank" rel="noopener noreferrer">帮助改善此页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021年4月22日星期四凌晨2点12分</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/frontend/performance/" class="prev router-link-active">
+        首页
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.2fd69221.js" defer></script><script src="/assets/js/2.c8687347.js" defer></script><script src="/assets/js/44.5ab33295.js" defer></script>
+  </body>
+</html>
